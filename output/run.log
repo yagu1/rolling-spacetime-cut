@@ -1,0 +1,24 @@
+GRID (A and B = starting positions)
+A..............
+..###########.B
+#.###########.#
+#.###########.#
+#.............#
+INDEPENDENT D* SHORTEST PATHS:
+  A: length=14; uses upper corridor: True
+  B: length=16; uses upper corridor: True
+CUT t= 0..10: locked=True  next 2s A=[(1, 2), (2, 2)] B=[(13, 3), (13, 4)]
+CUT t= 2..12: locked=True  next 2s A=[(3, 2), (4, 2)] B=[(13, 5), (13, 6)]
+CUT t= 4..14: locked=True  next 2s A=[(5, 2), (6, 2)] B=[(12, 6), (11, 6)]
+CUT t= 6..16: locked=True  next 2s A=[(7, 2), (8, 2)] B=[(10, 6), (9, 6)]
+CUT t= 8..18: locked=True  next 2s A=[(9, 2), (10, 2)] B=[(8, 6), (7, 6)]
+CUT t=10..20: locked=True  next 2s A=[(11, 2), (12, 2)] B=[(6, 6), (5, 6)]
+CUT t=12..22: locked=True  next 2s A=[(13, 2), (14, 2)] B=[(4, 6), (3, 6)]
+CUT t=14..24: locked=False  next 2s A=[(14, 2), (14, 2)] B=[(2, 6), (1, 6)]
+CUT t=16..26: locked=False  next 2s A=[(14, 2), (14, 2)] B=[(1, 5), (1, 4)]
+CUT t=18..28: locked=False  next 2s A=[(14, 2), (14, 2)] B=[(1, 3), (0, 3)]
+RESULT:
+  A: arrived=True arrival_t=14 trace=[[0, 2], [1, 2], [2, 2], [3, 2], [4, 2], [5, 2], [6, 2], [7, 2], [8, 2], [9, 2], [10, 2], [11, 2], [12, 2], [13, 2], [14, 2], [14, 2], [14, 2], [14, 2], [14, 2], [14, 2], [14, 2]]
+  B: arrived=True arrival_t=20 trace=[[14, 3], [13, 3], [13, 4], [13, 5], [13, 6], [12, 6], [11, 6], [10, 6], [9, 6], [8, 6], [7, 6], [6, 6], [5, 6], [4, 6], [3, 6], [2, 6], [1, 6], [1, 5], [1, 4], [1, 3], [0, 3]]
+  collisions: []
+Saved: output/demo.json
