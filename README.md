@@ -161,3 +161,22 @@ cd rolling_spacetime_cut
 ```
 
 then add the remote. The ZIP distribution is also usable without Git.
+
+## Additional experiment: step-scaled full-horizon cut (no fixed priority)
+
+See [`experiments/README.md`](experiments/README.md). The additional script
+`experiments/step_scaled_horizon.py` derives `H=2*max(independent route steps)`
+(`H=32` in the current map) rather than using a fixed 10-step rolling window.
+It first runs a symmetric XYT graph cut with **no protected corridor or
+preassigned priority**, and re-runs a time-expanded A* within each allocated
+region. In this scenario the plain cut permits A but disconnects B. A symmetric
+feasibility-repair experiment and a joint-state A* baseline then recover A's
+14-step upper route and B's 20-step lower route. Route witnesses are explicitly
+used to repair cut connectivity; the result is **not** evidence that a binary
+min cut alone discovers both routes.
+
+```bash
+python experiments/step_scaled_horizon.py --factor 2
+python experiments/render_step_scaled.py
+python -m pytest -q
+```
