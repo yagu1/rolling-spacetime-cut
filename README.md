@@ -207,3 +207,22 @@ python experiments/step_scaled_horizon.py --factor 2
 python experiments/render_step_scaled.py
 python -m pytest -q
 ```
+
+## Four-agent single-lane bridge extension
+
+A separate four-agent experiment now illustrates two robots from each side
+sharing one narrow bridge. A **four-label approximate Graph Cut** is seeded by
+collision-checked space-time A* trajectories (enumerating all 24 priority
+orders); the Cut alone does **not** prove reachability, discover the four
+paths, or establish physical safety. Two symmetric flow orders have the same
+sum of arrival steps, and the XYT cut interfaces can be viewed for each time.
+
+```bash
+python experiments/four_agent_bridge.py
+python experiments/four_agent_bridge.py --tie-side right --out output/four_bridge/right_first.json
+python experiments/render_four_agent_bridge.py
+python -m pytest -q
+```
+
+See [full methodology and figures](experiments/README_FOUR_AGENT_BRIDGE.md).
+
