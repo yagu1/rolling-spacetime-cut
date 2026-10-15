@@ -1,0 +1,58 @@
+[
+  {
+    "horizon_steps": 28,
+    "pair_required_center_m": 0.6,
+    "initial_connected_agents": 1,
+    "directed_feedback_connected_agents": 3,
+    "oracle_found": true,
+    "final_joint_plan_found": true,
+    "arrival_A": 14,
+    "arrival_B": 15,
+    "arrival_C": 26,
+    "arrival_D": 27,
+    "minimum_swept_pair_center_m": 0.70711,
+    "minimum_swept_wall_center_m": 0.5
+  },
+  {
+    "horizon_steps": 28,
+    "pair_required_center_m": 0.9,
+    "initial_connected_agents": 1,
+    "directed_feedback_connected_agents": 3,
+    "oracle_found": false,
+    "final_joint_plan_found": false,
+    "arrival_A": null,
+    "arrival_B": null,
+    "arrival_C": null,
+    "arrival_D": null,
+    "minimum_swept_pair_center_m": null,
+    "minimum_swept_wall_center_m": null
+  },
+  {
+    "horizon_steps": 30,
+    "pair_required_center_m": 0.9,
+    "initial_connected_agents": 1,
+    "directed_feedback_connected_agents": 4,
+    "oracle_found": true,
+    "final_joint_plan_found": true,
+    "arrival_A": 14,
+    "arrival_B": 16,
+    "arrival_C": 28,
+    "arrival_D": 30,
+    "minimum_swept_pair_center_m": 1.0,
+    "minimum_swept_wall_center_m": 0.5
+  },
+  {
+    "horizon_steps": 30,
+    "pair_required_center_m": 1.1,
+    "initial_connected_agents": 1,
+    "directed_feedback_connected_agents": 4,
+    "oracle_found": false,
+    "final_joint_plan_found": false,
+    "arrival_A": null,
+    "arrival_B": null,
+    "arrival_C": null,
+    "arrival_D": null,
+    "minimum_swept_pair_center_m": null,
+    "minimum_swept_wall_center_m": null
+  }
+]

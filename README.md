@@ -226,3 +226,25 @@ python -m pytest -q
 
 See [full methodology and figures](experiments/README_FOUR_AGENT_BRIDGE.md).
 
+
+## October 2026: reachability-guided four-agent cut and physical margins
+
+See [experiment notes](experiments/README_REACHABILITY_MARGIN.md) for the
+forward/backward XYT viability cones, state-dependent multi-label cut, iterative
+directed-connectivity feedback, swept body/wall clearance, and a separate
+margin-aware joint-state feasibility check. Run:
+
+```bash
+python experiments/reachability_margin_cut.py
+python experiments/render_reachability_margin.py
+python experiments/run_reachability_margin_matrix.py
+python -m pytest -q tests/test_reachability_margin_cut.py
+```
+
+The time-dependent potential cut alone is **not** sufficient to certify a
+collision-free trajectory. The last phase uses **soft safe-path feedback from a
+separate 24-order A* feasibility oracle**, followed by joint A* verification
+inside the resulting cut. No full trajectory is hard-pinned, but this is **not**
+a cut-only or fully path-free algorithm. The plots distinguish colored region
+ownership from the small, certified geometric safety tube around the final
+four-robot path.

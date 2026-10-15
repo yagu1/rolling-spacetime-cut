@@ -1,0 +1,5 @@
+horizon_steps,pair_required_center_m,initial_connected_agents,directed_feedback_connected_agents,oracle_found,final_joint_plan_found,arrival_A,arrival_B,arrival_C,arrival_D,minimum_swept_pair_center_m,minimum_swept_wall_center_m
+28,0.6,1,3,True,True,14,15,26,27,0.70711,0.5
+28,0.9,1,3,False,False,,,,,,
+30,0.9,1,4,True,True,14,16,28,30,1.0,0.5
+30,1.1,1,4,False,False,,,,,,
