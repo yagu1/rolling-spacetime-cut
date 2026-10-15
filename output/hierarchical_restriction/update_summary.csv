@@ -1,0 +1,5 @@
+at_s,version,evaluated,feasible,runtime_ms,score,predicted_min_sep_m,competing_roi_cells
+0,1,32,23,15.453,106.2835,1.0,15
+10,2,32,32,10.0,60.5203,1.0,15
+20,3,32,32,7.138,26.4766,1.0,15
+30,4,32,32,5.566,5.8127,1.0,0

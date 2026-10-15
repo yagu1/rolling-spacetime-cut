@@ -1,0 +1,3115 @@
+{
+  "method": "hierarchical restriction supervisor + independent per-rover D* Lite / temporal A*",
+  "assumptions": [
+    "1 grid cell = 1 meter; 1 step = 1 second",
+    "A/B start left; C/D start right; single-lane shared bridge",
+    "grant revisions are instant and synchronous in simulation",
+    "only the shared resource is restricted; all bank cells remain open",
+    "repulsion is soft supervisor rollout score, not physical safety proof",
+    "continuous linear swept-center pairwise and wall checks; no uncertainty model"
+  ],
+  "unrestricted_baseline": {
+    "all_rovers_arrive_if_independent": true,
+    "arrival_time_s": {
+      "A": 14,
+      "B": 14,
+      "C": 14,
+      "D": 14
+    },
+    "margin_satisfied": false,
+    "minimum_swept_center_distance_m": 0.0
+  },
+  "settings": {
+    "lookahead_seconds": 60,
+    "update_seconds": 10,
+    "candidate_budget": 32,
+    "minimum_center_distance_m": 0.9,
+    "rover_radius_m": 0.28,
+    "wall_extra_margin_m": 0.1,
+    "total_map_cells": 27,
+    "resource_cells": 15
+  },
+  "completed": true,
+  "total_simulated_seconds": 40,
+  "arrivals": {
+    "A": 16,
+    "B": 14,
+    "C": 30,
+    "D": 33
+  },
+  "traces": {
+    "A": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        2
+      ],
+      [
+        3,
+        2
+      ],
+      [
+        4,
+        2
+      ],
+      [
+        5,
+        2
+      ],
+      [
+        6,
+        2
+      ],
+      [
+        7,
+        2
+      ],
+      [
+        8,
+        2
+      ],
+      [
+        9,
+        2
+      ],
+      [
+        10,
+        2
+      ],
+      [
+        11,
+        2
+      ],
+      [
+        12,
+        2
+      ],
+      [
+        12,
+        1
+      ],
+      [
+        12,
+        1
+      ],
+      [
+        12,
+        1
+      ],
+      [
+        12,
+        1
+      ],
+      [
+        12,
+        1
+      ],
+      [
+        12,
+        1
+      ],
+      [
+        12,
+        1
+      ],
+      [
+        12,
+        1
+      ],
+      [
+        12,
+        1
+      ],
+      [
+        12,
+        1
+      ],
+      [
+        12,
+        1
+      ],
+      [
+        12,
+        1
+      ],
+      [
+        12,
+        1
+      ],
+      [
+        12,
+        1
+      ],
+      [
+        12,
+        1
+      ],
+      [
+        12,
+        1
+      ],
+      [
+        12,
+        1
+      ],
+      [
+        12,
+        1
+      ],
+      [
+        12,
+        1
+      ],
+      [
+        12,
+        1
+      ],
+      [
+        12,
+        1
+      ],
+      [
+        12,
+        1
+      ],
+      [
+        12,
+        1
+      ],
+      [
+        12,
+        1
+      ],
+      [
+        12,
+        1
+      ]
+    ],
+    "B": [
+      [
+        0,
+        3
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        2
+      ],
+      [
+        3,
+        2
+      ],
+      [
+        4,
+        2
+      ],
+      [
+        5,
+        2
+      ],
+      [
+        6,
+        2
+      ],
+      [
+        7,
+        2
+      ],
+      [
+        8,
+        2
+      ],
+      [
+        9,
+        2
+      ],
+      [
+        10,
+        2
+      ],
+      [
+        11,
+        2
+      ],
+      [
+        12,
+        2
+      ],
+      [
+        12,
+        3
+      ],
+      [
+        12,
+        3
+      ],
+      [
+        12,
+        3
+      ],
+      [
+        12,
+        3
+      ],
+      [
+        12,
+        3
+      ],
+      [
+        12,
+        3
+      ],
+      [
+        12,
+        3
+      ],
+      [
+        12,
+        3
+      ],
+      [
+        12,
+        3
+      ],
+      [
+        12,
+        3
+      ],
+      [
+        12,
+        3
+      ],
+      [
+        12,
+        3
+      ],
+      [
+        12,
+        3
+      ],
+      [
+        12,
+        3
+      ],
+      [
+        12,
+        3
+      ],
+      [
+        12,
+        3
+      ],
+      [
+        12,
+        3
+      ],
+      [
+        12,
+        3
+      ],
+      [
+        12,
+        3
+      ],
+      [
+        12,
+        3
+      ],
+      [
+        12,
+        3
+      ],
+      [
+        12,
+        3
+      ],
+      [
+        12,
+        3
+      ],
+      [
+        12,
+        3
+      ],
+      [
+        12,
+        3
+      ],
+      [
+        12,
+        3
+      ],
+      [
+        12,
+        3
+      ]
+    ],
+    "C": [
+      [
+        14,
+        1
+      ],
+      [
+        13,
+        1
+      ],
+      [
+        14,
+        1
+      ],
+      [
+        13,
+        1
+      ],
+      [
+        14,
+        1
+      ],
+      [
+        13,
+        1
+      ],
+      [
+        14,
+        1
+      ],
+      [
+        13,
+        1
+      ],
+      [
+        14,
+        1
+      ],
+      [
+        13,
+        1
+      ],
+      [
+        14,
+        1
+      ],
+      [
+        13,
+        1
+      ],
+      [
+        14,
+        1
+      ],
+      [
+        13,
+        1
+      ],
+      [
+        14,
+        1
+      ],
+      [
+        13,
+        1
+      ],
+      [
+        14,
+        1
+      ],
+      [
+        13,
+        1
+      ],
+      [
+        13,
+        2
+      ],
+      [
+        12,
+        2
+      ],
+      [
+        11,
+        2
+      ],
+      [
+        10,
+        2
+      ],
+      [
+        9,
+        2
+      ],
+      [
+        8,
+        2
+      ],
+      [
+        7,
+        2
+      ],
+      [
+        6,
+        2
+      ],
+      [
+        5,
+        2
+      ],
+      [
+        4,
+        2
+      ],
+      [
+        3,
+        2
+      ],
+      [
+        2,
+        2
+      ],
+      [
+        2,
+        1
+      ],
+      [
+        2,
+        1
+      ],
+      [
+        2,
+        1
+      ],
+      [
+        2,
+        1
+      ],
+      [
+        2,
+        1
+      ],
+      [
+        2,
+        1
+      ],
+      [
+        2,
+        1
+      ],
+      [
+        2,
+        1
+      ],
+      [
+        2,
+        1
+      ],
+      [
+        2,
+        1
+      ],
+      [
+        2,
+        1
+      ]
+    ],
+    "D": [
+      [
+        14,
+        3
+      ],
+      [
+        13,
+        3
+      ],
+      [
+        14,
+        3
+      ],
+      [
+        13,
+        3
+      ],
+      [
+        14,
+        3
+      ],
+      [
+        13,
+        3
+      ],
+      [
+        14,
+        3
+      ],
+      [
+        13,
+        3
+      ],
+      [
+        14,
+        3
+      ],
+      [
+        13,
+        3
+      ],
+      [
+        14,
+        3
+      ],
+      [
+        13,
+        3
+      ],
+      [
+        14,
+        3
+      ],
+      [
+        13,
+        3
+      ],
+      [
+        14,
+        3
+      ],
+      [
+        13,
+        3
+      ],
+      [
+        14,
+        3
+      ],
+      [
+        13,
+        3
+      ],
+      [
+        14,
+        3
+      ],
+      [
+        13,
+        3
+      ],
+      [
+        13,
+        3
+      ],
+      [
+        13,
+        2
+      ],
+      [
+        12,
+        2
+      ],
+      [
+        11,
+        2
+      ],
+      [
+        10,
+        2
+      ],
+      [
+        9,
+        2
+      ],
+      [
+        8,
+        2
+      ],
+      [
+        7,
+        2
+      ],
+      [
+        6,
+        2
+      ],
+      [
+        5,
+        2
+      ],
+      [
+        4,
+        2
+      ],
+      [
+        3,
+        2
+      ],
+      [
+        2,
+        2
+      ],
+      [
+        2,
+        3
+      ],
+      [
+        2,
+        3
+      ],
+      [
+        2,
+        3
+      ],
+      [
+        2,
+        3
+      ],
+      [
+        2,
+        3
+      ],
+      [
+        2,
+        3
+      ],
+      [
+        2,
+        3
+      ],
+      [
+        2,
+        3
+      ]
+    ]
+  },
+  "full_trace_clearance_pass": true,
+  "minimum_swept_distance_m": 1.0,
+  "supervisor_updates": [
+    {
+      "now": 0,
+      "version": 1,
+      "candidates": 32,
+      "feasible_candidates": 23,
+      "search_seconds": 0.015452602000095794,
+      "score": 106.28353543465326,
+      "predicted_arrival_remaining": {
+        "A": 16,
+        "B": 14,
+        "C": 31,
+        "D": 35
+      },
+      "predicted_min_swept_distance_m": 1.0,
+      "repulsion_energy": 65.59483816281396,
+      "restriction_volume": 180,
+      "windows": {
+        "B": {
+          "open_at": 0,
+          "close_at": 17
+        },
+        "A": {
+          "open_at": 4,
+          "close_at": 17
+        },
+        "C": {
+          "open_at": 19,
+          "close_at": 36
+        },
+        "D": {
+          "open_at": 23,
+          "close_at": 36
+        }
+      },
+      "cut_calls": 0,
+      "full_spacetime_cut_nodes_allocated": 0,
+      "scope": {
+        "live_rovers": 4,
+        "union_reachable_cells": 27,
+        "competing_bottleneck_cells": 15,
+        "estimated_full_XYT_node_count": 1647,
+        "bottleneck_XYT_node_equivalent": 915
+      }
+    },
+    {
+      "now": 10,
+      "version": 2,
+      "candidates": 32,
+      "feasible_candidates": 32,
+      "search_seconds": 0.009999892999985605,
+      "score": 60.520299923089524,
+      "predicted_arrival_remaining": {
+        "A": 6,
+        "B": 4,
+        "C": 20,
+        "D": 23
+      },
+      "predicted_min_swept_distance_m": 1.0,
+      "repulsion_energy": 60.41444358988367,
+      "restriction_volume": 193,
+      "windows": {
+        "B": {
+          "open_at": 0,
+          "close_at": 17
+        },
+        "A": {
+          "open_at": 4,
+          "close_at": 17
+        },
+        "C": {
+          "open_at": 18,
+          "close_at": 36
+        },
+        "D": {
+          "open_at": 21,
+          "close_at": 36
+        }
+      },
+      "cut_calls": 0,
+      "full_spacetime_cut_nodes_allocated": 0,
+      "scope": {
+        "live_rovers": 4,
+        "union_reachable_cells": 27,
+        "competing_bottleneck_cells": 15,
+        "estimated_full_XYT_node_count": 1647,
+        "bottleneck_XYT_node_equivalent": 915
+      }
+    },
+    {
+      "now": 20,
+      "version": 3,
+      "candidates": 32,
+      "feasible_candidates": 32,
+      "search_seconds": 0.007137640000109968,
+      "score": 26.476591138238895,
+      "predicted_arrival_remaining": {
+        "A": 0,
+        "B": 0,
+        "C": 10,
+        "D": 13
+      },
+      "predicted_min_swept_distance_m": 1.0,
+      "repulsion_energy": 37.63990153598772,
+      "restriction_volume": 89,
+      "windows": {
+        "C": {
+          "open_at": 18,
+          "close_at": 36
+        },
+        "D": {
+          "open_at": 21,
+          "close_at": 36
+        }
+      },
+      "cut_calls": 0,
+      "full_spacetime_cut_nodes_allocated": 0,
+      "scope": {
+        "live_rovers": 2,
+        "union_reachable_cells": 27,
+        "competing_bottleneck_cells": 15,
+        "estimated_full_XYT_node_count": 1647,
+        "bottleneck_XYT_node_equivalent": 915
+      }
+    },
+    {
+      "now": 30,
+      "version": 4,
+      "candidates": 32,
+      "feasible_candidates": 32,
+      "search_seconds": 0.005565768999986176,
+      "score": 5.8127074686001174,
+      "predicted_arrival_remaining": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 3
+      },
+      "predicted_min_swept_distance_m": 1.0,
+      "repulsion_energy": 30.65230520666797,
+      "restriction_volume": 54,
+      "windows": {
+        "D": {
+          "open_at": 21,
+          "close_at": 36
+        }
+      },
+      "cut_calls": 0,
+      "full_spacetime_cut_nodes_allocated": 0,
+      "scope": {
+        "live_rovers": 1,
+        "union_reachable_cells": 27,
+        "competing_bottleneck_cells": 0,
+        "estimated_full_XYT_node_count": 1647,
+        "bottleneck_XYT_node_equivalent": 0
+      }
+    }
+  ],
+  "timeline": [
+    {
+      "time": 0,
+      "positions_before": {
+        "A": [
+          0,
+          1
+        ],
+        "B": [
+          0,
+          3
+        ],
+        "C": [
+          14,
+          1
+        ],
+        "D": [
+          14,
+          3
+        ]
+      },
+      "positions_after": {
+        "A": [
+          7,
+          2
+        ],
+        "B": [
+          9,
+          2
+        ],
+        "C": [
+          14,
+          1
+        ],
+        "D": [
+          14,
+          3
+        ]
+      },
+      "minimum_swept_distance_m": 1.0,
+      "version": 1,
+      "executed": {
+        "A": [
+          [
+            1,
+            1
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            3,
+            2
+          ],
+          [
+            4,
+            2
+          ],
+          [
+            5,
+            2
+          ],
+          [
+            6,
+            2
+          ],
+          [
+            7,
+            2
+          ]
+        ],
+        "B": [
+          [
+            0,
+            2
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            3,
+            2
+          ],
+          [
+            4,
+            2
+          ],
+          [
+            5,
+            2
+          ],
+          [
+            6,
+            2
+          ],
+          [
+            7,
+            2
+          ],
+          [
+            8,
+            2
+          ],
+          [
+            9,
+            2
+          ]
+        ],
+        "C": [
+          [
+            13,
+            1
+          ],
+          [
+            14,
+            1
+          ],
+          [
+            13,
+            1
+          ],
+          [
+            14,
+            1
+          ],
+          [
+            13,
+            1
+          ],
+          [
+            14,
+            1
+          ],
+          [
+            13,
+            1
+          ],
+          [
+            14,
+            1
+          ],
+          [
+            13,
+            1
+          ],
+          [
+            14,
+            1
+          ]
+        ],
+        "D": [
+          [
+            13,
+            3
+          ],
+          [
+            14,
+            3
+          ],
+          [
+            13,
+            3
+          ],
+          [
+            14,
+            3
+          ],
+          [
+            13,
+            3
+          ],
+          [
+            14,
+            3
+          ],
+          [
+            13,
+            3
+          ],
+          [
+            14,
+            3
+          ],
+          [
+            13,
+            3
+          ],
+          [
+            14,
+            3
+          ]
+        ]
+      },
+      "restriction_payloads": {
+        "A": {
+          "version": 1,
+          "issued_at": 0,
+          "valid_to": 60,
+          "restricted_resource": "single_lane_bridge_and_approaches",
+          "resource_cell_count": 15,
+          "resource_cells_xy": [
+            [
+              0,
+              2
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              2,
+              2
+            ],
+            [
+              3,
+              2
+            ],
+            [
+              4,
+              2
+            ],
+            [
+              5,
+              2
+            ],
+            [
+              6,
+              2
+            ],
+            [
+              7,
+              2
+            ],
+            [
+              8,
+              2
+            ],
+            [
+              9,
+              2
+            ],
+            [
+              10,
+              2
+            ],
+            [
+              11,
+              2
+            ],
+            [
+              12,
+              2
+            ],
+            [
+              13,
+              2
+            ],
+            [
+              14,
+              2
+            ]
+          ],
+          "protected_parking_cells_xy": [
+            [
+              2,
+              1
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              12,
+              3
+            ]
+          ],
+          "access_window": {
+            "open_at": 4,
+            "close_at": 17
+          },
+          "contents": "resource-level allowed/denied mask; no path waypoints"
+        },
+        "B": {
+          "version": 1,
+          "issued_at": 0,
+          "valid_to": 60,
+          "restricted_resource": "single_lane_bridge_and_approaches",
+          "resource_cell_count": 15,
+          "resource_cells_xy": [
+            [
+              0,
+              2
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              2,
+              2
+            ],
+            [
+              3,
+              2
+            ],
+            [
+              4,
+              2
+            ],
+            [
+              5,
+              2
+            ],
+            [
+              6,
+              2
+            ],
+            [
+              7,
+              2
+            ],
+            [
+              8,
+              2
+            ],
+            [
+              9,
+              2
+            ],
+            [
+              10,
+              2
+            ],
+            [
+              11,
+              2
+            ],
+            [
+              12,
+              2
+            ],
+            [
+              13,
+              2
+            ],
+            [
+              14,
+              2
+            ]
+          ],
+          "protected_parking_cells_xy": [
+            [
+              2,
+              1
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              12,
+              1
+            ]
+          ],
+          "access_window": {
+            "open_at": 0,
+            "close_at": 17
+          },
+          "contents": "resource-level allowed/denied mask; no path waypoints"
+        },
+        "C": {
+          "version": 1,
+          "issued_at": 0,
+          "valid_to": 60,
+          "restricted_resource": "single_lane_bridge_and_approaches",
+          "resource_cell_count": 15,
+          "resource_cells_xy": [
+            [
+              0,
+              2
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              2,
+              2
+            ],
+            [
+              3,
+              2
+            ],
+            [
+              4,
+              2
+            ],
+            [
+              5,
+              2
+            ],
+            [
+              6,
+              2
+            ],
+            [
+              7,
+              2
+            ],
+            [
+              8,
+              2
+            ],
+            [
+              9,
+              2
+            ],
+            [
+              10,
+              2
+            ],
+            [
+              11,
+              2
+            ],
+            [
+              12,
+              2
+            ],
+            [
+              13,
+              2
+            ],
+            [
+              14,
+              2
+            ]
+          ],
+          "protected_parking_cells_xy": [
+            [
+              2,
+              3
+            ],
+            [
+              12,
+              1
+            ],
+            [
+              12,
+              3
+            ]
+          ],
+          "access_window": {
+            "open_at": 19,
+            "close_at": 36
+          },
+          "contents": "resource-level allowed/denied mask; no path waypoints"
+        },
+        "D": {
+          "version": 1,
+          "issued_at": 0,
+          "valid_to": 60,
+          "restricted_resource": "single_lane_bridge_and_approaches",
+          "resource_cell_count": 15,
+          "resource_cells_xy": [
+            [
+              0,
+              2
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              2,
+              2
+            ],
+            [
+              3,
+              2
+            ],
+            [
+              4,
+              2
+            ],
+            [
+              5,
+              2
+            ],
+            [
+              6,
+              2
+            ],
+            [
+              7,
+              2
+            ],
+            [
+              8,
+              2
+            ],
+            [
+              9,
+              2
+            ],
+            [
+              10,
+              2
+            ],
+            [
+              11,
+              2
+            ],
+            [
+              12,
+              2
+            ],
+            [
+              13,
+              2
+            ],
+            [
+              14,
+              2
+            ]
+          ],
+          "protected_parking_cells_xy": [
+            [
+              2,
+              1
+            ],
+            [
+              12,
+              1
+            ],
+            [
+              12,
+              3
+            ]
+          ],
+          "access_window": {
+            "open_at": 23,
+            "close_at": 36
+          },
+          "contents": "resource-level allowed/denied mask; no path waypoints"
+        }
+      }
+    },
+    {
+      "time": 10,
+      "positions_before": {
+        "A": [
+          7,
+          2
+        ],
+        "B": [
+          9,
+          2
+        ],
+        "C": [
+          14,
+          1
+        ],
+        "D": [
+          14,
+          3
+        ]
+      },
+      "positions_after": {
+        "A": [
+          12,
+          1
+        ],
+        "B": [
+          12,
+          3
+        ],
+        "C": [
+          11,
+          2
+        ],
+        "D": [
+          13,
+          3
+        ]
+      },
+      "minimum_swept_distance_m": 1.0,
+      "version": 2,
+      "executed": {
+        "A": [
+          [
+            8,
+            2
+          ],
+          [
+            9,
+            2
+          ],
+          [
+            10,
+            2
+          ],
+          [
+            11,
+            2
+          ],
+          [
+            12,
+            2
+          ],
+          [
+            12,
+            1
+          ],
+          [
+            12,
+            1
+          ],
+          [
+            12,
+            1
+          ],
+          [
+            12,
+            1
+          ],
+          [
+            12,
+            1
+          ]
+        ],
+        "B": [
+          [
+            10,
+            2
+          ],
+          [
+            11,
+            2
+          ],
+          [
+            12,
+            2
+          ],
+          [
+            12,
+            3
+          ],
+          [
+            12,
+            3
+          ],
+          [
+            12,
+            3
+          ],
+          [
+            12,
+            3
+          ],
+          [
+            12,
+            3
+          ],
+          [
+            12,
+            3
+          ],
+          [
+            12,
+            3
+          ]
+        ],
+        "C": [
+          [
+            13,
+            1
+          ],
+          [
+            14,
+            1
+          ],
+          [
+            13,
+            1
+          ],
+          [
+            14,
+            1
+          ],
+          [
+            13,
+            1
+          ],
+          [
+            14,
+            1
+          ],
+          [
+            13,
+            1
+          ],
+          [
+            13,
+            2
+          ],
+          [
+            12,
+            2
+          ],
+          [
+            11,
+            2
+          ]
+        ],
+        "D": [
+          [
+            13,
+            3
+          ],
+          [
+            14,
+            3
+          ],
+          [
+            13,
+            3
+          ],
+          [
+            14,
+            3
+          ],
+          [
+            13,
+            3
+          ],
+          [
+            14,
+            3
+          ],
+          [
+            13,
+            3
+          ],
+          [
+            14,
+            3
+          ],
+          [
+            13,
+            3
+          ],
+          [
+            13,
+            3
+          ]
+        ]
+      },
+      "restriction_payloads": {
+        "A": {
+          "version": 2,
+          "issued_at": 10,
+          "valid_to": 70,
+          "restricted_resource": "single_lane_bridge_and_approaches",
+          "resource_cell_count": 15,
+          "resource_cells_xy": [
+            [
+              0,
+              2
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              2,
+              2
+            ],
+            [
+              3,
+              2
+            ],
+            [
+              4,
+              2
+            ],
+            [
+              5,
+              2
+            ],
+            [
+              6,
+              2
+            ],
+            [
+              7,
+              2
+            ],
+            [
+              8,
+              2
+            ],
+            [
+              9,
+              2
+            ],
+            [
+              10,
+              2
+            ],
+            [
+              11,
+              2
+            ],
+            [
+              12,
+              2
+            ],
+            [
+              13,
+              2
+            ],
+            [
+              14,
+              2
+            ]
+          ],
+          "protected_parking_cells_xy": [
+            [
+              2,
+              1
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              12,
+              3
+            ]
+          ],
+          "access_window": {
+            "open_at": 4,
+            "close_at": 17
+          },
+          "contents": "resource-level allowed/denied mask; no path waypoints"
+        },
+        "B": {
+          "version": 2,
+          "issued_at": 10,
+          "valid_to": 70,
+          "restricted_resource": "single_lane_bridge_and_approaches",
+          "resource_cell_count": 15,
+          "resource_cells_xy": [
+            [
+              0,
+              2
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              2,
+              2
+            ],
+            [
+              3,
+              2
+            ],
+            [
+              4,
+              2
+            ],
+            [
+              5,
+              2
+            ],
+            [
+              6,
+              2
+            ],
+            [
+              7,
+              2
+            ],
+            [
+              8,
+              2
+            ],
+            [
+              9,
+              2
+            ],
+            [
+              10,
+              2
+            ],
+            [
+              11,
+              2
+            ],
+            [
+              12,
+              2
+            ],
+            [
+              13,
+              2
+            ],
+            [
+              14,
+              2
+            ]
+          ],
+          "protected_parking_cells_xy": [
+            [
+              2,
+              1
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              12,
+              1
+            ]
+          ],
+          "access_window": {
+            "open_at": 0,
+            "close_at": 17
+          },
+          "contents": "resource-level allowed/denied mask; no path waypoints"
+        },
+        "C": {
+          "version": 2,
+          "issued_at": 10,
+          "valid_to": 70,
+          "restricted_resource": "single_lane_bridge_and_approaches",
+          "resource_cell_count": 15,
+          "resource_cells_xy": [
+            [
+              0,
+              2
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              2,
+              2
+            ],
+            [
+              3,
+              2
+            ],
+            [
+              4,
+              2
+            ],
+            [
+              5,
+              2
+            ],
+            [
+              6,
+              2
+            ],
+            [
+              7,
+              2
+            ],
+            [
+              8,
+              2
+            ],
+            [
+              9,
+              2
+            ],
+            [
+              10,
+              2
+            ],
+            [
+              11,
+              2
+            ],
+            [
+              12,
+              2
+            ],
+            [
+              13,
+              2
+            ],
+            [
+              14,
+              2
+            ]
+          ],
+          "protected_parking_cells_xy": [
+            [
+              2,
+              3
+            ],
+            [
+              12,
+              1
+            ],
+            [
+              12,
+              3
+            ]
+          ],
+          "access_window": {
+            "open_at": 18,
+            "close_at": 36
+          },
+          "contents": "resource-level allowed/denied mask; no path waypoints"
+        },
+        "D": {
+          "version": 2,
+          "issued_at": 10,
+          "valid_to": 70,
+          "restricted_resource": "single_lane_bridge_and_approaches",
+          "resource_cell_count": 15,
+          "resource_cells_xy": [
+            [
+              0,
+              2
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              2,
+              2
+            ],
+            [
+              3,
+              2
+            ],
+            [
+              4,
+              2
+            ],
+            [
+              5,
+              2
+            ],
+            [
+              6,
+              2
+            ],
+            [
+              7,
+              2
+            ],
+            [
+              8,
+              2
+            ],
+            [
+              9,
+              2
+            ],
+            [
+              10,
+              2
+            ],
+            [
+              11,
+              2
+            ],
+            [
+              12,
+              2
+            ],
+            [
+              13,
+              2
+            ],
+            [
+              14,
+              2
+            ]
+          ],
+          "protected_parking_cells_xy": [
+            [
+              2,
+              1
+            ],
+            [
+              12,
+              1
+            ],
+            [
+              12,
+              3
+            ]
+          ],
+          "access_window": {
+            "open_at": 21,
+            "close_at": 36
+          },
+          "contents": "resource-level allowed/denied mask; no path waypoints"
+        }
+      }
+    },
+    {
+      "time": 20,
+      "positions_before": {
+        "A": [
+          12,
+          1
+        ],
+        "B": [
+          12,
+          3
+        ],
+        "C": [
+          11,
+          2
+        ],
+        "D": [
+          13,
+          3
+        ]
+      },
+      "positions_after": {
+        "A": [
+          12,
+          1
+        ],
+        "B": [
+          12,
+          3
+        ],
+        "C": [
+          2,
+          1
+        ],
+        "D": [
+          4,
+          2
+        ]
+      },
+      "minimum_swept_distance_m": 1.0,
+      "version": 3,
+      "executed": {
+        "A": [
+          [
+            12,
+            1
+          ],
+          [
+            12,
+            1
+          ],
+          [
+            12,
+            1
+          ],
+          [
+            12,
+            1
+          ],
+          [
+            12,
+            1
+          ],
+          [
+            12,
+            1
+          ],
+          [
+            12,
+            1
+          ],
+          [
+            12,
+            1
+          ],
+          [
+            12,
+            1
+          ],
+          [
+            12,
+            1
+          ]
+        ],
+        "B": [
+          [
+            12,
+            3
+          ],
+          [
+            12,
+            3
+          ],
+          [
+            12,
+            3
+          ],
+          [
+            12,
+            3
+          ],
+          [
+            12,
+            3
+          ],
+          [
+            12,
+            3
+          ],
+          [
+            12,
+            3
+          ],
+          [
+            12,
+            3
+          ],
+          [
+            12,
+            3
+          ],
+          [
+            12,
+            3
+          ]
+        ],
+        "C": [
+          [
+            10,
+            2
+          ],
+          [
+            9,
+            2
+          ],
+          [
+            8,
+            2
+          ],
+          [
+            7,
+            2
+          ],
+          [
+            6,
+            2
+          ],
+          [
+            5,
+            2
+          ],
+          [
+            4,
+            2
+          ],
+          [
+            3,
+            2
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            2,
+            1
+          ]
+        ],
+        "D": [
+          [
+            13,
+            2
+          ],
+          [
+            12,
+            2
+          ],
+          [
+            11,
+            2
+          ],
+          [
+            10,
+            2
+          ],
+          [
+            9,
+            2
+          ],
+          [
+            8,
+            2
+          ],
+          [
+            7,
+            2
+          ],
+          [
+            6,
+            2
+          ],
+          [
+            5,
+            2
+          ],
+          [
+            4,
+            2
+          ]
+        ]
+      },
+      "restriction_payloads": {
+        "A": {
+          "version": 3,
+          "issued_at": 20,
+          "valid_to": 80,
+          "restricted_resource": "single_lane_bridge_and_approaches",
+          "resource_cell_count": 15,
+          "resource_cells_xy": [
+            [
+              0,
+              2
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              2,
+              2
+            ],
+            [
+              3,
+              2
+            ],
+            [
+              4,
+              2
+            ],
+            [
+              5,
+              2
+            ],
+            [
+              6,
+              2
+            ],
+            [
+              7,
+              2
+            ],
+            [
+              8,
+              2
+            ],
+            [
+              9,
+              2
+            ],
+            [
+              10,
+              2
+            ],
+            [
+              11,
+              2
+            ],
+            [
+              12,
+              2
+            ],
+            [
+              13,
+              2
+            ],
+            [
+              14,
+              2
+            ]
+          ],
+          "protected_parking_cells_xy": [
+            [
+              2,
+              1
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              12,
+              3
+            ]
+          ],
+          "access_window": null,
+          "contents": "resource-level allowed/denied mask; no path waypoints"
+        },
+        "B": {
+          "version": 3,
+          "issued_at": 20,
+          "valid_to": 80,
+          "restricted_resource": "single_lane_bridge_and_approaches",
+          "resource_cell_count": 15,
+          "resource_cells_xy": [
+            [
+              0,
+              2
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              2,
+              2
+            ],
+            [
+              3,
+              2
+            ],
+            [
+              4,
+              2
+            ],
+            [
+              5,
+              2
+            ],
+            [
+              6,
+              2
+            ],
+            [
+              7,
+              2
+            ],
+            [
+              8,
+              2
+            ],
+            [
+              9,
+              2
+            ],
+            [
+              10,
+              2
+            ],
+            [
+              11,
+              2
+            ],
+            [
+              12,
+              2
+            ],
+            [
+              13,
+              2
+            ],
+            [
+              14,
+              2
+            ]
+          ],
+          "protected_parking_cells_xy": [
+            [
+              2,
+              1
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              12,
+              1
+            ]
+          ],
+          "access_window": null,
+          "contents": "resource-level allowed/denied mask; no path waypoints"
+        },
+        "C": {
+          "version": 3,
+          "issued_at": 20,
+          "valid_to": 80,
+          "restricted_resource": "single_lane_bridge_and_approaches",
+          "resource_cell_count": 15,
+          "resource_cells_xy": [
+            [
+              0,
+              2
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              2,
+              2
+            ],
+            [
+              3,
+              2
+            ],
+            [
+              4,
+              2
+            ],
+            [
+              5,
+              2
+            ],
+            [
+              6,
+              2
+            ],
+            [
+              7,
+              2
+            ],
+            [
+              8,
+              2
+            ],
+            [
+              9,
+              2
+            ],
+            [
+              10,
+              2
+            ],
+            [
+              11,
+              2
+            ],
+            [
+              12,
+              2
+            ],
+            [
+              13,
+              2
+            ],
+            [
+              14,
+              2
+            ]
+          ],
+          "protected_parking_cells_xy": [
+            [
+              2,
+              3
+            ],
+            [
+              12,
+              1
+            ],
+            [
+              12,
+              3
+            ]
+          ],
+          "access_window": {
+            "open_at": 18,
+            "close_at": 36
+          },
+          "contents": "resource-level allowed/denied mask; no path waypoints"
+        },
+        "D": {
+          "version": 3,
+          "issued_at": 20,
+          "valid_to": 80,
+          "restricted_resource": "single_lane_bridge_and_approaches",
+          "resource_cell_count": 15,
+          "resource_cells_xy": [
+            [
+              0,
+              2
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              2,
+              2
+            ],
+            [
+              3,
+              2
+            ],
+            [
+              4,
+              2
+            ],
+            [
+              5,
+              2
+            ],
+            [
+              6,
+              2
+            ],
+            [
+              7,
+              2
+            ],
+            [
+              8,
+              2
+            ],
+            [
+              9,
+              2
+            ],
+            [
+              10,
+              2
+            ],
+            [
+              11,
+              2
+            ],
+            [
+              12,
+              2
+            ],
+            [
+              13,
+              2
+            ],
+            [
+              14,
+              2
+            ]
+          ],
+          "protected_parking_cells_xy": [
+            [
+              2,
+              1
+            ],
+            [
+              12,
+              1
+            ],
+            [
+              12,
+              3
+            ]
+          ],
+          "access_window": {
+            "open_at": 21,
+            "close_at": 36
+          },
+          "contents": "resource-level allowed/denied mask; no path waypoints"
+        }
+      }
+    },
+    {
+      "time": 30,
+      "positions_before": {
+        "A": [
+          12,
+          1
+        ],
+        "B": [
+          12,
+          3
+        ],
+        "C": [
+          2,
+          1
+        ],
+        "D": [
+          4,
+          2
+        ]
+      },
+      "positions_after": {
+        "A": [
+          12,
+          1
+        ],
+        "B": [
+          12,
+          3
+        ],
+        "C": [
+          2,
+          1
+        ],
+        "D": [
+          2,
+          3
+        ]
+      },
+      "minimum_swept_distance_m": 1.0,
+      "version": 4,
+      "executed": {
+        "A": [
+          [
+            12,
+            1
+          ],
+          [
+            12,
+            1
+          ],
+          [
+            12,
+            1
+          ],
+          [
+            12,
+            1
+          ],
+          [
+            12,
+            1
+          ],
+          [
+            12,
+            1
+          ],
+          [
+            12,
+            1
+          ],
+          [
+            12,
+            1
+          ],
+          [
+            12,
+            1
+          ],
+          [
+            12,
+            1
+          ]
+        ],
+        "B": [
+          [
+            12,
+            3
+          ],
+          [
+            12,
+            3
+          ],
+          [
+            12,
+            3
+          ],
+          [
+            12,
+            3
+          ],
+          [
+            12,
+            3
+          ],
+          [
+            12,
+            3
+          ],
+          [
+            12,
+            3
+          ],
+          [
+            12,
+            3
+          ],
+          [
+            12,
+            3
+          ],
+          [
+            12,
+            3
+          ]
+        ],
+        "C": [
+          [
+            2,
+            1
+          ],
+          [
+            2,
+            1
+          ],
+          [
+            2,
+            1
+          ],
+          [
+            2,
+            1
+          ],
+          [
+            2,
+            1
+          ],
+          [
+            2,
+            1
+          ],
+          [
+            2,
+            1
+          ],
+          [
+            2,
+            1
+          ],
+          [
+            2,
+            1
+          ],
+          [
+            2,
+            1
+          ]
+        ],
+        "D": [
+          [
+            3,
+            2
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            2,
+            3
+          ]
+        ]
+      },
+      "restriction_payloads": {
+        "A": {
+          "version": 4,
+          "issued_at": 30,
+          "valid_to": 90,
+          "restricted_resource": "single_lane_bridge_and_approaches",
+          "resource_cell_count": 15,
+          "resource_cells_xy": [
+            [
+              0,
+              2
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              2,
+              2
+            ],
+            [
+              3,
+              2
+            ],
+            [
+              4,
+              2
+            ],
+            [
+              5,
+              2
+            ],
+            [
+              6,
+              2
+            ],
+            [
+              7,
+              2
+            ],
+            [
+              8,
+              2
+            ],
+            [
+              9,
+              2
+            ],
+            [
+              10,
+              2
+            ],
+            [
+              11,
+              2
+            ],
+            [
+              12,
+              2
+            ],
+            [
+              13,
+              2
+            ],
+            [
+              14,
+              2
+            ]
+          ],
+          "protected_parking_cells_xy": [
+            [
+              2,
+              1
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              12,
+              3
+            ]
+          ],
+          "access_window": null,
+          "contents": "resource-level allowed/denied mask; no path waypoints"
+        },
+        "B": {
+          "version": 4,
+          "issued_at": 30,
+          "valid_to": 90,
+          "restricted_resource": "single_lane_bridge_and_approaches",
+          "resource_cell_count": 15,
+          "resource_cells_xy": [
+            [
+              0,
+              2
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              2,
+              2
+            ],
+            [
+              3,
+              2
+            ],
+            [
+              4,
+              2
+            ],
+            [
+              5,
+              2
+            ],
+            [
+              6,
+              2
+            ],
+            [
+              7,
+              2
+            ],
+            [
+              8,
+              2
+            ],
+            [
+              9,
+              2
+            ],
+            [
+              10,
+              2
+            ],
+            [
+              11,
+              2
+            ],
+            [
+              12,
+              2
+            ],
+            [
+              13,
+              2
+            ],
+            [
+              14,
+              2
+            ]
+          ],
+          "protected_parking_cells_xy": [
+            [
+              2,
+              1
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              12,
+              1
+            ]
+          ],
+          "access_window": null,
+          "contents": "resource-level allowed/denied mask; no path waypoints"
+        },
+        "C": {
+          "version": 4,
+          "issued_at": 30,
+          "valid_to": 90,
+          "restricted_resource": "single_lane_bridge_and_approaches",
+          "resource_cell_count": 15,
+          "resource_cells_xy": [
+            [
+              0,
+              2
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              2,
+              2
+            ],
+            [
+              3,
+              2
+            ],
+            [
+              4,
+              2
+            ],
+            [
+              5,
+              2
+            ],
+            [
+              6,
+              2
+            ],
+            [
+              7,
+              2
+            ],
+            [
+              8,
+              2
+            ],
+            [
+              9,
+              2
+            ],
+            [
+              10,
+              2
+            ],
+            [
+              11,
+              2
+            ],
+            [
+              12,
+              2
+            ],
+            [
+              13,
+              2
+            ],
+            [
+              14,
+              2
+            ]
+          ],
+          "protected_parking_cells_xy": [
+            [
+              2,
+              3
+            ],
+            [
+              12,
+              1
+            ],
+            [
+              12,
+              3
+            ]
+          ],
+          "access_window": null,
+          "contents": "resource-level allowed/denied mask; no path waypoints"
+        },
+        "D": {
+          "version": 4,
+          "issued_at": 30,
+          "valid_to": 90,
+          "restricted_resource": "single_lane_bridge_and_approaches",
+          "resource_cell_count": 15,
+          "resource_cells_xy": [
+            [
+              0,
+              2
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              2,
+              2
+            ],
+            [
+              3,
+              2
+            ],
+            [
+              4,
+              2
+            ],
+            [
+              5,
+              2
+            ],
+            [
+              6,
+              2
+            ],
+            [
+              7,
+              2
+            ],
+            [
+              8,
+              2
+            ],
+            [
+              9,
+              2
+            ],
+            [
+              10,
+              2
+            ],
+            [
+              11,
+              2
+            ],
+            [
+              12,
+              2
+            ],
+            [
+              13,
+              2
+            ],
+            [
+              14,
+              2
+            ]
+          ],
+          "protected_parking_cells_xy": [
+            [
+              2,
+              1
+            ],
+            [
+              12,
+              1
+            ],
+            [
+              12,
+              3
+            ]
+          ],
+          "access_window": {
+            "open_at": 21,
+            "close_at": 36
+          },
+          "contents": "resource-level allowed/denied mask; no path waypoints"
+        }
+      }
+    }
+  ],
+  "supervisor_payload_contains_paths": false,
+  "whole_spacetime_graph_cut_calls": 0
+}

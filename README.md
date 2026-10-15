@@ -1,3 +1,25 @@
+## New: hierarchical restriction-only supervisor (60s / 10s)
+
+[Research note and limitations](experiments/README_HIERARCHICAL_RESTRICTION.md) ·
+[Reproducible 4-rover simulation](experiments/hierarchical_restriction.py) ·
+[Time-slice renderer](experiments/render_hierarchical_restriction.py)
+
+Separate the **supervisory restriction allocator** (samples candidate bridge
+access windows using 60s rollout / soft repulsive score every 10s) from
+**independent per-rover D* Lite + local time-dependent A***. The supervisor
+publishes resource restrictions, **not routes**. Normal staging space remains
+shared, rather than rigidly partitioned by agent. In a one-lane bridge there
+is no benefit to full XYT Graph Cut, so this demonstration **intentionally
+performs zero Graph Cuts** and leaves optional ROI cutting for wider spaces.
+This is a simulation-only experiment and is not guaranteed safe for arbitrary
+unmodeled robot deviations or delayed communication.
+
+```bash
+python experiments/hierarchical_restriction.py --lookahead 60 --update 10 --budget 32
+python experiments/render_hierarchical_restriction.py
+python -m pytest -q tests/test_hierarchical_restriction.py
+```
+
 # Rolling Space-Time Graph Cut + D* Lite — exploratory prototype
 
 2026-10 / Multi-agent 2D+T safe-region allocation proof of concept.
