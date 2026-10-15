@@ -2,6 +2,33 @@
 
 2026-10 / Multi-agent 2D+T safe-region allocation proof of concept.
 
+
+## New: connected-seed XYT cut and one-lane bridge study
+
+The extended experiment distinguishes **binary label cuts** from **directed
+Start-to-Goal connectivity**, animates the full XYT cut boundary at every time
+step, and compares a time-shared single-lane bridge with/without safe
+holding/passing locations. It also tests a tiny non-exclusive tie-break bias.
+
+- [Detailed study and results](experiments/README_CONNECTED_CUT.md)
+- [X–T bridge cut boundary](docs/figures/bridge_xt_boundary.png)
+- [XYT Start–Goal seed connections](docs/figures/bridge_seeds_xyt.png)
+- [Time-slice animation](docs/figures/bridge_cut.gif)
+- [Smoothed boundary animation](docs/figures/bridge_smooth_cut.gif)
+- [Browser-based time slider](docs/figures/cut_boundary_explorer.html)
+
+```bash
+python -m pip install -r requirements.txt
+python experiments/connected_cut_bridge.py
+python experiments/render_connected_cut.py
+python -m pytest -q
+```
+
+**Limitation:** Joint A* produces feasible path witnesses **before** they are
+pinned into the graph cut. The cut alone does not guarantee connectivity or
+robot safety. The viable directed subset is reported separately from all
+A/B-labeled vertices.
+
 > **Research prototype, not an assured collision-avoidance system.** This
 > demonstration uses a discretized map and time steps, and **does not** prove
 > that graph cuts preserve directed reachability or real-world continuous
