@@ -1,0 +1,6817 @@
+{
+  "scenario": "none",
+  "method": "uncoordinated",
+  "notes": [
+    "fixed Start/Goal assignments; TA optimization not included",
+    "1 grid cell=1m; step=1s; robot radius=.28m",
+    "supervisor restriction-only if mode=restriction",
+    "upper bridge is single resource; no geometric Graph Cut",
+    "local obstacle observations within Manhattan sensor_radius",
+    "ground-truth joint transition safety shield is idealized and SHARED by ALL methods",
+    "swept pairwise separation checked, no realistic sensor/control/communication noise"
+  ],
+  "settings": {
+    "update_interval": 10,
+    "lookahead": 60,
+    "budget": 16,
+    "safety_distance": 0.9,
+    "sensor_radius": 2,
+    "seed": 17
+  },
+  "events": [],
+  "all_arrived": false,
+  "arrival_times": {
+    "A": null,
+    "B": null,
+    "C": null,
+    "D": null
+  },
+  "completion_time": null,
+  "sum_arrival_times": 360,
+  "simulation_steps": 90,
+  "minimum_swept_distance": 1.0,
+  "safety_distance_satisfied": true,
+  "emergency_stops": 332,
+  "opposing_direction_simultaneous_grant_ticks": 0,
+  "sensing_update_count": 0,
+  "reactive_local_replans": 0,
+  "path_dispatch_messages": 0,
+  "restriction_messages": 0,
+  "path_payload_bytes": 0,
+  "restriction_payload_bytes": 0,
+  "restriction_payload_contains_paths": false,
+  "planner_calls": {
+    "A": 90,
+    "B": 90,
+    "C": 90,
+    "D": 90
+  },
+  "safe_hold_plans": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0
+  },
+  "obstacle_replans": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0
+  },
+  "observations": {
+    "A": [],
+    "B": [],
+    "C": [],
+    "D": []
+  },
+  "traces": {
+    "A": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        2
+      ],
+      [
+        3,
+        2
+      ],
+      [
+        4,
+        2
+      ],
+      [
+        5,
+        2
+      ],
+      [
+        6,
+        2
+      ],
+      [
+        7,
+        2
+      ],
+      [
+        7,
+        2
+      ],
+      [
+        7,
+        2
+      ],
+      [
+        7,
+        2
+      ],
+      [
+        7,
+        2
+      ],
+      [
+        7,
+        2
+      ],
+      [
+        7,
+        2
+      ],
+      [
+        7,
+        2
+      ],
+      [
+        7,
+        2
+      ],
+      [
+        7,
+        2
+      ],
+      [
+        7,
+        2
+      ],
+      [
+        7,
+        2
+      ],
+      [
+        7,
+        2
+      ],
+      [
+        7,
+        2
+      ],
+      [
+        7,
+        2
+      ],
+      [
+        7,
+        2
+      ],
+      [
+        7,
+        2
+      ],
+      [
+        7,
+        2
+      ],
+      [
+        7,
+        2
+      ],
+      [
+        7,
+        2
+      ],
+      [
+        7,
+        2
+      ],
+      [
+        7,
+        2
+      ],
+      [
+        7,
+        2
+      ],
+      [
+        7,
+        2
+      ],
+      [
+        7,
+        2
+      ],
+      [
+        7,
+        2
+      ],
+      [
+        7,
+        2
+      ],
+      [
+        7,
+        2
+      ],
+      [
+        7,
+        2
+      ],
+      [
+        7,
+        2
+      ],
+      [
+        7,
+        2
+      ],
+      [
+        7,
+        2
+      ],
+      [
+        7,
+        2
+      ],
+      [
+        7,
+        2
+      ],
+      [
+        7,
+        2
+      ],
+      [
+        7,
+        2
+      ],
+      [
+        7,
+        2
+      ],
+      [
+        7,
+        2
+      ],
+      [
+        7,
+        2
+      ],
+      [
+        7,
+        2
+      ],
+      [
+        7,
+        2
+      ],
+      [
+        7,
+        2
+      ],
+      [
+        7,
+        2
+      ],
+      [
+        7,
+        2
+      ],
+      [
+        7,
+        2
+      ],
+      [
+        7,
+        2
+      ],
+      [
+        7,
+        2
+      ],
+      [
+        7,
+        2
+      ],
+      [
+        7,
+        2
+      ],
+      [
+        7,
+        2
+      ],
+      [
+        7,
+        2
+      ],
+      [
+        7,
+        2
+      ],
+      [
+        7,
+        2
+      ],
+      [
+        7,
+        2
+      ],
+      [
+        7,
+        2
+      ],
+      [
+        7,
+        2
+      ],
+      [
+        7,
+        2
+      ],
+      [
+        7,
+        2
+      ],
+      [
+        7,
+        2
+      ],
+      [
+        7,
+        2
+      ],
+      [
+        7,
+        2
+      ],
+      [
+        7,
+        2
+      ],
+      [
+        7,
+        2
+      ],
+      [
+        7,
+        2
+      ],
+      [
+        7,
+        2
+      ],
+      [
+        7,
+        2
+      ],
+      [
+        7,
+        2
+      ],
+      [
+        7,
+        2
+      ],
+      [
+        7,
+        2
+      ],
+      [
+        7,
+        2
+      ],
+      [
+        7,
+        2
+      ],
+      [
+        7,
+        2
+      ],
+      [
+        7,
+        2
+      ],
+      [
+        7,
+        2
+      ],
+      [
+        7,
+        2
+      ],
+      [
+        7,
+        2
+      ],
+      [
+        7,
+        2
+      ],
+      [
+        7,
+        2
+      ],
+      [
+        7,
+        2
+      ],
+      [
+        7,
+        2
+      ],
+      [
+        7,
+        2
+      ],
+      [
+        7,
+        2
+      ],
+      [
+        7,
+        2
+      ]
+    ],
+    "B": [
+      [
+        0,
+        3
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        2
+      ],
+      [
+        3,
+        2
+      ],
+      [
+        4,
+        2
+      ],
+      [
+        5,
+        2
+      ],
+      [
+        6,
+        2
+      ],
+      [
+        6,
+        2
+      ],
+      [
+        6,
+        2
+      ],
+      [
+        6,
+        2
+      ],
+      [
+        6,
+        2
+      ],
+      [
+        6,
+        2
+      ],
+      [
+        6,
+        2
+      ],
+      [
+        6,
+        2
+      ],
+      [
+        6,
+        2
+      ],
+      [
+        6,
+        2
+      ],
+      [
+        6,
+        2
+      ],
+      [
+        6,
+        2
+      ],
+      [
+        6,
+        2
+      ],
+      [
+        6,
+        2
+      ],
+      [
+        6,
+        2
+      ],
+      [
+        6,
+        2
+      ],
+      [
+        6,
+        2
+      ],
+      [
+        6,
+        2
+      ],
+      [
+        6,
+        2
+      ],
+      [
+        6,
+        2
+      ],
+      [
+        6,
+        2
+      ],
+      [
+        6,
+        2
+      ],
+      [
+        6,
+        2
+      ],
+      [
+        6,
+        2
+      ],
+      [
+        6,
+        2
+      ],
+      [
+        6,
+        2
+      ],
+      [
+        6,
+        2
+      ],
+      [
+        6,
+        2
+      ],
+      [
+        6,
+        2
+      ],
+      [
+        6,
+        2
+      ],
+      [
+        6,
+        2
+      ],
+      [
+        6,
+        2
+      ],
+      [
+        6,
+        2
+      ],
+      [
+        6,
+        2
+      ],
+      [
+        6,
+        2
+      ],
+      [
+        6,
+        2
+      ],
+      [
+        6,
+        2
+      ],
+      [
+        6,
+        2
+      ],
+      [
+        6,
+        2
+      ],
+      [
+        6,
+        2
+      ],
+      [
+        6,
+        2
+      ],
+      [
+        6,
+        2
+      ],
+      [
+        6,
+        2
+      ],
+      [
+        6,
+        2
+      ],
+      [
+        6,
+        2
+      ],
+      [
+        6,
+        2
+      ],
+      [
+        6,
+        2
+      ],
+      [
+        6,
+        2
+      ],
+      [
+        6,
+        2
+      ],
+      [
+        6,
+        2
+      ],
+      [
+        6,
+        2
+      ],
+      [
+        6,
+        2
+      ],
+      [
+        6,
+        2
+      ],
+      [
+        6,
+        2
+      ],
+      [
+        6,
+        2
+      ],
+      [
+        6,
+        2
+      ],
+      [
+        6,
+        2
+      ],
+      [
+        6,
+        2
+      ],
+      [
+        6,
+        2
+      ],
+      [
+        6,
+        2
+      ],
+      [
+        6,
+        2
+      ],
+      [
+        6,
+        2
+      ],
+      [
+        6,
+        2
+      ],
+      [
+        6,
+        2
+      ],
+      [
+        6,
+        2
+      ],
+      [
+        6,
+        2
+      ],
+      [
+        6,
+        2
+      ],
+      [
+        6,
+        2
+      ],
+      [
+        6,
+        2
+      ],
+      [
+        6,
+        2
+      ],
+      [
+        6,
+        2
+      ],
+      [
+        6,
+        2
+      ],
+      [
+        6,
+        2
+      ],
+      [
+        6,
+        2
+      ],
+      [
+        6,
+        2
+      ],
+      [
+        6,
+        2
+      ],
+      [
+        6,
+        2
+      ],
+      [
+        6,
+        2
+      ],
+      [
+        6,
+        2
+      ],
+      [
+        6,
+        2
+      ],
+      [
+        6,
+        2
+      ],
+      [
+        6,
+        2
+      ]
+    ],
+    "C": [
+      [
+        14,
+        1
+      ],
+      [
+        13,
+        1
+      ],
+      [
+        13,
+        2
+      ],
+      [
+        12,
+        2
+      ],
+      [
+        11,
+        2
+      ],
+      [
+        10,
+        2
+      ],
+      [
+        9,
+        2
+      ],
+      [
+        8,
+        2
+      ],
+      [
+        8,
+        2
+      ],
+      [
+        8,
+        2
+      ],
+      [
+        8,
+        2
+      ],
+      [
+        8,
+        2
+      ],
+      [
+        8,
+        2
+      ],
+      [
+        8,
+        2
+      ],
+      [
+        8,
+        2
+      ],
+      [
+        8,
+        2
+      ],
+      [
+        8,
+        2
+      ],
+      [
+        8,
+        2
+      ],
+      [
+        8,
+        2
+      ],
+      [
+        8,
+        2
+      ],
+      [
+        8,
+        2
+      ],
+      [
+        8,
+        2
+      ],
+      [
+        8,
+        2
+      ],
+      [
+        8,
+        2
+      ],
+      [
+        8,
+        2
+      ],
+      [
+        8,
+        2
+      ],
+      [
+        8,
+        2
+      ],
+      [
+        8,
+        2
+      ],
+      [
+        8,
+        2
+      ],
+      [
+        8,
+        2
+      ],
+      [
+        8,
+        2
+      ],
+      [
+        8,
+        2
+      ],
+      [
+        8,
+        2
+      ],
+      [
+        8,
+        2
+      ],
+      [
+        8,
+        2
+      ],
+      [
+        8,
+        2
+      ],
+      [
+        8,
+        2
+      ],
+      [
+        8,
+        2
+      ],
+      [
+        8,
+        2
+      ],
+      [
+        8,
+        2
+      ],
+      [
+        8,
+        2
+      ],
+      [
+        8,
+        2
+      ],
+      [
+        8,
+        2
+      ],
+      [
+        8,
+        2
+      ],
+      [
+        8,
+        2
+      ],
+      [
+        8,
+        2
+      ],
+      [
+        8,
+        2
+      ],
+      [
+        8,
+        2
+      ],
+      [
+        8,
+        2
+      ],
+      [
+        8,
+        2
+      ],
+      [
+        8,
+        2
+      ],
+      [
+        8,
+        2
+      ],
+      [
+        8,
+        2
+      ],
+      [
+        8,
+        2
+      ],
+      [
+        8,
+        2
+      ],
+      [
+        8,
+        2
+      ],
+      [
+        8,
+        2
+      ],
+      [
+        8,
+        2
+      ],
+      [
+        8,
+        2
+      ],
+      [
+        8,
+        2
+      ],
+      [
+        8,
+        2
+      ],
+      [
+        8,
+        2
+      ],
+      [
+        8,
+        2
+      ],
+      [
+        8,
+        2
+      ],
+      [
+        8,
+        2
+      ],
+      [
+        8,
+        2
+      ],
+      [
+        8,
+        2
+      ],
+      [
+        8,
+        2
+      ],
+      [
+        8,
+        2
+      ],
+      [
+        8,
+        2
+      ],
+      [
+        8,
+        2
+      ],
+      [
+        8,
+        2
+      ],
+      [
+        8,
+        2
+      ],
+      [
+        8,
+        2
+      ],
+      [
+        8,
+        2
+      ],
+      [
+        8,
+        2
+      ],
+      [
+        8,
+        2
+      ],
+      [
+        8,
+        2
+      ],
+      [
+        8,
+        2
+      ],
+      [
+        8,
+        2
+      ],
+      [
+        8,
+        2
+      ],
+      [
+        8,
+        2
+      ],
+      [
+        8,
+        2
+      ],
+      [
+        8,
+        2
+      ],
+      [
+        8,
+        2
+      ],
+      [
+        8,
+        2
+      ],
+      [
+        8,
+        2
+      ],
+      [
+        8,
+        2
+      ],
+      [
+        8,
+        2
+      ],
+      [
+        8,
+        2
+      ],
+      [
+        8,
+        2
+      ]
+    ],
+    "D": [
+      [
+        14,
+        3
+      ],
+      [
+        13,
+        3
+      ],
+      [
+        13,
+        3
+      ],
+      [
+        13,
+        3
+      ],
+      [
+        13,
+        2
+      ],
+      [
+        12,
+        2
+      ],
+      [
+        11,
+        2
+      ],
+      [
+        10,
+        2
+      ],
+      [
+        9,
+        2
+      ],
+      [
+        9,
+        2
+      ],
+      [
+        9,
+        2
+      ],
+      [
+        9,
+        2
+      ],
+      [
+        9,
+        2
+      ],
+      [
+        9,
+        2
+      ],
+      [
+        9,
+        2
+      ],
+      [
+        9,
+        2
+      ],
+      [
+        9,
+        2
+      ],
+      [
+        9,
+        2
+      ],
+      [
+        9,
+        2
+      ],
+      [
+        9,
+        2
+      ],
+      [
+        9,
+        2
+      ],
+      [
+        9,
+        2
+      ],
+      [
+        9,
+        2
+      ],
+      [
+        9,
+        2
+      ],
+      [
+        9,
+        2
+      ],
+      [
+        9,
+        2
+      ],
+      [
+        9,
+        2
+      ],
+      [
+        9,
+        2
+      ],
+      [
+        9,
+        2
+      ],
+      [
+        9,
+        2
+      ],
+      [
+        9,
+        2
+      ],
+      [
+        9,
+        2
+      ],
+      [
+        9,
+        2
+      ],
+      [
+        9,
+        2
+      ],
+      [
+        9,
+        2
+      ],
+      [
+        9,
+        2
+      ],
+      [
+        9,
+        2
+      ],
+      [
+        9,
+        2
+      ],
+      [
+        9,
+        2
+      ],
+      [
+        9,
+        2
+      ],
+      [
+        9,
+        2
+      ],
+      [
+        9,
+        2
+      ],
+      [
+        9,
+        2
+      ],
+      [
+        9,
+        2
+      ],
+      [
+        9,
+        2
+      ],
+      [
+        9,
+        2
+      ],
+      [
+        9,
+        2
+      ],
+      [
+        9,
+        2
+      ],
+      [
+        9,
+        2
+      ],
+      [
+        9,
+        2
+      ],
+      [
+        9,
+        2
+      ],
+      [
+        9,
+        2
+      ],
+      [
+        9,
+        2
+      ],
+      [
+        9,
+        2
+      ],
+      [
+        9,
+        2
+      ],
+      [
+        9,
+        2
+      ],
+      [
+        9,
+        2
+      ],
+      [
+        9,
+        2
+      ],
+      [
+        9,
+        2
+      ],
+      [
+        9,
+        2
+      ],
+      [
+        9,
+        2
+      ],
+      [
+        9,
+        2
+      ],
+      [
+        9,
+        2
+      ],
+      [
+        9,
+        2
+      ],
+      [
+        9,
+        2
+      ],
+      [
+        9,
+        2
+      ],
+      [
+        9,
+        2
+      ],
+      [
+        9,
+        2
+      ],
+      [
+        9,
+        2
+      ],
+      [
+        9,
+        2
+      ],
+      [
+        9,
+        2
+      ],
+      [
+        9,
+        2
+      ],
+      [
+        9,
+        2
+      ],
+      [
+        9,
+        2
+      ],
+      [
+        9,
+        2
+      ],
+      [
+        9,
+        2
+      ],
+      [
+        9,
+        2
+      ],
+      [
+        9,
+        2
+      ],
+      [
+        9,
+        2
+      ],
+      [
+        9,
+        2
+      ],
+      [
+        9,
+        2
+      ],
+      [
+        9,
+        2
+      ],
+      [
+        9,
+        2
+      ],
+      [
+        9,
+        2
+      ],
+      [
+        9,
+        2
+      ],
+      [
+        9,
+        2
+      ],
+      [
+        9,
+        2
+      ],
+      [
+        9,
+        2
+      ],
+      [
+        9,
+        2
+      ],
+      [
+        9,
+        2
+      ],
+      [
+        9,
+        2
+      ]
+    ]
+  },
+  "supervisor_updates": [],
+  "timeline": [
+    {
+      "time": 0,
+      "obstacles": [],
+      "position_before": {
+        "A": [
+          0,
+          1
+        ],
+        "B": [
+          0,
+          3
+        ],
+        "C": [
+          14,
+          1
+        ],
+        "D": [
+          14,
+          3
+        ]
+      },
+      "positions": {
+        "A": [
+          0,
+          2
+        ],
+        "B": [
+          0,
+          3
+        ],
+        "C": [
+          13,
+          1
+        ],
+        "D": [
+          13,
+          3
+        ]
+      },
+      "status": {
+        "A": "route",
+        "B": "route",
+        "C": "route",
+        "D": "route"
+      },
+      "shield_stops": [
+        "B"
+      ],
+      "observed_changed": {
+        "A": false,
+        "B": false,
+        "C": false,
+        "D": false
+      },
+      "grant_windows": {}
+    },
+    {
+      "time": 1,
+      "obstacles": [],
+      "position_before": {
+        "A": [
+          0,
+          2
+        ],
+        "B": [
+          0,
+          3
+        ],
+        "C": [
+          13,
+          1
+        ],
+        "D": [
+          13,
+          3
+        ]
+      },
+      "positions": {
+        "A": [
+          1,
+          2
+        ],
+        "B": [
+          0,
+          3
+        ],
+        "C": [
+          13,
+          2
+        ],
+        "D": [
+          13,
+          3
+        ]
+      },
+      "status": {
+        "A": "route",
+        "B": "route",
+        "C": "route",
+        "D": "route"
+      },
+      "shield_stops": [
+        "B",
+        "D"
+      ],
+      "observed_changed": {
+        "A": false,
+        "B": false,
+        "C": false,
+        "D": false
+      },
+      "grant_windows": {}
+    },
+    {
+      "time": 2,
+      "obstacles": [],
+      "position_before": {
+        "A": [
+          1,
+          2
+        ],
+        "B": [
+          0,
+          3
+        ],
+        "C": [
+          13,
+          2
+        ],
+        "D": [
+          13,
+          3
+        ]
+      },
+      "positions": {
+        "A": [
+          2,
+          2
+        ],
+        "B": [
+          0,
+          2
+        ],
+        "C": [
+          12,
+          2
+        ],
+        "D": [
+          13,
+          3
+        ]
+      },
+      "status": {
+        "A": "route",
+        "B": "route",
+        "C": "route",
+        "D": "route"
+      },
+      "shield_stops": [
+        "D"
+      ],
+      "observed_changed": {
+        "A": false,
+        "B": false,
+        "C": false,
+        "D": false
+      },
+      "grant_windows": {}
+    },
+    {
+      "time": 3,
+      "obstacles": [],
+      "position_before": {
+        "A": [
+          2,
+          2
+        ],
+        "B": [
+          0,
+          2
+        ],
+        "C": [
+          12,
+          2
+        ],
+        "D": [
+          13,
+          3
+        ]
+      },
+      "positions": {
+        "A": [
+          3,
+          2
+        ],
+        "B": [
+          1,
+          2
+        ],
+        "C": [
+          11,
+          2
+        ],
+        "D": [
+          13,
+          2
+        ]
+      },
+      "status": {
+        "A": "route",
+        "B": "route",
+        "C": "route",
+        "D": "route"
+      },
+      "shield_stops": [],
+      "observed_changed": {
+        "A": false,
+        "B": false,
+        "C": false,
+        "D": false
+      },
+      "grant_windows": {}
+    },
+    {
+      "time": 4,
+      "obstacles": [],
+      "position_before": {
+        "A": [
+          3,
+          2
+        ],
+        "B": [
+          1,
+          2
+        ],
+        "C": [
+          11,
+          2
+        ],
+        "D": [
+          13,
+          2
+        ]
+      },
+      "positions": {
+        "A": [
+          4,
+          2
+        ],
+        "B": [
+          2,
+          2
+        ],
+        "C": [
+          10,
+          2
+        ],
+        "D": [
+          12,
+          2
+        ]
+      },
+      "status": {
+        "A": "route",
+        "B": "route",
+        "C": "route",
+        "D": "route"
+      },
+      "shield_stops": [],
+      "observed_changed": {
+        "A": false,
+        "B": false,
+        "C": false,
+        "D": false
+      },
+      "grant_windows": {}
+    },
+    {
+      "time": 5,
+      "obstacles": [],
+      "position_before": {
+        "A": [
+          4,
+          2
+        ],
+        "B": [
+          2,
+          2
+        ],
+        "C": [
+          10,
+          2
+        ],
+        "D": [
+          12,
+          2
+        ]
+      },
+      "positions": {
+        "A": [
+          5,
+          2
+        ],
+        "B": [
+          3,
+          2
+        ],
+        "C": [
+          9,
+          2
+        ],
+        "D": [
+          11,
+          2
+        ]
+      },
+      "status": {
+        "A": "route",
+        "B": "route",
+        "C": "route",
+        "D": "route"
+      },
+      "shield_stops": [],
+      "observed_changed": {
+        "A": false,
+        "B": false,
+        "C": false,
+        "D": false
+      },
+      "grant_windows": {}
+    },
+    {
+      "time": 6,
+      "obstacles": [],
+      "position_before": {
+        "A": [
+          5,
+          2
+        ],
+        "B": [
+          3,
+          2
+        ],
+        "C": [
+          9,
+          2
+        ],
+        "D": [
+          11,
+          2
+        ]
+      },
+      "positions": {
+        "A": [
+          6,
+          2
+        ],
+        "B": [
+          4,
+          2
+        ],
+        "C": [
+          8,
+          2
+        ],
+        "D": [
+          10,
+          2
+        ]
+      },
+      "status": {
+        "A": "route",
+        "B": "route",
+        "C": "route",
+        "D": "route"
+      },
+      "shield_stops": [],
+      "observed_changed": {
+        "A": false,
+        "B": false,
+        "C": false,
+        "D": false
+      },
+      "grant_windows": {}
+    },
+    {
+      "time": 7,
+      "obstacles": [],
+      "position_before": {
+        "A": [
+          6,
+          2
+        ],
+        "B": [
+          4,
+          2
+        ],
+        "C": [
+          8,
+          2
+        ],
+        "D": [
+          10,
+          2
+        ]
+      },
+      "positions": {
+        "A": [
+          7,
+          2
+        ],
+        "B": [
+          5,
+          2
+        ],
+        "C": [
+          8,
+          2
+        ],
+        "D": [
+          9,
+          2
+        ]
+      },
+      "status": {
+        "A": "route",
+        "B": "route",
+        "C": "route",
+        "D": "route"
+      },
+      "shield_stops": [
+        "C"
+      ],
+      "observed_changed": {
+        "A": false,
+        "B": false,
+        "C": false,
+        "D": false
+      },
+      "grant_windows": {}
+    },
+    {
+      "time": 8,
+      "obstacles": [],
+      "position_before": {
+        "A": [
+          7,
+          2
+        ],
+        "B": [
+          5,
+          2
+        ],
+        "C": [
+          8,
+          2
+        ],
+        "D": [
+          9,
+          2
+        ]
+      },
+      "positions": {
+        "A": [
+          7,
+          2
+        ],
+        "B": [
+          6,
+          2
+        ],
+        "C": [
+          8,
+          2
+        ],
+        "D": [
+          9,
+          2
+        ]
+      },
+      "status": {
+        "A": "route",
+        "B": "route",
+        "C": "route",
+        "D": "route"
+      },
+      "shield_stops": [
+        "A",
+        "C",
+        "D"
+      ],
+      "observed_changed": {
+        "A": false,
+        "B": false,
+        "C": false,
+        "D": false
+      },
+      "grant_windows": {}
+    },
+    {
+      "time": 9,
+      "obstacles": [],
+      "position_before": {
+        "A": [
+          7,
+          2
+        ],
+        "B": [
+          6,
+          2
+        ],
+        "C": [
+          8,
+          2
+        ],
+        "D": [
+          9,
+          2
+        ]
+      },
+      "positions": {
+        "A": [
+          7,
+          2
+        ],
+        "B": [
+          6,
+          2
+        ],
+        "C": [
+          8,
+          2
+        ],
+        "D": [
+          9,
+          2
+        ]
+      },
+      "status": {
+        "A": "route",
+        "B": "route",
+        "C": "route",
+        "D": "route"
+      },
+      "shield_stops": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "observed_changed": {
+        "A": false,
+        "B": false,
+        "C": false,
+        "D": false
+      },
+      "grant_windows": {}
+    },
+    {
+      "time": 10,
+      "obstacles": [],
+      "position_before": {
+        "A": [
+          7,
+          2
+        ],
+        "B": [
+          6,
+          2
+        ],
+        "C": [
+          8,
+          2
+        ],
+        "D": [
+          9,
+          2
+        ]
+      },
+      "positions": {
+        "A": [
+          7,
+          2
+        ],
+        "B": [
+          6,
+          2
+        ],
+        "C": [
+          8,
+          2
+        ],
+        "D": [
+          9,
+          2
+        ]
+      },
+      "status": {
+        "A": "route",
+        "B": "route",
+        "C": "route",
+        "D": "route"
+      },
+      "shield_stops": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "observed_changed": {
+        "A": false,
+        "B": false,
+        "C": false,
+        "D": false
+      },
+      "grant_windows": {}
+    },
+    {
+      "time": 11,
+      "obstacles": [],
+      "position_before": {
+        "A": [
+          7,
+          2
+        ],
+        "B": [
+          6,
+          2
+        ],
+        "C": [
+          8,
+          2
+        ],
+        "D": [
+          9,
+          2
+        ]
+      },
+      "positions": {
+        "A": [
+          7,
+          2
+        ],
+        "B": [
+          6,
+          2
+        ],
+        "C": [
+          8,
+          2
+        ],
+        "D": [
+          9,
+          2
+        ]
+      },
+      "status": {
+        "A": "route",
+        "B": "route",
+        "C": "route",
+        "D": "route"
+      },
+      "shield_stops": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "observed_changed": {
+        "A": false,
+        "B": false,
+        "C": false,
+        "D": false
+      },
+      "grant_windows": {}
+    },
+    {
+      "time": 12,
+      "obstacles": [],
+      "position_before": {
+        "A": [
+          7,
+          2
+        ],
+        "B": [
+          6,
+          2
+        ],
+        "C": [
+          8,
+          2
+        ],
+        "D": [
+          9,
+          2
+        ]
+      },
+      "positions": {
+        "A": [
+          7,
+          2
+        ],
+        "B": [
+          6,
+          2
+        ],
+        "C": [
+          8,
+          2
+        ],
+        "D": [
+          9,
+          2
+        ]
+      },
+      "status": {
+        "A": "route",
+        "B": "route",
+        "C": "route",
+        "D": "route"
+      },
+      "shield_stops": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "observed_changed": {
+        "A": false,
+        "B": false,
+        "C": false,
+        "D": false
+      },
+      "grant_windows": {}
+    },
+    {
+      "time": 13,
+      "obstacles": [],
+      "position_before": {
+        "A": [
+          7,
+          2
+        ],
+        "B": [
+          6,
+          2
+        ],
+        "C": [
+          8,
+          2
+        ],
+        "D": [
+          9,
+          2
+        ]
+      },
+      "positions": {
+        "A": [
+          7,
+          2
+        ],
+        "B": [
+          6,
+          2
+        ],
+        "C": [
+          8,
+          2
+        ],
+        "D": [
+          9,
+          2
+        ]
+      },
+      "status": {
+        "A": "route",
+        "B": "route",
+        "C": "route",
+        "D": "route"
+      },
+      "shield_stops": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "observed_changed": {
+        "A": false,
+        "B": false,
+        "C": false,
+        "D": false
+      },
+      "grant_windows": {}
+    },
+    {
+      "time": 14,
+      "obstacles": [],
+      "position_before": {
+        "A": [
+          7,
+          2
+        ],
+        "B": [
+          6,
+          2
+        ],
+        "C": [
+          8,
+          2
+        ],
+        "D": [
+          9,
+          2
+        ]
+      },
+      "positions": {
+        "A": [
+          7,
+          2
+        ],
+        "B": [
+          6,
+          2
+        ],
+        "C": [
+          8,
+          2
+        ],
+        "D": [
+          9,
+          2
+        ]
+      },
+      "status": {
+        "A": "route",
+        "B": "route",
+        "C": "route",
+        "D": "route"
+      },
+      "shield_stops": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "observed_changed": {
+        "A": false,
+        "B": false,
+        "C": false,
+        "D": false
+      },
+      "grant_windows": {}
+    },
+    {
+      "time": 15,
+      "obstacles": [],
+      "position_before": {
+        "A": [
+          7,
+          2
+        ],
+        "B": [
+          6,
+          2
+        ],
+        "C": [
+          8,
+          2
+        ],
+        "D": [
+          9,
+          2
+        ]
+      },
+      "positions": {
+        "A": [
+          7,
+          2
+        ],
+        "B": [
+          6,
+          2
+        ],
+        "C": [
+          8,
+          2
+        ],
+        "D": [
+          9,
+          2
+        ]
+      },
+      "status": {
+        "A": "route",
+        "B": "route",
+        "C": "route",
+        "D": "route"
+      },
+      "shield_stops": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "observed_changed": {
+        "A": false,
+        "B": false,
+        "C": false,
+        "D": false
+      },
+      "grant_windows": {}
+    },
+    {
+      "time": 16,
+      "obstacles": [],
+      "position_before": {
+        "A": [
+          7,
+          2
+        ],
+        "B": [
+          6,
+          2
+        ],
+        "C": [
+          8,
+          2
+        ],
+        "D": [
+          9,
+          2
+        ]
+      },
+      "positions": {
+        "A": [
+          7,
+          2
+        ],
+        "B": [
+          6,
+          2
+        ],
+        "C": [
+          8,
+          2
+        ],
+        "D": [
+          9,
+          2
+        ]
+      },
+      "status": {
+        "A": "route",
+        "B": "route",
+        "C": "route",
+        "D": "route"
+      },
+      "shield_stops": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "observed_changed": {
+        "A": false,
+        "B": false,
+        "C": false,
+        "D": false
+      },
+      "grant_windows": {}
+    },
+    {
+      "time": 17,
+      "obstacles": [],
+      "position_before": {
+        "A": [
+          7,
+          2
+        ],
+        "B": [
+          6,
+          2
+        ],
+        "C": [
+          8,
+          2
+        ],
+        "D": [
+          9,
+          2
+        ]
+      },
+      "positions": {
+        "A": [
+          7,
+          2
+        ],
+        "B": [
+          6,
+          2
+        ],
+        "C": [
+          8,
+          2
+        ],
+        "D": [
+          9,
+          2
+        ]
+      },
+      "status": {
+        "A": "route",
+        "B": "route",
+        "C": "route",
+        "D": "route"
+      },
+      "shield_stops": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "observed_changed": {
+        "A": false,
+        "B": false,
+        "C": false,
+        "D": false
+      },
+      "grant_windows": {}
+    },
+    {
+      "time": 18,
+      "obstacles": [],
+      "position_before": {
+        "A": [
+          7,
+          2
+        ],
+        "B": [
+          6,
+          2
+        ],
+        "C": [
+          8,
+          2
+        ],
+        "D": [
+          9,
+          2
+        ]
+      },
+      "positions": {
+        "A": [
+          7,
+          2
+        ],
+        "B": [
+          6,
+          2
+        ],
+        "C": [
+          8,
+          2
+        ],
+        "D": [
+          9,
+          2
+        ]
+      },
+      "status": {
+        "A": "route",
+        "B": "route",
+        "C": "route",
+        "D": "route"
+      },
+      "shield_stops": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "observed_changed": {
+        "A": false,
+        "B": false,
+        "C": false,
+        "D": false
+      },
+      "grant_windows": {}
+    },
+    {
+      "time": 19,
+      "obstacles": [],
+      "position_before": {
+        "A": [
+          7,
+          2
+        ],
+        "B": [
+          6,
+          2
+        ],
+        "C": [
+          8,
+          2
+        ],
+        "D": [
+          9,
+          2
+        ]
+      },
+      "positions": {
+        "A": [
+          7,
+          2
+        ],
+        "B": [
+          6,
+          2
+        ],
+        "C": [
+          8,
+          2
+        ],
+        "D": [
+          9,
+          2
+        ]
+      },
+      "status": {
+        "A": "route",
+        "B": "route",
+        "C": "route",
+        "D": "route"
+      },
+      "shield_stops": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "observed_changed": {
+        "A": false,
+        "B": false,
+        "C": false,
+        "D": false
+      },
+      "grant_windows": {}
+    },
+    {
+      "time": 20,
+      "obstacles": [],
+      "position_before": {
+        "A": [
+          7,
+          2
+        ],
+        "B": [
+          6,
+          2
+        ],
+        "C": [
+          8,
+          2
+        ],
+        "D": [
+          9,
+          2
+        ]
+      },
+      "positions": {
+        "A": [
+          7,
+          2
+        ],
+        "B": [
+          6,
+          2
+        ],
+        "C": [
+          8,
+          2
+        ],
+        "D": [
+          9,
+          2
+        ]
+      },
+      "status": {
+        "A": "route",
+        "B": "route",
+        "C": "route",
+        "D": "route"
+      },
+      "shield_stops": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "observed_changed": {
+        "A": false,
+        "B": false,
+        "C": false,
+        "D": false
+      },
+      "grant_windows": {}
+    },
+    {
+      "time": 21,
+      "obstacles": [],
+      "position_before": {
+        "A": [
+          7,
+          2
+        ],
+        "B": [
+          6,
+          2
+        ],
+        "C": [
+          8,
+          2
+        ],
+        "D": [
+          9,
+          2
+        ]
+      },
+      "positions": {
+        "A": [
+          7,
+          2
+        ],
+        "B": [
+          6,
+          2
+        ],
+        "C": [
+          8,
+          2
+        ],
+        "D": [
+          9,
+          2
+        ]
+      },
+      "status": {
+        "A": "route",
+        "B": "route",
+        "C": "route",
+        "D": "route"
+      },
+      "shield_stops": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "observed_changed": {
+        "A": false,
+        "B": false,
+        "C": false,
+        "D": false
+      },
+      "grant_windows": {}
+    },
+    {
+      "time": 22,
+      "obstacles": [],
+      "position_before": {
+        "A": [
+          7,
+          2
+        ],
+        "B": [
+          6,
+          2
+        ],
+        "C": [
+          8,
+          2
+        ],
+        "D": [
+          9,
+          2
+        ]
+      },
+      "positions": {
+        "A": [
+          7,
+          2
+        ],
+        "B": [
+          6,
+          2
+        ],
+        "C": [
+          8,
+          2
+        ],
+        "D": [
+          9,
+          2
+        ]
+      },
+      "status": {
+        "A": "route",
+        "B": "route",
+        "C": "route",
+        "D": "route"
+      },
+      "shield_stops": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "observed_changed": {
+        "A": false,
+        "B": false,
+        "C": false,
+        "D": false
+      },
+      "grant_windows": {}
+    },
+    {
+      "time": 23,
+      "obstacles": [],
+      "position_before": {
+        "A": [
+          7,
+          2
+        ],
+        "B": [
+          6,
+          2
+        ],
+        "C": [
+          8,
+          2
+        ],
+        "D": [
+          9,
+          2
+        ]
+      },
+      "positions": {
+        "A": [
+          7,
+          2
+        ],
+        "B": [
+          6,
+          2
+        ],
+        "C": [
+          8,
+          2
+        ],
+        "D": [
+          9,
+          2
+        ]
+      },
+      "status": {
+        "A": "route",
+        "B": "route",
+        "C": "route",
+        "D": "route"
+      },
+      "shield_stops": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "observed_changed": {
+        "A": false,
+        "B": false,
+        "C": false,
+        "D": false
+      },
+      "grant_windows": {}
+    },
+    {
+      "time": 24,
+      "obstacles": [],
+      "position_before": {
+        "A": [
+          7,
+          2
+        ],
+        "B": [
+          6,
+          2
+        ],
+        "C": [
+          8,
+          2
+        ],
+        "D": [
+          9,
+          2
+        ]
+      },
+      "positions": {
+        "A": [
+          7,
+          2
+        ],
+        "B": [
+          6,
+          2
+        ],
+        "C": [
+          8,
+          2
+        ],
+        "D": [
+          9,
+          2
+        ]
+      },
+      "status": {
+        "A": "route",
+        "B": "route",
+        "C": "route",
+        "D": "route"
+      },
+      "shield_stops": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "observed_changed": {
+        "A": false,
+        "B": false,
+        "C": false,
+        "D": false
+      },
+      "grant_windows": {}
+    },
+    {
+      "time": 25,
+      "obstacles": [],
+      "position_before": {
+        "A": [
+          7,
+          2
+        ],
+        "B": [
+          6,
+          2
+        ],
+        "C": [
+          8,
+          2
+        ],
+        "D": [
+          9,
+          2
+        ]
+      },
+      "positions": {
+        "A": [
+          7,
+          2
+        ],
+        "B": [
+          6,
+          2
+        ],
+        "C": [
+          8,
+          2
+        ],
+        "D": [
+          9,
+          2
+        ]
+      },
+      "status": {
+        "A": "route",
+        "B": "route",
+        "C": "route",
+        "D": "route"
+      },
+      "shield_stops": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "observed_changed": {
+        "A": false,
+        "B": false,
+        "C": false,
+        "D": false
+      },
+      "grant_windows": {}
+    },
+    {
+      "time": 26,
+      "obstacles": [],
+      "position_before": {
+        "A": [
+          7,
+          2
+        ],
+        "B": [
+          6,
+          2
+        ],
+        "C": [
+          8,
+          2
+        ],
+        "D": [
+          9,
+          2
+        ]
+      },
+      "positions": {
+        "A": [
+          7,
+          2
+        ],
+        "B": [
+          6,
+          2
+        ],
+        "C": [
+          8,
+          2
+        ],
+        "D": [
+          9,
+          2
+        ]
+      },
+      "status": {
+        "A": "route",
+        "B": "route",
+        "C": "route",
+        "D": "route"
+      },
+      "shield_stops": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "observed_changed": {
+        "A": false,
+        "B": false,
+        "C": false,
+        "D": false
+      },
+      "grant_windows": {}
+    },
+    {
+      "time": 27,
+      "obstacles": [],
+      "position_before": {
+        "A": [
+          7,
+          2
+        ],
+        "B": [
+          6,
+          2
+        ],
+        "C": [
+          8,
+          2
+        ],
+        "D": [
+          9,
+          2
+        ]
+      },
+      "positions": {
+        "A": [
+          7,
+          2
+        ],
+        "B": [
+          6,
+          2
+        ],
+        "C": [
+          8,
+          2
+        ],
+        "D": [
+          9,
+          2
+        ]
+      },
+      "status": {
+        "A": "route",
+        "B": "route",
+        "C": "route",
+        "D": "route"
+      },
+      "shield_stops": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "observed_changed": {
+        "A": false,
+        "B": false,
+        "C": false,
+        "D": false
+      },
+      "grant_windows": {}
+    },
+    {
+      "time": 28,
+      "obstacles": [],
+      "position_before": {
+        "A": [
+          7,
+          2
+        ],
+        "B": [
+          6,
+          2
+        ],
+        "C": [
+          8,
+          2
+        ],
+        "D": [
+          9,
+          2
+        ]
+      },
+      "positions": {
+        "A": [
+          7,
+          2
+        ],
+        "B": [
+          6,
+          2
+        ],
+        "C": [
+          8,
+          2
+        ],
+        "D": [
+          9,
+          2
+        ]
+      },
+      "status": {
+        "A": "route",
+        "B": "route",
+        "C": "route",
+        "D": "route"
+      },
+      "shield_stops": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "observed_changed": {
+        "A": false,
+        "B": false,
+        "C": false,
+        "D": false
+      },
+      "grant_windows": {}
+    },
+    {
+      "time": 29,
+      "obstacles": [],
+      "position_before": {
+        "A": [
+          7,
+          2
+        ],
+        "B": [
+          6,
+          2
+        ],
+        "C": [
+          8,
+          2
+        ],
+        "D": [
+          9,
+          2
+        ]
+      },
+      "positions": {
+        "A": [
+          7,
+          2
+        ],
+        "B": [
+          6,
+          2
+        ],
+        "C": [
+          8,
+          2
+        ],
+        "D": [
+          9,
+          2
+        ]
+      },
+      "status": {
+        "A": "route",
+        "B": "route",
+        "C": "route",
+        "D": "route"
+      },
+      "shield_stops": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "observed_changed": {
+        "A": false,
+        "B": false,
+        "C": false,
+        "D": false
+      },
+      "grant_windows": {}
+    },
+    {
+      "time": 30,
+      "obstacles": [],
+      "position_before": {
+        "A": [
+          7,
+          2
+        ],
+        "B": [
+          6,
+          2
+        ],
+        "C": [
+          8,
+          2
+        ],
+        "D": [
+          9,
+          2
+        ]
+      },
+      "positions": {
+        "A": [
+          7,
+          2
+        ],
+        "B": [
+          6,
+          2
+        ],
+        "C": [
+          8,
+          2
+        ],
+        "D": [
+          9,
+          2
+        ]
+      },
+      "status": {
+        "A": "route",
+        "B": "route",
+        "C": "route",
+        "D": "route"
+      },
+      "shield_stops": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "observed_changed": {
+        "A": false,
+        "B": false,
+        "C": false,
+        "D": false
+      },
+      "grant_windows": {}
+    },
+    {
+      "time": 31,
+      "obstacles": [],
+      "position_before": {
+        "A": [
+          7,
+          2
+        ],
+        "B": [
+          6,
+          2
+        ],
+        "C": [
+          8,
+          2
+        ],
+        "D": [
+          9,
+          2
+        ]
+      },
+      "positions": {
+        "A": [
+          7,
+          2
+        ],
+        "B": [
+          6,
+          2
+        ],
+        "C": [
+          8,
+          2
+        ],
+        "D": [
+          9,
+          2
+        ]
+      },
+      "status": {
+        "A": "route",
+        "B": "route",
+        "C": "route",
+        "D": "route"
+      },
+      "shield_stops": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "observed_changed": {
+        "A": false,
+        "B": false,
+        "C": false,
+        "D": false
+      },
+      "grant_windows": {}
+    },
+    {
+      "time": 32,
+      "obstacles": [],
+      "position_before": {
+        "A": [
+          7,
+          2
+        ],
+        "B": [
+          6,
+          2
+        ],
+        "C": [
+          8,
+          2
+        ],
+        "D": [
+          9,
+          2
+        ]
+      },
+      "positions": {
+        "A": [
+          7,
+          2
+        ],
+        "B": [
+          6,
+          2
+        ],
+        "C": [
+          8,
+          2
+        ],
+        "D": [
+          9,
+          2
+        ]
+      },
+      "status": {
+        "A": "route",
+        "B": "route",
+        "C": "route",
+        "D": "route"
+      },
+      "shield_stops": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "observed_changed": {
+        "A": false,
+        "B": false,
+        "C": false,
+        "D": false
+      },
+      "grant_windows": {}
+    },
+    {
+      "time": 33,
+      "obstacles": [],
+      "position_before": {
+        "A": [
+          7,
+          2
+        ],
+        "B": [
+          6,
+          2
+        ],
+        "C": [
+          8,
+          2
+        ],
+        "D": [
+          9,
+          2
+        ]
+      },
+      "positions": {
+        "A": [
+          7,
+          2
+        ],
+        "B": [
+          6,
+          2
+        ],
+        "C": [
+          8,
+          2
+        ],
+        "D": [
+          9,
+          2
+        ]
+      },
+      "status": {
+        "A": "route",
+        "B": "route",
+        "C": "route",
+        "D": "route"
+      },
+      "shield_stops": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "observed_changed": {
+        "A": false,
+        "B": false,
+        "C": false,
+        "D": false
+      },
+      "grant_windows": {}
+    },
+    {
+      "time": 34,
+      "obstacles": [],
+      "position_before": {
+        "A": [
+          7,
+          2
+        ],
+        "B": [
+          6,
+          2
+        ],
+        "C": [
+          8,
+          2
+        ],
+        "D": [
+          9,
+          2
+        ]
+      },
+      "positions": {
+        "A": [
+          7,
+          2
+        ],
+        "B": [
+          6,
+          2
+        ],
+        "C": [
+          8,
+          2
+        ],
+        "D": [
+          9,
+          2
+        ]
+      },
+      "status": {
+        "A": "route",
+        "B": "route",
+        "C": "route",
+        "D": "route"
+      },
+      "shield_stops": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "observed_changed": {
+        "A": false,
+        "B": false,
+        "C": false,
+        "D": false
+      },
+      "grant_windows": {}
+    },
+    {
+      "time": 35,
+      "obstacles": [],
+      "position_before": {
+        "A": [
+          7,
+          2
+        ],
+        "B": [
+          6,
+          2
+        ],
+        "C": [
+          8,
+          2
+        ],
+        "D": [
+          9,
+          2
+        ]
+      },
+      "positions": {
+        "A": [
+          7,
+          2
+        ],
+        "B": [
+          6,
+          2
+        ],
+        "C": [
+          8,
+          2
+        ],
+        "D": [
+          9,
+          2
+        ]
+      },
+      "status": {
+        "A": "route",
+        "B": "route",
+        "C": "route",
+        "D": "route"
+      },
+      "shield_stops": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "observed_changed": {
+        "A": false,
+        "B": false,
+        "C": false,
+        "D": false
+      },
+      "grant_windows": {}
+    },
+    {
+      "time": 36,
+      "obstacles": [],
+      "position_before": {
+        "A": [
+          7,
+          2
+        ],
+        "B": [
+          6,
+          2
+        ],
+        "C": [
+          8,
+          2
+        ],
+        "D": [
+          9,
+          2
+        ]
+      },
+      "positions": {
+        "A": [
+          7,
+          2
+        ],
+        "B": [
+          6,
+          2
+        ],
+        "C": [
+          8,
+          2
+        ],
+        "D": [
+          9,
+          2
+        ]
+      },
+      "status": {
+        "A": "route",
+        "B": "route",
+        "C": "route",
+        "D": "route"
+      },
+      "shield_stops": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "observed_changed": {
+        "A": false,
+        "B": false,
+        "C": false,
+        "D": false
+      },
+      "grant_windows": {}
+    },
+    {
+      "time": 37,
+      "obstacles": [],
+      "position_before": {
+        "A": [
+          7,
+          2
+        ],
+        "B": [
+          6,
+          2
+        ],
+        "C": [
+          8,
+          2
+        ],
+        "D": [
+          9,
+          2
+        ]
+      },
+      "positions": {
+        "A": [
+          7,
+          2
+        ],
+        "B": [
+          6,
+          2
+        ],
+        "C": [
+          8,
+          2
+        ],
+        "D": [
+          9,
+          2
+        ]
+      },
+      "status": {
+        "A": "route",
+        "B": "route",
+        "C": "route",
+        "D": "route"
+      },
+      "shield_stops": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "observed_changed": {
+        "A": false,
+        "B": false,
+        "C": false,
+        "D": false
+      },
+      "grant_windows": {}
+    },
+    {
+      "time": 38,
+      "obstacles": [],
+      "position_before": {
+        "A": [
+          7,
+          2
+        ],
+        "B": [
+          6,
+          2
+        ],
+        "C": [
+          8,
+          2
+        ],
+        "D": [
+          9,
+          2
+        ]
+      },
+      "positions": {
+        "A": [
+          7,
+          2
+        ],
+        "B": [
+          6,
+          2
+        ],
+        "C": [
+          8,
+          2
+        ],
+        "D": [
+          9,
+          2
+        ]
+      },
+      "status": {
+        "A": "route",
+        "B": "route",
+        "C": "route",
+        "D": "route"
+      },
+      "shield_stops": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "observed_changed": {
+        "A": false,
+        "B": false,
+        "C": false,
+        "D": false
+      },
+      "grant_windows": {}
+    },
+    {
+      "time": 39,
+      "obstacles": [],
+      "position_before": {
+        "A": [
+          7,
+          2
+        ],
+        "B": [
+          6,
+          2
+        ],
+        "C": [
+          8,
+          2
+        ],
+        "D": [
+          9,
+          2
+        ]
+      },
+      "positions": {
+        "A": [
+          7,
+          2
+        ],
+        "B": [
+          6,
+          2
+        ],
+        "C": [
+          8,
+          2
+        ],
+        "D": [
+          9,
+          2
+        ]
+      },
+      "status": {
+        "A": "route",
+        "B": "route",
+        "C": "route",
+        "D": "route"
+      },
+      "shield_stops": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "observed_changed": {
+        "A": false,
+        "B": false,
+        "C": false,
+        "D": false
+      },
+      "grant_windows": {}
+    },
+    {
+      "time": 40,
+      "obstacles": [],
+      "position_before": {
+        "A": [
+          7,
+          2
+        ],
+        "B": [
+          6,
+          2
+        ],
+        "C": [
+          8,
+          2
+        ],
+        "D": [
+          9,
+          2
+        ]
+      },
+      "positions": {
+        "A": [
+          7,
+          2
+        ],
+        "B": [
+          6,
+          2
+        ],
+        "C": [
+          8,
+          2
+        ],
+        "D": [
+          9,
+          2
+        ]
+      },
+      "status": {
+        "A": "route",
+        "B": "route",
+        "C": "route",
+        "D": "route"
+      },
+      "shield_stops": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "observed_changed": {
+        "A": false,
+        "B": false,
+        "C": false,
+        "D": false
+      },
+      "grant_windows": {}
+    },
+    {
+      "time": 41,
+      "obstacles": [],
+      "position_before": {
+        "A": [
+          7,
+          2
+        ],
+        "B": [
+          6,
+          2
+        ],
+        "C": [
+          8,
+          2
+        ],
+        "D": [
+          9,
+          2
+        ]
+      },
+      "positions": {
+        "A": [
+          7,
+          2
+        ],
+        "B": [
+          6,
+          2
+        ],
+        "C": [
+          8,
+          2
+        ],
+        "D": [
+          9,
+          2
+        ]
+      },
+      "status": {
+        "A": "route",
+        "B": "route",
+        "C": "route",
+        "D": "route"
+      },
+      "shield_stops": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "observed_changed": {
+        "A": false,
+        "B": false,
+        "C": false,
+        "D": false
+      },
+      "grant_windows": {}
+    },
+    {
+      "time": 42,
+      "obstacles": [],
+      "position_before": {
+        "A": [
+          7,
+          2
+        ],
+        "B": [
+          6,
+          2
+        ],
+        "C": [
+          8,
+          2
+        ],
+        "D": [
+          9,
+          2
+        ]
+      },
+      "positions": {
+        "A": [
+          7,
+          2
+        ],
+        "B": [
+          6,
+          2
+        ],
+        "C": [
+          8,
+          2
+        ],
+        "D": [
+          9,
+          2
+        ]
+      },
+      "status": {
+        "A": "route",
+        "B": "route",
+        "C": "route",
+        "D": "route"
+      },
+      "shield_stops": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "observed_changed": {
+        "A": false,
+        "B": false,
+        "C": false,
+        "D": false
+      },
+      "grant_windows": {}
+    },
+    {
+      "time": 43,
+      "obstacles": [],
+      "position_before": {
+        "A": [
+          7,
+          2
+        ],
+        "B": [
+          6,
+          2
+        ],
+        "C": [
+          8,
+          2
+        ],
+        "D": [
+          9,
+          2
+        ]
+      },
+      "positions": {
+        "A": [
+          7,
+          2
+        ],
+        "B": [
+          6,
+          2
+        ],
+        "C": [
+          8,
+          2
+        ],
+        "D": [
+          9,
+          2
+        ]
+      },
+      "status": {
+        "A": "route",
+        "B": "route",
+        "C": "route",
+        "D": "route"
+      },
+      "shield_stops": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "observed_changed": {
+        "A": false,
+        "B": false,
+        "C": false,
+        "D": false
+      },
+      "grant_windows": {}
+    },
+    {
+      "time": 44,
+      "obstacles": [],
+      "position_before": {
+        "A": [
+          7,
+          2
+        ],
+        "B": [
+          6,
+          2
+        ],
+        "C": [
+          8,
+          2
+        ],
+        "D": [
+          9,
+          2
+        ]
+      },
+      "positions": {
+        "A": [
+          7,
+          2
+        ],
+        "B": [
+          6,
+          2
+        ],
+        "C": [
+          8,
+          2
+        ],
+        "D": [
+          9,
+          2
+        ]
+      },
+      "status": {
+        "A": "route",
+        "B": "route",
+        "C": "route",
+        "D": "route"
+      },
+      "shield_stops": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "observed_changed": {
+        "A": false,
+        "B": false,
+        "C": false,
+        "D": false
+      },
+      "grant_windows": {}
+    },
+    {
+      "time": 45,
+      "obstacles": [],
+      "position_before": {
+        "A": [
+          7,
+          2
+        ],
+        "B": [
+          6,
+          2
+        ],
+        "C": [
+          8,
+          2
+        ],
+        "D": [
+          9,
+          2
+        ]
+      },
+      "positions": {
+        "A": [
+          7,
+          2
+        ],
+        "B": [
+          6,
+          2
+        ],
+        "C": [
+          8,
+          2
+        ],
+        "D": [
+          9,
+          2
+        ]
+      },
+      "status": {
+        "A": "route",
+        "B": "route",
+        "C": "route",
+        "D": "route"
+      },
+      "shield_stops": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "observed_changed": {
+        "A": false,
+        "B": false,
+        "C": false,
+        "D": false
+      },
+      "grant_windows": {}
+    },
+    {
+      "time": 46,
+      "obstacles": [],
+      "position_before": {
+        "A": [
+          7,
+          2
+        ],
+        "B": [
+          6,
+          2
+        ],
+        "C": [
+          8,
+          2
+        ],
+        "D": [
+          9,
+          2
+        ]
+      },
+      "positions": {
+        "A": [
+          7,
+          2
+        ],
+        "B": [
+          6,
+          2
+        ],
+        "C": [
+          8,
+          2
+        ],
+        "D": [
+          9,
+          2
+        ]
+      },
+      "status": {
+        "A": "route",
+        "B": "route",
+        "C": "route",
+        "D": "route"
+      },
+      "shield_stops": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "observed_changed": {
+        "A": false,
+        "B": false,
+        "C": false,
+        "D": false
+      },
+      "grant_windows": {}
+    },
+    {
+      "time": 47,
+      "obstacles": [],
+      "position_before": {
+        "A": [
+          7,
+          2
+        ],
+        "B": [
+          6,
+          2
+        ],
+        "C": [
+          8,
+          2
+        ],
+        "D": [
+          9,
+          2
+        ]
+      },
+      "positions": {
+        "A": [
+          7,
+          2
+        ],
+        "B": [
+          6,
+          2
+        ],
+        "C": [
+          8,
+          2
+        ],
+        "D": [
+          9,
+          2
+        ]
+      },
+      "status": {
+        "A": "route",
+        "B": "route",
+        "C": "route",
+        "D": "route"
+      },
+      "shield_stops": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "observed_changed": {
+        "A": false,
+        "B": false,
+        "C": false,
+        "D": false
+      },
+      "grant_windows": {}
+    },
+    {
+      "time": 48,
+      "obstacles": [],
+      "position_before": {
+        "A": [
+          7,
+          2
+        ],
+        "B": [
+          6,
+          2
+        ],
+        "C": [
+          8,
+          2
+        ],
+        "D": [
+          9,
+          2
+        ]
+      },
+      "positions": {
+        "A": [
+          7,
+          2
+        ],
+        "B": [
+          6,
+          2
+        ],
+        "C": [
+          8,
+          2
+        ],
+        "D": [
+          9,
+          2
+        ]
+      },
+      "status": {
+        "A": "route",
+        "B": "route",
+        "C": "route",
+        "D": "route"
+      },
+      "shield_stops": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "observed_changed": {
+        "A": false,
+        "B": false,
+        "C": false,
+        "D": false
+      },
+      "grant_windows": {}
+    },
+    {
+      "time": 49,
+      "obstacles": [],
+      "position_before": {
+        "A": [
+          7,
+          2
+        ],
+        "B": [
+          6,
+          2
+        ],
+        "C": [
+          8,
+          2
+        ],
+        "D": [
+          9,
+          2
+        ]
+      },
+      "positions": {
+        "A": [
+          7,
+          2
+        ],
+        "B": [
+          6,
+          2
+        ],
+        "C": [
+          8,
+          2
+        ],
+        "D": [
+          9,
+          2
+        ]
+      },
+      "status": {
+        "A": "route",
+        "B": "route",
+        "C": "route",
+        "D": "route"
+      },
+      "shield_stops": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "observed_changed": {
+        "A": false,
+        "B": false,
+        "C": false,
+        "D": false
+      },
+      "grant_windows": {}
+    },
+    {
+      "time": 50,
+      "obstacles": [],
+      "position_before": {
+        "A": [
+          7,
+          2
+        ],
+        "B": [
+          6,
+          2
+        ],
+        "C": [
+          8,
+          2
+        ],
+        "D": [
+          9,
+          2
+        ]
+      },
+      "positions": {
+        "A": [
+          7,
+          2
+        ],
+        "B": [
+          6,
+          2
+        ],
+        "C": [
+          8,
+          2
+        ],
+        "D": [
+          9,
+          2
+        ]
+      },
+      "status": {
+        "A": "route",
+        "B": "route",
+        "C": "route",
+        "D": "route"
+      },
+      "shield_stops": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "observed_changed": {
+        "A": false,
+        "B": false,
+        "C": false,
+        "D": false
+      },
+      "grant_windows": {}
+    },
+    {
+      "time": 51,
+      "obstacles": [],
+      "position_before": {
+        "A": [
+          7,
+          2
+        ],
+        "B": [
+          6,
+          2
+        ],
+        "C": [
+          8,
+          2
+        ],
+        "D": [
+          9,
+          2
+        ]
+      },
+      "positions": {
+        "A": [
+          7,
+          2
+        ],
+        "B": [
+          6,
+          2
+        ],
+        "C": [
+          8,
+          2
+        ],
+        "D": [
+          9,
+          2
+        ]
+      },
+      "status": {
+        "A": "route",
+        "B": "route",
+        "C": "route",
+        "D": "route"
+      },
+      "shield_stops": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "observed_changed": {
+        "A": false,
+        "B": false,
+        "C": false,
+        "D": false
+      },
+      "grant_windows": {}
+    },
+    {
+      "time": 52,
+      "obstacles": [],
+      "position_before": {
+        "A": [
+          7,
+          2
+        ],
+        "B": [
+          6,
+          2
+        ],
+        "C": [
+          8,
+          2
+        ],
+        "D": [
+          9,
+          2
+        ]
+      },
+      "positions": {
+        "A": [
+          7,
+          2
+        ],
+        "B": [
+          6,
+          2
+        ],
+        "C": [
+          8,
+          2
+        ],
+        "D": [
+          9,
+          2
+        ]
+      },
+      "status": {
+        "A": "route",
+        "B": "route",
+        "C": "route",
+        "D": "route"
+      },
+      "shield_stops": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "observed_changed": {
+        "A": false,
+        "B": false,
+        "C": false,
+        "D": false
+      },
+      "grant_windows": {}
+    },
+    {
+      "time": 53,
+      "obstacles": [],
+      "position_before": {
+        "A": [
+          7,
+          2
+        ],
+        "B": [
+          6,
+          2
+        ],
+        "C": [
+          8,
+          2
+        ],
+        "D": [
+          9,
+          2
+        ]
+      },
+      "positions": {
+        "A": [
+          7,
+          2
+        ],
+        "B": [
+          6,
+          2
+        ],
+        "C": [
+          8,
+          2
+        ],
+        "D": [
+          9,
+          2
+        ]
+      },
+      "status": {
+        "A": "route",
+        "B": "route",
+        "C": "route",
+        "D": "route"
+      },
+      "shield_stops": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "observed_changed": {
+        "A": false,
+        "B": false,
+        "C": false,
+        "D": false
+      },
+      "grant_windows": {}
+    },
+    {
+      "time": 54,
+      "obstacles": [],
+      "position_before": {
+        "A": [
+          7,
+          2
+        ],
+        "B": [
+          6,
+          2
+        ],
+        "C": [
+          8,
+          2
+        ],
+        "D": [
+          9,
+          2
+        ]
+      },
+      "positions": {
+        "A": [
+          7,
+          2
+        ],
+        "B": [
+          6,
+          2
+        ],
+        "C": [
+          8,
+          2
+        ],
+        "D": [
+          9,
+          2
+        ]
+      },
+      "status": {
+        "A": "route",
+        "B": "route",
+        "C": "route",
+        "D": "route"
+      },
+      "shield_stops": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "observed_changed": {
+        "A": false,
+        "B": false,
+        "C": false,
+        "D": false
+      },
+      "grant_windows": {}
+    },
+    {
+      "time": 55,
+      "obstacles": [],
+      "position_before": {
+        "A": [
+          7,
+          2
+        ],
+        "B": [
+          6,
+          2
+        ],
+        "C": [
+          8,
+          2
+        ],
+        "D": [
+          9,
+          2
+        ]
+      },
+      "positions": {
+        "A": [
+          7,
+          2
+        ],
+        "B": [
+          6,
+          2
+        ],
+        "C": [
+          8,
+          2
+        ],
+        "D": [
+          9,
+          2
+        ]
+      },
+      "status": {
+        "A": "route",
+        "B": "route",
+        "C": "route",
+        "D": "route"
+      },
+      "shield_stops": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "observed_changed": {
+        "A": false,
+        "B": false,
+        "C": false,
+        "D": false
+      },
+      "grant_windows": {}
+    },
+    {
+      "time": 56,
+      "obstacles": [],
+      "position_before": {
+        "A": [
+          7,
+          2
+        ],
+        "B": [
+          6,
+          2
+        ],
+        "C": [
+          8,
+          2
+        ],
+        "D": [
+          9,
+          2
+        ]
+      },
+      "positions": {
+        "A": [
+          7,
+          2
+        ],
+        "B": [
+          6,
+          2
+        ],
+        "C": [
+          8,
+          2
+        ],
+        "D": [
+          9,
+          2
+        ]
+      },
+      "status": {
+        "A": "route",
+        "B": "route",
+        "C": "route",
+        "D": "route"
+      },
+      "shield_stops": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "observed_changed": {
+        "A": false,
+        "B": false,
+        "C": false,
+        "D": false
+      },
+      "grant_windows": {}
+    },
+    {
+      "time": 57,
+      "obstacles": [],
+      "position_before": {
+        "A": [
+          7,
+          2
+        ],
+        "B": [
+          6,
+          2
+        ],
+        "C": [
+          8,
+          2
+        ],
+        "D": [
+          9,
+          2
+        ]
+      },
+      "positions": {
+        "A": [
+          7,
+          2
+        ],
+        "B": [
+          6,
+          2
+        ],
+        "C": [
+          8,
+          2
+        ],
+        "D": [
+          9,
+          2
+        ]
+      },
+      "status": {
+        "A": "route",
+        "B": "route",
+        "C": "route",
+        "D": "route"
+      },
+      "shield_stops": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "observed_changed": {
+        "A": false,
+        "B": false,
+        "C": false,
+        "D": false
+      },
+      "grant_windows": {}
+    },
+    {
+      "time": 58,
+      "obstacles": [],
+      "position_before": {
+        "A": [
+          7,
+          2
+        ],
+        "B": [
+          6,
+          2
+        ],
+        "C": [
+          8,
+          2
+        ],
+        "D": [
+          9,
+          2
+        ]
+      },
+      "positions": {
+        "A": [
+          7,
+          2
+        ],
+        "B": [
+          6,
+          2
+        ],
+        "C": [
+          8,
+          2
+        ],
+        "D": [
+          9,
+          2
+        ]
+      },
+      "status": {
+        "A": "route",
+        "B": "route",
+        "C": "route",
+        "D": "route"
+      },
+      "shield_stops": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "observed_changed": {
+        "A": false,
+        "B": false,
+        "C": false,
+        "D": false
+      },
+      "grant_windows": {}
+    },
+    {
+      "time": 59,
+      "obstacles": [],
+      "position_before": {
+        "A": [
+          7,
+          2
+        ],
+        "B": [
+          6,
+          2
+        ],
+        "C": [
+          8,
+          2
+        ],
+        "D": [
+          9,
+          2
+        ]
+      },
+      "positions": {
+        "A": [
+          7,
+          2
+        ],
+        "B": [
+          6,
+          2
+        ],
+        "C": [
+          8,
+          2
+        ],
+        "D": [
+          9,
+          2
+        ]
+      },
+      "status": {
+        "A": "route",
+        "B": "route",
+        "C": "route",
+        "D": "route"
+      },
+      "shield_stops": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "observed_changed": {
+        "A": false,
+        "B": false,
+        "C": false,
+        "D": false
+      },
+      "grant_windows": {}
+    },
+    {
+      "time": 60,
+      "obstacles": [],
+      "position_before": {
+        "A": [
+          7,
+          2
+        ],
+        "B": [
+          6,
+          2
+        ],
+        "C": [
+          8,
+          2
+        ],
+        "D": [
+          9,
+          2
+        ]
+      },
+      "positions": {
+        "A": [
+          7,
+          2
+        ],
+        "B": [
+          6,
+          2
+        ],
+        "C": [
+          8,
+          2
+        ],
+        "D": [
+          9,
+          2
+        ]
+      },
+      "status": {
+        "A": "route",
+        "B": "route",
+        "C": "route",
+        "D": "route"
+      },
+      "shield_stops": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "observed_changed": {
+        "A": false,
+        "B": false,
+        "C": false,
+        "D": false
+      },
+      "grant_windows": {}
+    },
+    {
+      "time": 61,
+      "obstacles": [],
+      "position_before": {
+        "A": [
+          7,
+          2
+        ],
+        "B": [
+          6,
+          2
+        ],
+        "C": [
+          8,
+          2
+        ],
+        "D": [
+          9,
+          2
+        ]
+      },
+      "positions": {
+        "A": [
+          7,
+          2
+        ],
+        "B": [
+          6,
+          2
+        ],
+        "C": [
+          8,
+          2
+        ],
+        "D": [
+          9,
+          2
+        ]
+      },
+      "status": {
+        "A": "route",
+        "B": "route",
+        "C": "route",
+        "D": "route"
+      },
+      "shield_stops": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "observed_changed": {
+        "A": false,
+        "B": false,
+        "C": false,
+        "D": false
+      },
+      "grant_windows": {}
+    },
+    {
+      "time": 62,
+      "obstacles": [],
+      "position_before": {
+        "A": [
+          7,
+          2
+        ],
+        "B": [
+          6,
+          2
+        ],
+        "C": [
+          8,
+          2
+        ],
+        "D": [
+          9,
+          2
+        ]
+      },
+      "positions": {
+        "A": [
+          7,
+          2
+        ],
+        "B": [
+          6,
+          2
+        ],
+        "C": [
+          8,
+          2
+        ],
+        "D": [
+          9,
+          2
+        ]
+      },
+      "status": {
+        "A": "route",
+        "B": "route",
+        "C": "route",
+        "D": "route"
+      },
+      "shield_stops": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "observed_changed": {
+        "A": false,
+        "B": false,
+        "C": false,
+        "D": false
+      },
+      "grant_windows": {}
+    },
+    {
+      "time": 63,
+      "obstacles": [],
+      "position_before": {
+        "A": [
+          7,
+          2
+        ],
+        "B": [
+          6,
+          2
+        ],
+        "C": [
+          8,
+          2
+        ],
+        "D": [
+          9,
+          2
+        ]
+      },
+      "positions": {
+        "A": [
+          7,
+          2
+        ],
+        "B": [
+          6,
+          2
+        ],
+        "C": [
+          8,
+          2
+        ],
+        "D": [
+          9,
+          2
+        ]
+      },
+      "status": {
+        "A": "route",
+        "B": "route",
+        "C": "route",
+        "D": "route"
+      },
+      "shield_stops": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "observed_changed": {
+        "A": false,
+        "B": false,
+        "C": false,
+        "D": false
+      },
+      "grant_windows": {}
+    },
+    {
+      "time": 64,
+      "obstacles": [],
+      "position_before": {
+        "A": [
+          7,
+          2
+        ],
+        "B": [
+          6,
+          2
+        ],
+        "C": [
+          8,
+          2
+        ],
+        "D": [
+          9,
+          2
+        ]
+      },
+      "positions": {
+        "A": [
+          7,
+          2
+        ],
+        "B": [
+          6,
+          2
+        ],
+        "C": [
+          8,
+          2
+        ],
+        "D": [
+          9,
+          2
+        ]
+      },
+      "status": {
+        "A": "route",
+        "B": "route",
+        "C": "route",
+        "D": "route"
+      },
+      "shield_stops": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "observed_changed": {
+        "A": false,
+        "B": false,
+        "C": false,
+        "D": false
+      },
+      "grant_windows": {}
+    },
+    {
+      "time": 65,
+      "obstacles": [],
+      "position_before": {
+        "A": [
+          7,
+          2
+        ],
+        "B": [
+          6,
+          2
+        ],
+        "C": [
+          8,
+          2
+        ],
+        "D": [
+          9,
+          2
+        ]
+      },
+      "positions": {
+        "A": [
+          7,
+          2
+        ],
+        "B": [
+          6,
+          2
+        ],
+        "C": [
+          8,
+          2
+        ],
+        "D": [
+          9,
+          2
+        ]
+      },
+      "status": {
+        "A": "route",
+        "B": "route",
+        "C": "route",
+        "D": "route"
+      },
+      "shield_stops": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "observed_changed": {
+        "A": false,
+        "B": false,
+        "C": false,
+        "D": false
+      },
+      "grant_windows": {}
+    },
+    {
+      "time": 66,
+      "obstacles": [],
+      "position_before": {
+        "A": [
+          7,
+          2
+        ],
+        "B": [
+          6,
+          2
+        ],
+        "C": [
+          8,
+          2
+        ],
+        "D": [
+          9,
+          2
+        ]
+      },
+      "positions": {
+        "A": [
+          7,
+          2
+        ],
+        "B": [
+          6,
+          2
+        ],
+        "C": [
+          8,
+          2
+        ],
+        "D": [
+          9,
+          2
+        ]
+      },
+      "status": {
+        "A": "route",
+        "B": "route",
+        "C": "route",
+        "D": "route"
+      },
+      "shield_stops": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "observed_changed": {
+        "A": false,
+        "B": false,
+        "C": false,
+        "D": false
+      },
+      "grant_windows": {}
+    },
+    {
+      "time": 67,
+      "obstacles": [],
+      "position_before": {
+        "A": [
+          7,
+          2
+        ],
+        "B": [
+          6,
+          2
+        ],
+        "C": [
+          8,
+          2
+        ],
+        "D": [
+          9,
+          2
+        ]
+      },
+      "positions": {
+        "A": [
+          7,
+          2
+        ],
+        "B": [
+          6,
+          2
+        ],
+        "C": [
+          8,
+          2
+        ],
+        "D": [
+          9,
+          2
+        ]
+      },
+      "status": {
+        "A": "route",
+        "B": "route",
+        "C": "route",
+        "D": "route"
+      },
+      "shield_stops": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "observed_changed": {
+        "A": false,
+        "B": false,
+        "C": false,
+        "D": false
+      },
+      "grant_windows": {}
+    },
+    {
+      "time": 68,
+      "obstacles": [],
+      "position_before": {
+        "A": [
+          7,
+          2
+        ],
+        "B": [
+          6,
+          2
+        ],
+        "C": [
+          8,
+          2
+        ],
+        "D": [
+          9,
+          2
+        ]
+      },
+      "positions": {
+        "A": [
+          7,
+          2
+        ],
+        "B": [
+          6,
+          2
+        ],
+        "C": [
+          8,
+          2
+        ],
+        "D": [
+          9,
+          2
+        ]
+      },
+      "status": {
+        "A": "route",
+        "B": "route",
+        "C": "route",
+        "D": "route"
+      },
+      "shield_stops": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "observed_changed": {
+        "A": false,
+        "B": false,
+        "C": false,
+        "D": false
+      },
+      "grant_windows": {}
+    },
+    {
+      "time": 69,
+      "obstacles": [],
+      "position_before": {
+        "A": [
+          7,
+          2
+        ],
+        "B": [
+          6,
+          2
+        ],
+        "C": [
+          8,
+          2
+        ],
+        "D": [
+          9,
+          2
+        ]
+      },
+      "positions": {
+        "A": [
+          7,
+          2
+        ],
+        "B": [
+          6,
+          2
+        ],
+        "C": [
+          8,
+          2
+        ],
+        "D": [
+          9,
+          2
+        ]
+      },
+      "status": {
+        "A": "route",
+        "B": "route",
+        "C": "route",
+        "D": "route"
+      },
+      "shield_stops": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "observed_changed": {
+        "A": false,
+        "B": false,
+        "C": false,
+        "D": false
+      },
+      "grant_windows": {}
+    },
+    {
+      "time": 70,
+      "obstacles": [],
+      "position_before": {
+        "A": [
+          7,
+          2
+        ],
+        "B": [
+          6,
+          2
+        ],
+        "C": [
+          8,
+          2
+        ],
+        "D": [
+          9,
+          2
+        ]
+      },
+      "positions": {
+        "A": [
+          7,
+          2
+        ],
+        "B": [
+          6,
+          2
+        ],
+        "C": [
+          8,
+          2
+        ],
+        "D": [
+          9,
+          2
+        ]
+      },
+      "status": {
+        "A": "route",
+        "B": "route",
+        "C": "route",
+        "D": "route"
+      },
+      "shield_stops": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "observed_changed": {
+        "A": false,
+        "B": false,
+        "C": false,
+        "D": false
+      },
+      "grant_windows": {}
+    },
+    {
+      "time": 71,
+      "obstacles": [],
+      "position_before": {
+        "A": [
+          7,
+          2
+        ],
+        "B": [
+          6,
+          2
+        ],
+        "C": [
+          8,
+          2
+        ],
+        "D": [
+          9,
+          2
+        ]
+      },
+      "positions": {
+        "A": [
+          7,
+          2
+        ],
+        "B": [
+          6,
+          2
+        ],
+        "C": [
+          8,
+          2
+        ],
+        "D": [
+          9,
+          2
+        ]
+      },
+      "status": {
+        "A": "route",
+        "B": "route",
+        "C": "route",
+        "D": "route"
+      },
+      "shield_stops": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "observed_changed": {
+        "A": false,
+        "B": false,
+        "C": false,
+        "D": false
+      },
+      "grant_windows": {}
+    },
+    {
+      "time": 72,
+      "obstacles": [],
+      "position_before": {
+        "A": [
+          7,
+          2
+        ],
+        "B": [
+          6,
+          2
+        ],
+        "C": [
+          8,
+          2
+        ],
+        "D": [
+          9,
+          2
+        ]
+      },
+      "positions": {
+        "A": [
+          7,
+          2
+        ],
+        "B": [
+          6,
+          2
+        ],
+        "C": [
+          8,
+          2
+        ],
+        "D": [
+          9,
+          2
+        ]
+      },
+      "status": {
+        "A": "route",
+        "B": "route",
+        "C": "route",
+        "D": "route"
+      },
+      "shield_stops": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "observed_changed": {
+        "A": false,
+        "B": false,
+        "C": false,
+        "D": false
+      },
+      "grant_windows": {}
+    },
+    {
+      "time": 73,
+      "obstacles": [],
+      "position_before": {
+        "A": [
+          7,
+          2
+        ],
+        "B": [
+          6,
+          2
+        ],
+        "C": [
+          8,
+          2
+        ],
+        "D": [
+          9,
+          2
+        ]
+      },
+      "positions": {
+        "A": [
+          7,
+          2
+        ],
+        "B": [
+          6,
+          2
+        ],
+        "C": [
+          8,
+          2
+        ],
+        "D": [
+          9,
+          2
+        ]
+      },
+      "status": {
+        "A": "route",
+        "B": "route",
+        "C": "route",
+        "D": "route"
+      },
+      "shield_stops": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "observed_changed": {
+        "A": false,
+        "B": false,
+        "C": false,
+        "D": false
+      },
+      "grant_windows": {}
+    },
+    {
+      "time": 74,
+      "obstacles": [],
+      "position_before": {
+        "A": [
+          7,
+          2
+        ],
+        "B": [
+          6,
+          2
+        ],
+        "C": [
+          8,
+          2
+        ],
+        "D": [
+          9,
+          2
+        ]
+      },
+      "positions": {
+        "A": [
+          7,
+          2
+        ],
+        "B": [
+          6,
+          2
+        ],
+        "C": [
+          8,
+          2
+        ],
+        "D": [
+          9,
+          2
+        ]
+      },
+      "status": {
+        "A": "route",
+        "B": "route",
+        "C": "route",
+        "D": "route"
+      },
+      "shield_stops": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "observed_changed": {
+        "A": false,
+        "B": false,
+        "C": false,
+        "D": false
+      },
+      "grant_windows": {}
+    },
+    {
+      "time": 75,
+      "obstacles": [],
+      "position_before": {
+        "A": [
+          7,
+          2
+        ],
+        "B": [
+          6,
+          2
+        ],
+        "C": [
+          8,
+          2
+        ],
+        "D": [
+          9,
+          2
+        ]
+      },
+      "positions": {
+        "A": [
+          7,
+          2
+        ],
+        "B": [
+          6,
+          2
+        ],
+        "C": [
+          8,
+          2
+        ],
+        "D": [
+          9,
+          2
+        ]
+      },
+      "status": {
+        "A": "route",
+        "B": "route",
+        "C": "route",
+        "D": "route"
+      },
+      "shield_stops": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "observed_changed": {
+        "A": false,
+        "B": false,
+        "C": false,
+        "D": false
+      },
+      "grant_windows": {}
+    },
+    {
+      "time": 76,
+      "obstacles": [],
+      "position_before": {
+        "A": [
+          7,
+          2
+        ],
+        "B": [
+          6,
+          2
+        ],
+        "C": [
+          8,
+          2
+        ],
+        "D": [
+          9,
+          2
+        ]
+      },
+      "positions": {
+        "A": [
+          7,
+          2
+        ],
+        "B": [
+          6,
+          2
+        ],
+        "C": [
+          8,
+          2
+        ],
+        "D": [
+          9,
+          2
+        ]
+      },
+      "status": {
+        "A": "route",
+        "B": "route",
+        "C": "route",
+        "D": "route"
+      },
+      "shield_stops": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "observed_changed": {
+        "A": false,
+        "B": false,
+        "C": false,
+        "D": false
+      },
+      "grant_windows": {}
+    },
+    {
+      "time": 77,
+      "obstacles": [],
+      "position_before": {
+        "A": [
+          7,
+          2
+        ],
+        "B": [
+          6,
+          2
+        ],
+        "C": [
+          8,
+          2
+        ],
+        "D": [
+          9,
+          2
+        ]
+      },
+      "positions": {
+        "A": [
+          7,
+          2
+        ],
+        "B": [
+          6,
+          2
+        ],
+        "C": [
+          8,
+          2
+        ],
+        "D": [
+          9,
+          2
+        ]
+      },
+      "status": {
+        "A": "route",
+        "B": "route",
+        "C": "route",
+        "D": "route"
+      },
+      "shield_stops": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "observed_changed": {
+        "A": false,
+        "B": false,
+        "C": false,
+        "D": false
+      },
+      "grant_windows": {}
+    },
+    {
+      "time": 78,
+      "obstacles": [],
+      "position_before": {
+        "A": [
+          7,
+          2
+        ],
+        "B": [
+          6,
+          2
+        ],
+        "C": [
+          8,
+          2
+        ],
+        "D": [
+          9,
+          2
+        ]
+      },
+      "positions": {
+        "A": [
+          7,
+          2
+        ],
+        "B": [
+          6,
+          2
+        ],
+        "C": [
+          8,
+          2
+        ],
+        "D": [
+          9,
+          2
+        ]
+      },
+      "status": {
+        "A": "route",
+        "B": "route",
+        "C": "route",
+        "D": "route"
+      },
+      "shield_stops": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "observed_changed": {
+        "A": false,
+        "B": false,
+        "C": false,
+        "D": false
+      },
+      "grant_windows": {}
+    },
+    {
+      "time": 79,
+      "obstacles": [],
+      "position_before": {
+        "A": [
+          7,
+          2
+        ],
+        "B": [
+          6,
+          2
+        ],
+        "C": [
+          8,
+          2
+        ],
+        "D": [
+          9,
+          2
+        ]
+      },
+      "positions": {
+        "A": [
+          7,
+          2
+        ],
+        "B": [
+          6,
+          2
+        ],
+        "C": [
+          8,
+          2
+        ],
+        "D": [
+          9,
+          2
+        ]
+      },
+      "status": {
+        "A": "route",
+        "B": "route",
+        "C": "route",
+        "D": "route"
+      },
+      "shield_stops": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "observed_changed": {
+        "A": false,
+        "B": false,
+        "C": false,
+        "D": false
+      },
+      "grant_windows": {}
+    },
+    {
+      "time": 80,
+      "obstacles": [],
+      "position_before": {
+        "A": [
+          7,
+          2
+        ],
+        "B": [
+          6,
+          2
+        ],
+        "C": [
+          8,
+          2
+        ],
+        "D": [
+          9,
+          2
+        ]
+      },
+      "positions": {
+        "A": [
+          7,
+          2
+        ],
+        "B": [
+          6,
+          2
+        ],
+        "C": [
+          8,
+          2
+        ],
+        "D": [
+          9,
+          2
+        ]
+      },
+      "status": {
+        "A": "route",
+        "B": "route",
+        "C": "route",
+        "D": "route"
+      },
+      "shield_stops": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "observed_changed": {
+        "A": false,
+        "B": false,
+        "C": false,
+        "D": false
+      },
+      "grant_windows": {}
+    },
+    {
+      "time": 81,
+      "obstacles": [],
+      "position_before": {
+        "A": [
+          7,
+          2
+        ],
+        "B": [
+          6,
+          2
+        ],
+        "C": [
+          8,
+          2
+        ],
+        "D": [
+          9,
+          2
+        ]
+      },
+      "positions": {
+        "A": [
+          7,
+          2
+        ],
+        "B": [
+          6,
+          2
+        ],
+        "C": [
+          8,
+          2
+        ],
+        "D": [
+          9,
+          2
+        ]
+      },
+      "status": {
+        "A": "route",
+        "B": "route",
+        "C": "route",
+        "D": "route"
+      },
+      "shield_stops": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "observed_changed": {
+        "A": false,
+        "B": false,
+        "C": false,
+        "D": false
+      },
+      "grant_windows": {}
+    },
+    {
+      "time": 82,
+      "obstacles": [],
+      "position_before": {
+        "A": [
+          7,
+          2
+        ],
+        "B": [
+          6,
+          2
+        ],
+        "C": [
+          8,
+          2
+        ],
+        "D": [
+          9,
+          2
+        ]
+      },
+      "positions": {
+        "A": [
+          7,
+          2
+        ],
+        "B": [
+          6,
+          2
+        ],
+        "C": [
+          8,
+          2
+        ],
+        "D": [
+          9,
+          2
+        ]
+      },
+      "status": {
+        "A": "route",
+        "B": "route",
+        "C": "route",
+        "D": "route"
+      },
+      "shield_stops": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "observed_changed": {
+        "A": false,
+        "B": false,
+        "C": false,
+        "D": false
+      },
+      "grant_windows": {}
+    },
+    {
+      "time": 83,
+      "obstacles": [],
+      "position_before": {
+        "A": [
+          7,
+          2
+        ],
+        "B": [
+          6,
+          2
+        ],
+        "C": [
+          8,
+          2
+        ],
+        "D": [
+          9,
+          2
+        ]
+      },
+      "positions": {
+        "A": [
+          7,
+          2
+        ],
+        "B": [
+          6,
+          2
+        ],
+        "C": [
+          8,
+          2
+        ],
+        "D": [
+          9,
+          2
+        ]
+      },
+      "status": {
+        "A": "route",
+        "B": "route",
+        "C": "route",
+        "D": "route"
+      },
+      "shield_stops": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "observed_changed": {
+        "A": false,
+        "B": false,
+        "C": false,
+        "D": false
+      },
+      "grant_windows": {}
+    },
+    {
+      "time": 84,
+      "obstacles": [],
+      "position_before": {
+        "A": [
+          7,
+          2
+        ],
+        "B": [
+          6,
+          2
+        ],
+        "C": [
+          8,
+          2
+        ],
+        "D": [
+          9,
+          2
+        ]
+      },
+      "positions": {
+        "A": [
+          7,
+          2
+        ],
+        "B": [
+          6,
+          2
+        ],
+        "C": [
+          8,
+          2
+        ],
+        "D": [
+          9,
+          2
+        ]
+      },
+      "status": {
+        "A": "route",
+        "B": "route",
+        "C": "route",
+        "D": "route"
+      },
+      "shield_stops": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "observed_changed": {
+        "A": false,
+        "B": false,
+        "C": false,
+        "D": false
+      },
+      "grant_windows": {}
+    },
+    {
+      "time": 85,
+      "obstacles": [],
+      "position_before": {
+        "A": [
+          7,
+          2
+        ],
+        "B": [
+          6,
+          2
+        ],
+        "C": [
+          8,
+          2
+        ],
+        "D": [
+          9,
+          2
+        ]
+      },
+      "positions": {
+        "A": [
+          7,
+          2
+        ],
+        "B": [
+          6,
+          2
+        ],
+        "C": [
+          8,
+          2
+        ],
+        "D": [
+          9,
+          2
+        ]
+      },
+      "status": {
+        "A": "route",
+        "B": "route",
+        "C": "route",
+        "D": "route"
+      },
+      "shield_stops": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "observed_changed": {
+        "A": false,
+        "B": false,
+        "C": false,
+        "D": false
+      },
+      "grant_windows": {}
+    },
+    {
+      "time": 86,
+      "obstacles": [],
+      "position_before": {
+        "A": [
+          7,
+          2
+        ],
+        "B": [
+          6,
+          2
+        ],
+        "C": [
+          8,
+          2
+        ],
+        "D": [
+          9,
+          2
+        ]
+      },
+      "positions": {
+        "A": [
+          7,
+          2
+        ],
+        "B": [
+          6,
+          2
+        ],
+        "C": [
+          8,
+          2
+        ],
+        "D": [
+          9,
+          2
+        ]
+      },
+      "status": {
+        "A": "route",
+        "B": "route",
+        "C": "route",
+        "D": "route"
+      },
+      "shield_stops": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "observed_changed": {
+        "A": false,
+        "B": false,
+        "C": false,
+        "D": false
+      },
+      "grant_windows": {}
+    },
+    {
+      "time": 87,
+      "obstacles": [],
+      "position_before": {
+        "A": [
+          7,
+          2
+        ],
+        "B": [
+          6,
+          2
+        ],
+        "C": [
+          8,
+          2
+        ],
+        "D": [
+          9,
+          2
+        ]
+      },
+      "positions": {
+        "A": [
+          7,
+          2
+        ],
+        "B": [
+          6,
+          2
+        ],
+        "C": [
+          8,
+          2
+        ],
+        "D": [
+          9,
+          2
+        ]
+      },
+      "status": {
+        "A": "route",
+        "B": "route",
+        "C": "route",
+        "D": "route"
+      },
+      "shield_stops": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "observed_changed": {
+        "A": false,
+        "B": false,
+        "C": false,
+        "D": false
+      },
+      "grant_windows": {}
+    },
+    {
+      "time": 88,
+      "obstacles": [],
+      "position_before": {
+        "A": [
+          7,
+          2
+        ],
+        "B": [
+          6,
+          2
+        ],
+        "C": [
+          8,
+          2
+        ],
+        "D": [
+          9,
+          2
+        ]
+      },
+      "positions": {
+        "A": [
+          7,
+          2
+        ],
+        "B": [
+          6,
+          2
+        ],
+        "C": [
+          8,
+          2
+        ],
+        "D": [
+          9,
+          2
+        ]
+      },
+      "status": {
+        "A": "route",
+        "B": "route",
+        "C": "route",
+        "D": "route"
+      },
+      "shield_stops": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "observed_changed": {
+        "A": false,
+        "B": false,
+        "C": false,
+        "D": false
+      },
+      "grant_windows": {}
+    },
+    {
+      "time": 89,
+      "obstacles": [],
+      "position_before": {
+        "A": [
+          7,
+          2
+        ],
+        "B": [
+          6,
+          2
+        ],
+        "C": [
+          8,
+          2
+        ],
+        "D": [
+          9,
+          2
+        ]
+      },
+      "positions": {
+        "A": [
+          7,
+          2
+        ],
+        "B": [
+          6,
+          2
+        ],
+        "C": [
+          8,
+          2
+        ],
+        "D": [
+          9,
+          2
+        ]
+      },
+      "status": {
+        "A": "route",
+        "B": "route",
+        "C": "route",
+        "D": "route"
+      },
+      "shield_stops": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "observed_changed": {
+        "A": false,
+        "B": false,
+        "C": false,
+        "D": false
+      },
+      "grant_windows": {}
+    }
+  ],
+  "restriction_payloads": [],
+  "runtime_seconds": 0.016494486999818037,
+  "cut_calls": 0
+}

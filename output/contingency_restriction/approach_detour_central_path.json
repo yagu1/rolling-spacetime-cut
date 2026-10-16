@@ -1,0 +1,8415 @@
+{
+  "scenario": "approach_detour",
+  "method": "central_path",
+  "notes": [
+    "fixed Start/Goal assignments; TA optimization not included",
+    "1 grid cell=1m; step=1s; robot radius=.28m",
+    "supervisor restriction-only if mode=restriction",
+    "upper bridge is single resource; no geometric Graph Cut",
+    "local obstacle observations within Manhattan sensor_radius",
+    "ground-truth joint transition safety shield is idealized and SHARED by ALL methods",
+    "swept pairwise separation checked, no realistic sensor/control/communication noise"
+  ],
+  "settings": {
+    "update_interval": 10,
+    "lookahead": 60,
+    "budget": 16,
+    "safety_distance": 0.9,
+    "sensor_radius": 2,
+    "seed": 17
+  },
+  "events": [
+    {
+      "name": "staging-area obstruction",
+      "cell": [
+        13,
+        2
+      ],
+      "active_from": 1,
+      "active_until": 18
+    }
+  ],
+  "all_arrived": true,
+  "arrival_times": {
+    "A": 43,
+    "B": 31,
+    "C": 63,
+    "D": 65
+  },
+  "completion_time": 65,
+  "sum_arrival_times": 202,
+  "simulation_steps": 65,
+  "minimum_swept_distance": 1.0,
+  "safety_distance_satisfied": true,
+  "emergency_stops": 16,
+  "opposing_direction_simultaneous_grant_ticks": 0,
+  "sensing_update_count": 4,
+  "reactive_local_replans": 0,
+  "path_dispatch_messages": 28,
+  "restriction_messages": 28,
+  "path_payload_bytes": 12272,
+  "restriction_payload_bytes": 11147,
+  "restriction_payload_contains_paths": false,
+  "planner_calls": {
+    "A": 7,
+    "B": 7,
+    "C": 7,
+    "D": 7
+  },
+  "safe_hold_plans": {
+    "A": 1,
+    "B": 0,
+    "C": 4,
+    "D": 4
+  },
+  "obstacle_replans": {
+    "A": 0,
+    "B": 0,
+    "C": 2,
+    "D": 2
+  },
+  "observations": {
+    "A": [],
+    "B": [],
+    "C": [
+      {
+        "time": 1,
+        "cell": [
+          13,
+          2
+        ],
+        "blocked": true
+      },
+      {
+        "time": 18,
+        "cell": [
+          13,
+          2
+        ],
+        "blocked": false
+      }
+    ],
+    "D": [
+      {
+        "time": 1,
+        "cell": [
+          13,
+          2
+        ],
+        "blocked": true
+      },
+      {
+        "time": 18,
+        "cell": [
+          13,
+          2
+        ],
+        "blocked": false
+      }
+    ]
+  },
+  "traces": {
+    "A": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        2
+      ],
+      [
+        3,
+        2
+      ],
+      [
+        4,
+        2
+      ],
+      [
+        5,
+        2
+      ],
+      [
+        6,
+        2
+      ],
+      [
+        7,
+        2
+      ],
+      [
+        8,
+        2
+      ],
+      [
+        9,
+        2
+      ],
+      [
+        10,
+        2
+      ],
+      [
+        11,
+        2
+      ],
+      [
+        11,
+        1
+      ],
+      [
+        12,
+        1
+      ],
+      [
+        12,
+        1
+      ],
+      [
+        12,
+        1
+      ],
+      [
+        12,
+        1
+      ],
+      [
+        12,
+        1
+      ],
+      [
+        12,
+        1
+      ],
+      [
+        12,
+        1
+      ],
+      [
+        12,
+        1
+      ],
+      [
+        12,
+        1
+      ],
+      [
+        12,
+        1
+      ],
+      [
+        12,
+        1
+      ],
+      [
+        12,
+        1
+      ],
+      [
+        12,
+        1
+      ],
+      [
+        12,
+        1
+      ],
+      [
+        12,
+        1
+      ],
+      [
+        12,
+        1
+      ],
+      [
+        12,
+        1
+      ],
+      [
+        12,
+        1
+      ],
+      [
+        12,
+        1
+      ],
+      [
+        12,
+        1
+      ],
+      [
+        12,
+        1
+      ],
+      [
+        12,
+        1
+      ],
+      [
+        12,
+        1
+      ]
+    ],
+    "B": [
+      [
+        0,
+        3
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        2
+      ],
+      [
+        3,
+        2
+      ],
+      [
+        4,
+        2
+      ],
+      [
+        5,
+        2
+      ],
+      [
+        6,
+        2
+      ],
+      [
+        7,
+        2
+      ],
+      [
+        8,
+        2
+      ],
+      [
+        9,
+        2
+      ],
+      [
+        10,
+        2
+      ],
+      [
+        11,
+        2
+      ],
+      [
+        11,
+        3
+      ],
+      [
+        12,
+        3
+      ],
+      [
+        12,
+        3
+      ],
+      [
+        12,
+        3
+      ],
+      [
+        12,
+        3
+      ],
+      [
+        12,
+        3
+      ],
+      [
+        12,
+        3
+      ],
+      [
+        12,
+        3
+      ],
+      [
+        12,
+        3
+      ],
+      [
+        12,
+        3
+      ],
+      [
+        12,
+        3
+      ],
+      [
+        12,
+        3
+      ],
+      [
+        12,
+        3
+      ],
+      [
+        12,
+        3
+      ],
+      [
+        12,
+        3
+      ],
+      [
+        12,
+        3
+      ],
+      [
+        12,
+        3
+      ],
+      [
+        12,
+        3
+      ],
+      [
+        12,
+        3
+      ],
+      [
+        12,
+        3
+      ],
+      [
+        12,
+        3
+      ],
+      [
+        12,
+        3
+      ],
+      [
+        12,
+        3
+      ],
+      [
+        12,
+        3
+      ],
+      [
+        12,
+        3
+      ],
+      [
+        12,
+        3
+      ],
+      [
+        12,
+        3
+      ],
+      [
+        12,
+        3
+      ],
+      [
+        12,
+        3
+      ],
+      [
+        12,
+        3
+      ],
+      [
+        12,
+        3
+      ],
+      [
+        12,
+        3
+      ],
+      [
+        12,
+        3
+      ],
+      [
+        12,
+        3
+      ],
+      [
+        12,
+        3
+      ],
+      [
+        12,
+        3
+      ]
+    ],
+    "C": [
+      [
+        14,
+        1
+      ],
+      [
+        13,
+        1
+      ],
+      [
+        13,
+        1
+      ],
+      [
+        13,
+        1
+      ],
+      [
+        13,
+        1
+      ],
+      [
+        13,
+        1
+      ],
+      [
+        13,
+        1
+      ],
+      [
+        13,
+        1
+      ],
+      [
+        13,
+        1
+      ],
+      [
+        13,
+        1
+      ],
+      [
+        13,
+        1
+      ],
+      [
+        13,
+        1
+      ],
+      [
+        13,
+        1
+      ],
+      [
+        13,
+        1
+      ],
+      [
+        13,
+        1
+      ],
+      [
+        13,
+        1
+      ],
+      [
+        13,
+        1
+      ],
+      [
+        13,
+        1
+      ],
+      [
+        13,
+        1
+      ],
+      [
+        13,
+        1
+      ],
+      [
+        13,
+        1
+      ],
+      [
+        13,
+        1
+      ],
+      [
+        13,
+        1
+      ],
+      [
+        13,
+        1
+      ],
+      [
+        13,
+        1
+      ],
+      [
+        13,
+        1
+      ],
+      [
+        13,
+        1
+      ],
+      [
+        13,
+        1
+      ],
+      [
+        13,
+        1
+      ],
+      [
+        13,
+        1
+      ],
+      [
+        13,
+        1
+      ],
+      [
+        13,
+        1
+      ],
+      [
+        13,
+        1
+      ],
+      [
+        13,
+        1
+      ],
+      [
+        13,
+        1
+      ],
+      [
+        13,
+        1
+      ],
+      [
+        13,
+        1
+      ],
+      [
+        13,
+        1
+      ],
+      [
+        13,
+        1
+      ],
+      [
+        13,
+        1
+      ],
+      [
+        13,
+        1
+      ],
+      [
+        13,
+        1
+      ],
+      [
+        13,
+        1
+      ],
+      [
+        13,
+        1
+      ],
+      [
+        13,
+        1
+      ],
+      [
+        13,
+        1
+      ],
+      [
+        13,
+        1
+      ],
+      [
+        13,
+        1
+      ],
+      [
+        13,
+        1
+      ],
+      [
+        13,
+        1
+      ],
+      [
+        13,
+        1
+      ],
+      [
+        13,
+        2
+      ],
+      [
+        12,
+        2
+      ],
+      [
+        11,
+        2
+      ],
+      [
+        10,
+        2
+      ],
+      [
+        9,
+        2
+      ],
+      [
+        8,
+        2
+      ],
+      [
+        7,
+        2
+      ],
+      [
+        6,
+        2
+      ],
+      [
+        5,
+        2
+      ],
+      [
+        4,
+        2
+      ],
+      [
+        3,
+        2
+      ],
+      [
+        2,
+        2
+      ],
+      [
+        2,
+        1
+      ],
+      [
+        2,
+        1
+      ],
+      [
+        2,
+        1
+      ]
+    ],
+    "D": [
+      [
+        14,
+        3
+      ],
+      [
+        13,
+        3
+      ],
+      [
+        13,
+        3
+      ],
+      [
+        13,
+        3
+      ],
+      [
+        13,
+        3
+      ],
+      [
+        13,
+        3
+      ],
+      [
+        13,
+        3
+      ],
+      [
+        13,
+        3
+      ],
+      [
+        13,
+        3
+      ],
+      [
+        13,
+        3
+      ],
+      [
+        13,
+        3
+      ],
+      [
+        13,
+        3
+      ],
+      [
+        13,
+        3
+      ],
+      [
+        13,
+        3
+      ],
+      [
+        13,
+        3
+      ],
+      [
+        13,
+        3
+      ],
+      [
+        13,
+        3
+      ],
+      [
+        13,
+        3
+      ],
+      [
+        13,
+        3
+      ],
+      [
+        13,
+        3
+      ],
+      [
+        13,
+        3
+      ],
+      [
+        13,
+        3
+      ],
+      [
+        13,
+        3
+      ],
+      [
+        13,
+        3
+      ],
+      [
+        13,
+        3
+      ],
+      [
+        13,
+        3
+      ],
+      [
+        13,
+        3
+      ],
+      [
+        13,
+        3
+      ],
+      [
+        13,
+        3
+      ],
+      [
+        13,
+        3
+      ],
+      [
+        13,
+        3
+      ],
+      [
+        13,
+        3
+      ],
+      [
+        13,
+        3
+      ],
+      [
+        13,
+        3
+      ],
+      [
+        13,
+        3
+      ],
+      [
+        13,
+        3
+      ],
+      [
+        13,
+        3
+      ],
+      [
+        13,
+        3
+      ],
+      [
+        13,
+        3
+      ],
+      [
+        13,
+        3
+      ],
+      [
+        13,
+        3
+      ],
+      [
+        13,
+        3
+      ],
+      [
+        13,
+        3
+      ],
+      [
+        13,
+        3
+      ],
+      [
+        13,
+        3
+      ],
+      [
+        13,
+        3
+      ],
+      [
+        13,
+        3
+      ],
+      [
+        13,
+        3
+      ],
+      [
+        13,
+        3
+      ],
+      [
+        13,
+        3
+      ],
+      [
+        13,
+        3
+      ],
+      [
+        13,
+        4
+      ],
+      [
+        12,
+        4
+      ],
+      [
+        11,
+        4
+      ],
+      [
+        11,
+        3
+      ],
+      [
+        11,
+        2
+      ],
+      [
+        10,
+        2
+      ],
+      [
+        9,
+        2
+      ],
+      [
+        8,
+        2
+      ],
+      [
+        7,
+        2
+      ],
+      [
+        6,
+        2
+      ],
+      [
+        5,
+        2
+      ],
+      [
+        4,
+        2
+      ],
+      [
+        3,
+        2
+      ],
+      [
+        2,
+        2
+      ],
+      [
+        2,
+        3
+      ]
+    ]
+  },
+  "supervisor_updates": [
+    {
+      "now": 0,
+      "version": 1,
+      "candidates": 16,
+      "feasible_candidates": 6,
+      "search_seconds": 0.016509680000126536,
+      "score": 102.94805781114705,
+      "predicted_arrival_remaining": {
+        "A": 36,
+        "B": 32,
+        "C": 16,
+        "D": 14
+      },
+      "predicted_min_swept_distance_m": 1.0,
+      "repulsion_energy": 68.17225444495789,
+      "restriction_volume": 176,
+      "windows": {
+        "D": {
+          "open_at": 0,
+          "close_at": 18
+        },
+        "C": {
+          "open_at": 4,
+          "close_at": 18
+        },
+        "B": {
+          "open_at": 20,
+          "close_at": 38
+        },
+        "A": {
+          "open_at": 24,
+          "close_at": 38
+        }
+      },
+      "cut_calls": 0,
+      "full_spacetime_cut_nodes_allocated": 0,
+      "scope": {
+        "live_rovers": 4,
+        "union_reachable_cells": 37,
+        "competing_bottleneck_cells": 15,
+        "estimated_full_XYT_node_count": 2257,
+        "bottleneck_XYT_node_equivalent": 915
+      }
+    },
+    {
+      "now": 10,
+      "version": 2,
+      "candidates": 16,
+      "feasible_candidates": 16,
+      "search_seconds": 0.06709724000029382,
+      "score": 197.4027709308352,
+      "predicted_arrival_remaining": {
+        "A": 24,
+        "B": 21,
+        "C": 70,
+        "D": 70
+      },
+      "predicted_min_swept_distance_m": 1.0,
+      "repulsion_energy": 116.2681561547889,
+      "restriction_volume": 189,
+      "windows": {
+        "D": {
+          "open_at": 0,
+          "close_at": 18
+        },
+        "C": {
+          "open_at": 4,
+          "close_at": 18
+        },
+        "B": {
+          "open_at": 19,
+          "close_at": 38
+        },
+        "A": {
+          "open_at": 22,
+          "close_at": 38
+        }
+      },
+      "cut_calls": 0,
+      "full_spacetime_cut_nodes_allocated": 0,
+      "scope": {
+        "live_rovers": 4,
+        "union_reachable_cells": 37,
+        "competing_bottleneck_cells": 15,
+        "estimated_full_XYT_node_count": 2257,
+        "bottleneck_XYT_node_equivalent": 915
+      }
+    },
+    {
+      "now": 20,
+      "version": 3,
+      "feasible_candidates": 0,
+      "fallback_safe_hold": true,
+      "cut_calls": 0,
+      "scope": {
+        "live_rovers": 4,
+        "union_reachable_cells": 37,
+        "competing_bottleneck_cells": 15,
+        "estimated_full_XYT_node_count": 2257,
+        "bottleneck_XYT_node_equivalent": 915
+      }
+    },
+    {
+      "now": 30,
+      "version": 4,
+      "candidates": 16,
+      "feasible_candidates": 16,
+      "search_seconds": 0.040584322000086104,
+      "score": 168.47141657414997,
+      "predicted_arrival_remaining": {
+        "A": 13,
+        "B": 1,
+        "C": 70,
+        "D": 70
+      },
+      "predicted_min_swept_distance_m": 1.0,
+      "repulsion_energy": 147.77737963071365,
+      "restriction_volume": 127,
+      "windows": {
+        "B": {
+          "open_at": 19,
+          "close_at": 80
+        },
+        "A": {
+          "open_at": 30,
+          "close_at": 80
+        },
+        "C": {
+          "open_at": 82,
+          "close_at": 100
+        },
+        "D": {
+          "open_at": 85,
+          "close_at": 100
+        }
+      },
+      "cut_calls": 0,
+      "full_spacetime_cut_nodes_allocated": 0,
+      "scope": {
+        "live_rovers": 4,
+        "union_reachable_cells": 37,
+        "competing_bottleneck_cells": 15,
+        "estimated_full_XYT_node_count": 2257,
+        "bottleneck_XYT_node_equivalent": 915
+      }
+    },
+    {
+      "now": 40,
+      "version": 5,
+      "candidates": 16,
+      "feasible_candidates": 16,
+      "search_seconds": 0.03339756100012892,
+      "score": 159.37406586699913,
+      "predicted_arrival_remaining": {
+        "A": 3,
+        "B": 0,
+        "C": 70,
+        "D": 70
+      },
+      "predicted_min_swept_distance_m": 1.0,
+      "repulsion_energy": 161.12951238570201,
+      "restriction_volume": 120,
+      "windows": {
+        "A": {
+          "open_at": 30,
+          "close_at": 100
+        },
+        "C": {
+          "open_at": 101,
+          "close_at": 120
+        },
+        "D": {
+          "open_at": 105,
+          "close_at": 120
+        }
+      },
+      "cut_calls": 0,
+      "full_spacetime_cut_nodes_allocated": 0,
+      "scope": {
+        "live_rovers": 3,
+        "union_reachable_cells": 37,
+        "competing_bottleneck_cells": 15,
+        "estimated_full_XYT_node_count": 2257,
+        "bottleneck_XYT_node_equivalent": 915
+      }
+    },
+    {
+      "now": 50,
+      "version": 6,
+      "candidates": 16,
+      "feasible_candidates": 15,
+      "search_seconds": 0.005397867000283441,
+      "score": 33.853728675910055,
+      "predicted_arrival_remaining": {
+        "A": 0,
+        "B": 0,
+        "C": 13,
+        "D": 15
+      },
+      "predicted_min_swept_distance_m": 1.0,
+      "repulsion_energy": 46.65326679871503,
+      "restriction_volume": 88,
+      "windows": {
+        "C": {
+          "open_at": 51,
+          "close_at": 69
+        },
+        "D": {
+          "open_at": 55,
+          "close_at": 69
+        }
+      },
+      "cut_calls": 0,
+      "full_spacetime_cut_nodes_allocated": 0,
+      "scope": {
+        "live_rovers": 2,
+        "union_reachable_cells": 37,
+        "competing_bottleneck_cells": 15,
+        "estimated_full_XYT_node_count": 2257,
+        "bottleneck_XYT_node_equivalent": 915
+      }
+    },
+    {
+      "now": 60,
+      "version": 7,
+      "candidates": 16,
+      "feasible_candidates": 16,
+      "search_seconds": 0.003938742999707756,
+      "score": 10.145661364466761,
+      "predicted_arrival_remaining": {
+        "A": 0,
+        "B": 0,
+        "C": 3,
+        "D": 5
+      },
+      "predicted_min_swept_distance_m": 1.0,
+      "repulsion_energy": 30.652305206668004,
+      "restriction_volume": 0,
+      "windows": {
+        "C": {
+          "open_at": 51,
+          "close_at": 120
+        },
+        "D": {
+          "open_at": 55,
+          "close_at": 120
+        }
+      },
+      "cut_calls": 0,
+      "full_spacetime_cut_nodes_allocated": 0,
+      "scope": {
+        "live_rovers": 2,
+        "union_reachable_cells": 37,
+        "competing_bottleneck_cells": 15,
+        "estimated_full_XYT_node_count": 2257,
+        "bottleneck_XYT_node_equivalent": 915
+      }
+    }
+  ],
+  "timeline": [
+    {
+      "time": 0,
+      "obstacles": [],
+      "position_before": {
+        "A": [
+          0,
+          1
+        ],
+        "B": [
+          0,
+          3
+        ],
+        "C": [
+          14,
+          1
+        ],
+        "D": [
+          14,
+          3
+        ]
+      },
+      "positions": {
+        "A": [
+          1,
+          1
+        ],
+        "B": [
+          1,
+          3
+        ],
+        "C": [
+          13,
+          1
+        ],
+        "D": [
+          13,
+          3
+        ]
+      },
+      "status": {
+        "A": "central_path_command",
+        "B": "central_path_command",
+        "C": "central_path_command",
+        "D": "central_path_command"
+      },
+      "shield_stops": [],
+      "observed_changed": {
+        "A": false,
+        "B": false,
+        "C": false,
+        "D": false
+      },
+      "grant_windows": {
+        "D": {
+          "open_at": 0,
+          "close_at": 18
+        },
+        "C": {
+          "open_at": 4,
+          "close_at": 18
+        },
+        "B": {
+          "open_at": 20,
+          "close_at": 38
+        },
+        "A": {
+          "open_at": 24,
+          "close_at": 38
+        }
+      }
+    },
+    {
+      "time": 1,
+      "obstacles": [
+        [
+          13,
+          2
+        ]
+      ],
+      "position_before": {
+        "A": [
+          1,
+          1
+        ],
+        "B": [
+          1,
+          3
+        ],
+        "C": [
+          13,
+          1
+        ],
+        "D": [
+          13,
+          3
+        ]
+      },
+      "positions": {
+        "A": [
+          1,
+          1
+        ],
+        "B": [
+          1,
+          3
+        ],
+        "C": [
+          13,
+          1
+        ],
+        "D": [
+          13,
+          3
+        ]
+      },
+      "status": {
+        "A": "central_path_command",
+        "B": "central_path_command",
+        "C": "central_path_command",
+        "D": "obstacle_stop"
+      },
+      "shield_stops": [],
+      "observed_changed": {
+        "A": false,
+        "B": false,
+        "C": true,
+        "D": true
+      },
+      "grant_windows": {
+        "D": {
+          "open_at": 0,
+          "close_at": 18
+        },
+        "C": {
+          "open_at": 4,
+          "close_at": 18
+        },
+        "B": {
+          "open_at": 20,
+          "close_at": 38
+        },
+        "A": {
+          "open_at": 24,
+          "close_at": 38
+        }
+      }
+    },
+    {
+      "time": 2,
+      "obstacles": [
+        [
+          13,
+          2
+        ]
+      ],
+      "position_before": {
+        "A": [
+          1,
+          1
+        ],
+        "B": [
+          1,
+          3
+        ],
+        "C": [
+          13,
+          1
+        ],
+        "D": [
+          13,
+          3
+        ]
+      },
+      "positions": {
+        "A": [
+          1,
+          1
+        ],
+        "B": [
+          1,
+          3
+        ],
+        "C": [
+          13,
+          1
+        ],
+        "D": [
+          13,
+          3
+        ]
+      },
+      "status": {
+        "A": "central_path_command",
+        "B": "central_path_command",
+        "C": "central_path_command",
+        "D": "stale_route_stop"
+      },
+      "shield_stops": [],
+      "observed_changed": {
+        "A": false,
+        "B": false,
+        "C": false,
+        "D": false
+      },
+      "grant_windows": {
+        "D": {
+          "open_at": 0,
+          "close_at": 18
+        },
+        "C": {
+          "open_at": 4,
+          "close_at": 18
+        },
+        "B": {
+          "open_at": 20,
+          "close_at": 38
+        },
+        "A": {
+          "open_at": 24,
+          "close_at": 38
+        }
+      }
+    },
+    {
+      "time": 3,
+      "obstacles": [
+        [
+          13,
+          2
+        ]
+      ],
+      "position_before": {
+        "A": [
+          1,
+          1
+        ],
+        "B": [
+          1,
+          3
+        ],
+        "C": [
+          13,
+          1
+        ],
+        "D": [
+          13,
+          3
+        ]
+      },
+      "positions": {
+        "A": [
+          1,
+          1
+        ],
+        "B": [
+          1,
+          3
+        ],
+        "C": [
+          13,
+          1
+        ],
+        "D": [
+          13,
+          3
+        ]
+      },
+      "status": {
+        "A": "central_path_command",
+        "B": "central_path_command",
+        "C": "obstacle_stop",
+        "D": "stale_route_stop"
+      },
+      "shield_stops": [],
+      "observed_changed": {
+        "A": false,
+        "B": false,
+        "C": false,
+        "D": false
+      },
+      "grant_windows": {
+        "D": {
+          "open_at": 0,
+          "close_at": 18
+        },
+        "C": {
+          "open_at": 4,
+          "close_at": 18
+        },
+        "B": {
+          "open_at": 20,
+          "close_at": 38
+        },
+        "A": {
+          "open_at": 24,
+          "close_at": 38
+        }
+      }
+    },
+    {
+      "time": 4,
+      "obstacles": [
+        [
+          13,
+          2
+        ]
+      ],
+      "position_before": {
+        "A": [
+          1,
+          1
+        ],
+        "B": [
+          1,
+          3
+        ],
+        "C": [
+          13,
+          1
+        ],
+        "D": [
+          13,
+          3
+        ]
+      },
+      "positions": {
+        "A": [
+          1,
+          1
+        ],
+        "B": [
+          1,
+          3
+        ],
+        "C": [
+          13,
+          1
+        ],
+        "D": [
+          13,
+          3
+        ]
+      },
+      "status": {
+        "A": "central_path_command",
+        "B": "central_path_command",
+        "C": "stale_route_stop",
+        "D": "stale_route_stop"
+      },
+      "shield_stops": [],
+      "observed_changed": {
+        "A": false,
+        "B": false,
+        "C": false,
+        "D": false
+      },
+      "grant_windows": {
+        "D": {
+          "open_at": 0,
+          "close_at": 18
+        },
+        "C": {
+          "open_at": 4,
+          "close_at": 18
+        },
+        "B": {
+          "open_at": 20,
+          "close_at": 38
+        },
+        "A": {
+          "open_at": 24,
+          "close_at": 38
+        }
+      }
+    },
+    {
+      "time": 5,
+      "obstacles": [
+        [
+          13,
+          2
+        ]
+      ],
+      "position_before": {
+        "A": [
+          1,
+          1
+        ],
+        "B": [
+          1,
+          3
+        ],
+        "C": [
+          13,
+          1
+        ],
+        "D": [
+          13,
+          3
+        ]
+      },
+      "positions": {
+        "A": [
+          1,
+          1
+        ],
+        "B": [
+          1,
+          3
+        ],
+        "C": [
+          13,
+          1
+        ],
+        "D": [
+          13,
+          3
+        ]
+      },
+      "status": {
+        "A": "central_path_command",
+        "B": "central_path_command",
+        "C": "stale_route_stop",
+        "D": "stale_route_stop"
+      },
+      "shield_stops": [],
+      "observed_changed": {
+        "A": false,
+        "B": false,
+        "C": false,
+        "D": false
+      },
+      "grant_windows": {
+        "D": {
+          "open_at": 0,
+          "close_at": 18
+        },
+        "C": {
+          "open_at": 4,
+          "close_at": 18
+        },
+        "B": {
+          "open_at": 20,
+          "close_at": 38
+        },
+        "A": {
+          "open_at": 24,
+          "close_at": 38
+        }
+      }
+    },
+    {
+      "time": 6,
+      "obstacles": [
+        [
+          13,
+          2
+        ]
+      ],
+      "position_before": {
+        "A": [
+          1,
+          1
+        ],
+        "B": [
+          1,
+          3
+        ],
+        "C": [
+          13,
+          1
+        ],
+        "D": [
+          13,
+          3
+        ]
+      },
+      "positions": {
+        "A": [
+          1,
+          1
+        ],
+        "B": [
+          1,
+          3
+        ],
+        "C": [
+          13,
+          1
+        ],
+        "D": [
+          13,
+          3
+        ]
+      },
+      "status": {
+        "A": "central_path_command",
+        "B": "central_path_command",
+        "C": "stale_route_stop",
+        "D": "stale_route_stop"
+      },
+      "shield_stops": [],
+      "observed_changed": {
+        "A": false,
+        "B": false,
+        "C": false,
+        "D": false
+      },
+      "grant_windows": {
+        "D": {
+          "open_at": 0,
+          "close_at": 18
+        },
+        "C": {
+          "open_at": 4,
+          "close_at": 18
+        },
+        "B": {
+          "open_at": 20,
+          "close_at": 38
+        },
+        "A": {
+          "open_at": 24,
+          "close_at": 38
+        }
+      }
+    },
+    {
+      "time": 7,
+      "obstacles": [
+        [
+          13,
+          2
+        ]
+      ],
+      "position_before": {
+        "A": [
+          1,
+          1
+        ],
+        "B": [
+          1,
+          3
+        ],
+        "C": [
+          13,
+          1
+        ],
+        "D": [
+          13,
+          3
+        ]
+      },
+      "positions": {
+        "A": [
+          1,
+          1
+        ],
+        "B": [
+          1,
+          3
+        ],
+        "C": [
+          13,
+          1
+        ],
+        "D": [
+          13,
+          3
+        ]
+      },
+      "status": {
+        "A": "central_path_command",
+        "B": "central_path_command",
+        "C": "stale_route_stop",
+        "D": "stale_route_stop"
+      },
+      "shield_stops": [],
+      "observed_changed": {
+        "A": false,
+        "B": false,
+        "C": false,
+        "D": false
+      },
+      "grant_windows": {
+        "D": {
+          "open_at": 0,
+          "close_at": 18
+        },
+        "C": {
+          "open_at": 4,
+          "close_at": 18
+        },
+        "B": {
+          "open_at": 20,
+          "close_at": 38
+        },
+        "A": {
+          "open_at": 24,
+          "close_at": 38
+        }
+      }
+    },
+    {
+      "time": 8,
+      "obstacles": [
+        [
+          13,
+          2
+        ]
+      ],
+      "position_before": {
+        "A": [
+          1,
+          1
+        ],
+        "B": [
+          1,
+          3
+        ],
+        "C": [
+          13,
+          1
+        ],
+        "D": [
+          13,
+          3
+        ]
+      },
+      "positions": {
+        "A": [
+          1,
+          1
+        ],
+        "B": [
+          1,
+          3
+        ],
+        "C": [
+          13,
+          1
+        ],
+        "D": [
+          13,
+          3
+        ]
+      },
+      "status": {
+        "A": "central_path_command",
+        "B": "central_path_command",
+        "C": "stale_route_stop",
+        "D": "stale_route_stop"
+      },
+      "shield_stops": [],
+      "observed_changed": {
+        "A": false,
+        "B": false,
+        "C": false,
+        "D": false
+      },
+      "grant_windows": {
+        "D": {
+          "open_at": 0,
+          "close_at": 18
+        },
+        "C": {
+          "open_at": 4,
+          "close_at": 18
+        },
+        "B": {
+          "open_at": 20,
+          "close_at": 38
+        },
+        "A": {
+          "open_at": 24,
+          "close_at": 38
+        }
+      }
+    },
+    {
+      "time": 9,
+      "obstacles": [
+        [
+          13,
+          2
+        ]
+      ],
+      "position_before": {
+        "A": [
+          1,
+          1
+        ],
+        "B": [
+          1,
+          3
+        ],
+        "C": [
+          13,
+          1
+        ],
+        "D": [
+          13,
+          3
+        ]
+      },
+      "positions": {
+        "A": [
+          1,
+          1
+        ],
+        "B": [
+          1,
+          3
+        ],
+        "C": [
+          13,
+          1
+        ],
+        "D": [
+          13,
+          3
+        ]
+      },
+      "status": {
+        "A": "central_path_command",
+        "B": "central_path_command",
+        "C": "stale_route_stop",
+        "D": "stale_route_stop"
+      },
+      "shield_stops": [],
+      "observed_changed": {
+        "A": false,
+        "B": false,
+        "C": false,
+        "D": false
+      },
+      "grant_windows": {
+        "D": {
+          "open_at": 0,
+          "close_at": 18
+        },
+        "C": {
+          "open_at": 4,
+          "close_at": 18
+        },
+        "B": {
+          "open_at": 20,
+          "close_at": 38
+        },
+        "A": {
+          "open_at": 24,
+          "close_at": 38
+        }
+      }
+    },
+    {
+      "time": 10,
+      "obstacles": [
+        [
+          13,
+          2
+        ]
+      ],
+      "position_before": {
+        "A": [
+          1,
+          1
+        ],
+        "B": [
+          1,
+          3
+        ],
+        "C": [
+          13,
+          1
+        ],
+        "D": [
+          13,
+          3
+        ]
+      },
+      "positions": {
+        "A": [
+          1,
+          1
+        ],
+        "B": [
+          1,
+          3
+        ],
+        "C": [
+          13,
+          1
+        ],
+        "D": [
+          13,
+          3
+        ]
+      },
+      "status": {
+        "A": "central_path_command",
+        "B": "central_path_command",
+        "C": "central_path_command",
+        "D": "central_path_command"
+      },
+      "shield_stops": [],
+      "observed_changed": {
+        "A": false,
+        "B": false,
+        "C": false,
+        "D": false
+      },
+      "grant_windows": {
+        "D": {
+          "open_at": 0,
+          "close_at": 18
+        },
+        "C": {
+          "open_at": 4,
+          "close_at": 18
+        },
+        "B": {
+          "open_at": 19,
+          "close_at": 38
+        },
+        "A": {
+          "open_at": 22,
+          "close_at": 38
+        }
+      }
+    },
+    {
+      "time": 11,
+      "obstacles": [
+        [
+          13,
+          2
+        ]
+      ],
+      "position_before": {
+        "A": [
+          1,
+          1
+        ],
+        "B": [
+          1,
+          3
+        ],
+        "C": [
+          13,
+          1
+        ],
+        "D": [
+          13,
+          3
+        ]
+      },
+      "positions": {
+        "A": [
+          1,
+          1
+        ],
+        "B": [
+          1,
+          3
+        ],
+        "C": [
+          13,
+          1
+        ],
+        "D": [
+          13,
+          3
+        ]
+      },
+      "status": {
+        "A": "central_path_command",
+        "B": "central_path_command",
+        "C": "central_path_command",
+        "D": "central_path_command"
+      },
+      "shield_stops": [],
+      "observed_changed": {
+        "A": false,
+        "B": false,
+        "C": false,
+        "D": false
+      },
+      "grant_windows": {
+        "D": {
+          "open_at": 0,
+          "close_at": 18
+        },
+        "C": {
+          "open_at": 4,
+          "close_at": 18
+        },
+        "B": {
+          "open_at": 19,
+          "close_at": 38
+        },
+        "A": {
+          "open_at": 22,
+          "close_at": 38
+        }
+      }
+    },
+    {
+      "time": 12,
+      "obstacles": [
+        [
+          13,
+          2
+        ]
+      ],
+      "position_before": {
+        "A": [
+          1,
+          1
+        ],
+        "B": [
+          1,
+          3
+        ],
+        "C": [
+          13,
+          1
+        ],
+        "D": [
+          13,
+          3
+        ]
+      },
+      "positions": {
+        "A": [
+          1,
+          1
+        ],
+        "B": [
+          1,
+          3
+        ],
+        "C": [
+          13,
+          1
+        ],
+        "D": [
+          13,
+          3
+        ]
+      },
+      "status": {
+        "A": "central_path_command",
+        "B": "central_path_command",
+        "C": "central_path_command",
+        "D": "central_path_command"
+      },
+      "shield_stops": [],
+      "observed_changed": {
+        "A": false,
+        "B": false,
+        "C": false,
+        "D": false
+      },
+      "grant_windows": {
+        "D": {
+          "open_at": 0,
+          "close_at": 18
+        },
+        "C": {
+          "open_at": 4,
+          "close_at": 18
+        },
+        "B": {
+          "open_at": 19,
+          "close_at": 38
+        },
+        "A": {
+          "open_at": 22,
+          "close_at": 38
+        }
+      }
+    },
+    {
+      "time": 13,
+      "obstacles": [
+        [
+          13,
+          2
+        ]
+      ],
+      "position_before": {
+        "A": [
+          1,
+          1
+        ],
+        "B": [
+          1,
+          3
+        ],
+        "C": [
+          13,
+          1
+        ],
+        "D": [
+          13,
+          3
+        ]
+      },
+      "positions": {
+        "A": [
+          1,
+          1
+        ],
+        "B": [
+          1,
+          3
+        ],
+        "C": [
+          13,
+          1
+        ],
+        "D": [
+          13,
+          3
+        ]
+      },
+      "status": {
+        "A": "central_path_command",
+        "B": "central_path_command",
+        "C": "central_path_command",
+        "D": "central_path_command"
+      },
+      "shield_stops": [],
+      "observed_changed": {
+        "A": false,
+        "B": false,
+        "C": false,
+        "D": false
+      },
+      "grant_windows": {
+        "D": {
+          "open_at": 0,
+          "close_at": 18
+        },
+        "C": {
+          "open_at": 4,
+          "close_at": 18
+        },
+        "B": {
+          "open_at": 19,
+          "close_at": 38
+        },
+        "A": {
+          "open_at": 22,
+          "close_at": 38
+        }
+      }
+    },
+    {
+      "time": 14,
+      "obstacles": [
+        [
+          13,
+          2
+        ]
+      ],
+      "position_before": {
+        "A": [
+          1,
+          1
+        ],
+        "B": [
+          1,
+          3
+        ],
+        "C": [
+          13,
+          1
+        ],
+        "D": [
+          13,
+          3
+        ]
+      },
+      "positions": {
+        "A": [
+          1,
+          1
+        ],
+        "B": [
+          1,
+          3
+        ],
+        "C": [
+          13,
+          1
+        ],
+        "D": [
+          13,
+          3
+        ]
+      },
+      "status": {
+        "A": "central_path_command",
+        "B": "central_path_command",
+        "C": "central_path_command",
+        "D": "central_path_command"
+      },
+      "shield_stops": [],
+      "observed_changed": {
+        "A": false,
+        "B": false,
+        "C": false,
+        "D": false
+      },
+      "grant_windows": {
+        "D": {
+          "open_at": 0,
+          "close_at": 18
+        },
+        "C": {
+          "open_at": 4,
+          "close_at": 18
+        },
+        "B": {
+          "open_at": 19,
+          "close_at": 38
+        },
+        "A": {
+          "open_at": 22,
+          "close_at": 38
+        }
+      }
+    },
+    {
+      "time": 15,
+      "obstacles": [
+        [
+          13,
+          2
+        ]
+      ],
+      "position_before": {
+        "A": [
+          1,
+          1
+        ],
+        "B": [
+          1,
+          3
+        ],
+        "C": [
+          13,
+          1
+        ],
+        "D": [
+          13,
+          3
+        ]
+      },
+      "positions": {
+        "A": [
+          1,
+          1
+        ],
+        "B": [
+          1,
+          3
+        ],
+        "C": [
+          13,
+          1
+        ],
+        "D": [
+          13,
+          3
+        ]
+      },
+      "status": {
+        "A": "central_path_command",
+        "B": "central_path_command",
+        "C": "central_path_command",
+        "D": "central_path_command"
+      },
+      "shield_stops": [],
+      "observed_changed": {
+        "A": false,
+        "B": false,
+        "C": false,
+        "D": false
+      },
+      "grant_windows": {
+        "D": {
+          "open_at": 0,
+          "close_at": 18
+        },
+        "C": {
+          "open_at": 4,
+          "close_at": 18
+        },
+        "B": {
+          "open_at": 19,
+          "close_at": 38
+        },
+        "A": {
+          "open_at": 22,
+          "close_at": 38
+        }
+      }
+    },
+    {
+      "time": 16,
+      "obstacles": [
+        [
+          13,
+          2
+        ]
+      ],
+      "position_before": {
+        "A": [
+          1,
+          1
+        ],
+        "B": [
+          1,
+          3
+        ],
+        "C": [
+          13,
+          1
+        ],
+        "D": [
+          13,
+          3
+        ]
+      },
+      "positions": {
+        "A": [
+          1,
+          1
+        ],
+        "B": [
+          1,
+          3
+        ],
+        "C": [
+          13,
+          1
+        ],
+        "D": [
+          13,
+          3
+        ]
+      },
+      "status": {
+        "A": "central_path_command",
+        "B": "central_path_command",
+        "C": "central_path_command",
+        "D": "central_path_command"
+      },
+      "shield_stops": [],
+      "observed_changed": {
+        "A": false,
+        "B": false,
+        "C": false,
+        "D": false
+      },
+      "grant_windows": {
+        "D": {
+          "open_at": 0,
+          "close_at": 18
+        },
+        "C": {
+          "open_at": 4,
+          "close_at": 18
+        },
+        "B": {
+          "open_at": 19,
+          "close_at": 38
+        },
+        "A": {
+          "open_at": 22,
+          "close_at": 38
+        }
+      }
+    },
+    {
+      "time": 17,
+      "obstacles": [
+        [
+          13,
+          2
+        ]
+      ],
+      "position_before": {
+        "A": [
+          1,
+          1
+        ],
+        "B": [
+          1,
+          3
+        ],
+        "C": [
+          13,
+          1
+        ],
+        "D": [
+          13,
+          3
+        ]
+      },
+      "positions": {
+        "A": [
+          1,
+          1
+        ],
+        "B": [
+          1,
+          3
+        ],
+        "C": [
+          13,
+          1
+        ],
+        "D": [
+          13,
+          3
+        ]
+      },
+      "status": {
+        "A": "central_path_command",
+        "B": "central_path_command",
+        "C": "central_path_command",
+        "D": "central_path_command"
+      },
+      "shield_stops": [],
+      "observed_changed": {
+        "A": false,
+        "B": false,
+        "C": false,
+        "D": false
+      },
+      "grant_windows": {
+        "D": {
+          "open_at": 0,
+          "close_at": 18
+        },
+        "C": {
+          "open_at": 4,
+          "close_at": 18
+        },
+        "B": {
+          "open_at": 19,
+          "close_at": 38
+        },
+        "A": {
+          "open_at": 22,
+          "close_at": 38
+        }
+      }
+    },
+    {
+      "time": 18,
+      "obstacles": [],
+      "position_before": {
+        "A": [
+          1,
+          1
+        ],
+        "B": [
+          1,
+          3
+        ],
+        "C": [
+          13,
+          1
+        ],
+        "D": [
+          13,
+          3
+        ]
+      },
+      "positions": {
+        "A": [
+          1,
+          1
+        ],
+        "B": [
+          1,
+          2
+        ],
+        "C": [
+          13,
+          1
+        ],
+        "D": [
+          13,
+          3
+        ]
+      },
+      "status": {
+        "A": "central_path_command",
+        "B": "central_path_command",
+        "C": "central_path_command",
+        "D": "central_path_command"
+      },
+      "shield_stops": [],
+      "observed_changed": {
+        "A": false,
+        "B": false,
+        "C": true,
+        "D": true
+      },
+      "grant_windows": {
+        "D": {
+          "open_at": 0,
+          "close_at": 18
+        },
+        "C": {
+          "open_at": 4,
+          "close_at": 18
+        },
+        "B": {
+          "open_at": 19,
+          "close_at": 38
+        },
+        "A": {
+          "open_at": 22,
+          "close_at": 38
+        }
+      }
+    },
+    {
+      "time": 19,
+      "obstacles": [],
+      "position_before": {
+        "A": [
+          1,
+          1
+        ],
+        "B": [
+          1,
+          2
+        ],
+        "C": [
+          13,
+          1
+        ],
+        "D": [
+          13,
+          3
+        ]
+      },
+      "positions": {
+        "A": [
+          1,
+          1
+        ],
+        "B": [
+          2,
+          2
+        ],
+        "C": [
+          13,
+          1
+        ],
+        "D": [
+          13,
+          3
+        ]
+      },
+      "status": {
+        "A": "central_path_command",
+        "B": "central_path_command",
+        "C": "central_path_command",
+        "D": "central_path_command"
+      },
+      "shield_stops": [],
+      "observed_changed": {
+        "A": false,
+        "B": false,
+        "C": false,
+        "D": false
+      },
+      "grant_windows": {
+        "D": {
+          "open_at": 0,
+          "close_at": 18
+        },
+        "C": {
+          "open_at": 4,
+          "close_at": 18
+        },
+        "B": {
+          "open_at": 19,
+          "close_at": 38
+        },
+        "A": {
+          "open_at": 22,
+          "close_at": 38
+        }
+      }
+    },
+    {
+      "time": 20,
+      "obstacles": [],
+      "position_before": {
+        "A": [
+          1,
+          1
+        ],
+        "B": [
+          2,
+          2
+        ],
+        "C": [
+          13,
+          1
+        ],
+        "D": [
+          13,
+          3
+        ]
+      },
+      "positions": {
+        "A": [
+          1,
+          1
+        ],
+        "B": [
+          3,
+          2
+        ],
+        "C": [
+          13,
+          1
+        ],
+        "D": [
+          13,
+          3
+        ]
+      },
+      "status": {
+        "A": "central_path_command",
+        "B": "central_path_command",
+        "C": "central_path_command",
+        "D": "central_path_command"
+      },
+      "shield_stops": [],
+      "observed_changed": {
+        "A": false,
+        "B": false,
+        "C": false,
+        "D": false
+      },
+      "grant_windows": {
+        "B": {
+          "open_at": 19,
+          "close_at": 80
+        }
+      }
+    },
+    {
+      "time": 21,
+      "obstacles": [],
+      "position_before": {
+        "A": [
+          1,
+          1
+        ],
+        "B": [
+          3,
+          2
+        ],
+        "C": [
+          13,
+          1
+        ],
+        "D": [
+          13,
+          3
+        ]
+      },
+      "positions": {
+        "A": [
+          1,
+          1
+        ],
+        "B": [
+          4,
+          2
+        ],
+        "C": [
+          13,
+          1
+        ],
+        "D": [
+          13,
+          3
+        ]
+      },
+      "status": {
+        "A": "central_path_command",
+        "B": "central_path_command",
+        "C": "central_path_command",
+        "D": "central_path_command"
+      },
+      "shield_stops": [],
+      "observed_changed": {
+        "A": false,
+        "B": false,
+        "C": false,
+        "D": false
+      },
+      "grant_windows": {
+        "B": {
+          "open_at": 19,
+          "close_at": 80
+        }
+      }
+    },
+    {
+      "time": 22,
+      "obstacles": [],
+      "position_before": {
+        "A": [
+          1,
+          1
+        ],
+        "B": [
+          4,
+          2
+        ],
+        "C": [
+          13,
+          1
+        ],
+        "D": [
+          13,
+          3
+        ]
+      },
+      "positions": {
+        "A": [
+          1,
+          1
+        ],
+        "B": [
+          5,
+          2
+        ],
+        "C": [
+          13,
+          1
+        ],
+        "D": [
+          13,
+          3
+        ]
+      },
+      "status": {
+        "A": "central_path_command",
+        "B": "central_path_command",
+        "C": "central_path_command",
+        "D": "central_path_command"
+      },
+      "shield_stops": [],
+      "observed_changed": {
+        "A": false,
+        "B": false,
+        "C": false,
+        "D": false
+      },
+      "grant_windows": {
+        "B": {
+          "open_at": 19,
+          "close_at": 80
+        }
+      }
+    },
+    {
+      "time": 23,
+      "obstacles": [],
+      "position_before": {
+        "A": [
+          1,
+          1
+        ],
+        "B": [
+          5,
+          2
+        ],
+        "C": [
+          13,
+          1
+        ],
+        "D": [
+          13,
+          3
+        ]
+      },
+      "positions": {
+        "A": [
+          1,
+          1
+        ],
+        "B": [
+          6,
+          2
+        ],
+        "C": [
+          13,
+          1
+        ],
+        "D": [
+          13,
+          3
+        ]
+      },
+      "status": {
+        "A": "central_path_command",
+        "B": "central_path_command",
+        "C": "central_path_command",
+        "D": "central_path_command"
+      },
+      "shield_stops": [],
+      "observed_changed": {
+        "A": false,
+        "B": false,
+        "C": false,
+        "D": false
+      },
+      "grant_windows": {
+        "B": {
+          "open_at": 19,
+          "close_at": 80
+        }
+      }
+    },
+    {
+      "time": 24,
+      "obstacles": [],
+      "position_before": {
+        "A": [
+          1,
+          1
+        ],
+        "B": [
+          6,
+          2
+        ],
+        "C": [
+          13,
+          1
+        ],
+        "D": [
+          13,
+          3
+        ]
+      },
+      "positions": {
+        "A": [
+          1,
+          1
+        ],
+        "B": [
+          7,
+          2
+        ],
+        "C": [
+          13,
+          1
+        ],
+        "D": [
+          13,
+          3
+        ]
+      },
+      "status": {
+        "A": "central_path_command",
+        "B": "central_path_command",
+        "C": "central_path_command",
+        "D": "central_path_command"
+      },
+      "shield_stops": [],
+      "observed_changed": {
+        "A": false,
+        "B": false,
+        "C": false,
+        "D": false
+      },
+      "grant_windows": {
+        "B": {
+          "open_at": 19,
+          "close_at": 80
+        }
+      }
+    },
+    {
+      "time": 25,
+      "obstacles": [],
+      "position_before": {
+        "A": [
+          1,
+          1
+        ],
+        "B": [
+          7,
+          2
+        ],
+        "C": [
+          13,
+          1
+        ],
+        "D": [
+          13,
+          3
+        ]
+      },
+      "positions": {
+        "A": [
+          1,
+          1
+        ],
+        "B": [
+          8,
+          2
+        ],
+        "C": [
+          13,
+          1
+        ],
+        "D": [
+          13,
+          3
+        ]
+      },
+      "status": {
+        "A": "central_path_command",
+        "B": "central_path_command",
+        "C": "central_path_command",
+        "D": "central_path_command"
+      },
+      "shield_stops": [],
+      "observed_changed": {
+        "A": false,
+        "B": false,
+        "C": false,
+        "D": false
+      },
+      "grant_windows": {
+        "B": {
+          "open_at": 19,
+          "close_at": 80
+        }
+      }
+    },
+    {
+      "time": 26,
+      "obstacles": [],
+      "position_before": {
+        "A": [
+          1,
+          1
+        ],
+        "B": [
+          8,
+          2
+        ],
+        "C": [
+          13,
+          1
+        ],
+        "D": [
+          13,
+          3
+        ]
+      },
+      "positions": {
+        "A": [
+          1,
+          1
+        ],
+        "B": [
+          9,
+          2
+        ],
+        "C": [
+          13,
+          1
+        ],
+        "D": [
+          13,
+          3
+        ]
+      },
+      "status": {
+        "A": "central_path_command",
+        "B": "central_path_command",
+        "C": "central_path_command",
+        "D": "central_path_command"
+      },
+      "shield_stops": [],
+      "observed_changed": {
+        "A": false,
+        "B": false,
+        "C": false,
+        "D": false
+      },
+      "grant_windows": {
+        "B": {
+          "open_at": 19,
+          "close_at": 80
+        }
+      }
+    },
+    {
+      "time": 27,
+      "obstacles": [],
+      "position_before": {
+        "A": [
+          1,
+          1
+        ],
+        "B": [
+          9,
+          2
+        ],
+        "C": [
+          13,
+          1
+        ],
+        "D": [
+          13,
+          3
+        ]
+      },
+      "positions": {
+        "A": [
+          1,
+          1
+        ],
+        "B": [
+          10,
+          2
+        ],
+        "C": [
+          13,
+          1
+        ],
+        "D": [
+          13,
+          3
+        ]
+      },
+      "status": {
+        "A": "central_path_command",
+        "B": "central_path_command",
+        "C": "central_path_command",
+        "D": "central_path_command"
+      },
+      "shield_stops": [],
+      "observed_changed": {
+        "A": false,
+        "B": false,
+        "C": false,
+        "D": false
+      },
+      "grant_windows": {
+        "B": {
+          "open_at": 19,
+          "close_at": 80
+        }
+      }
+    },
+    {
+      "time": 28,
+      "obstacles": [],
+      "position_before": {
+        "A": [
+          1,
+          1
+        ],
+        "B": [
+          10,
+          2
+        ],
+        "C": [
+          13,
+          1
+        ],
+        "D": [
+          13,
+          3
+        ]
+      },
+      "positions": {
+        "A": [
+          1,
+          1
+        ],
+        "B": [
+          11,
+          2
+        ],
+        "C": [
+          13,
+          1
+        ],
+        "D": [
+          13,
+          3
+        ]
+      },
+      "status": {
+        "A": "central_path_command",
+        "B": "central_path_command",
+        "C": "central_path_command",
+        "D": "central_path_command"
+      },
+      "shield_stops": [],
+      "observed_changed": {
+        "A": false,
+        "B": false,
+        "C": false,
+        "D": false
+      },
+      "grant_windows": {
+        "B": {
+          "open_at": 19,
+          "close_at": 80
+        }
+      }
+    },
+    {
+      "time": 29,
+      "obstacles": [],
+      "position_before": {
+        "A": [
+          1,
+          1
+        ],
+        "B": [
+          11,
+          2
+        ],
+        "C": [
+          13,
+          1
+        ],
+        "D": [
+          13,
+          3
+        ]
+      },
+      "positions": {
+        "A": [
+          1,
+          1
+        ],
+        "B": [
+          11,
+          3
+        ],
+        "C": [
+          13,
+          1
+        ],
+        "D": [
+          13,
+          3
+        ]
+      },
+      "status": {
+        "A": "central_path_command",
+        "B": "central_path_command",
+        "C": "central_path_command",
+        "D": "central_path_command"
+      },
+      "shield_stops": [],
+      "observed_changed": {
+        "A": false,
+        "B": false,
+        "C": false,
+        "D": false
+      },
+      "grant_windows": {
+        "B": {
+          "open_at": 19,
+          "close_at": 80
+        }
+      }
+    },
+    {
+      "time": 30,
+      "obstacles": [],
+      "position_before": {
+        "A": [
+          1,
+          1
+        ],
+        "B": [
+          11,
+          3
+        ],
+        "C": [
+          13,
+          1
+        ],
+        "D": [
+          13,
+          3
+        ]
+      },
+      "positions": {
+        "A": [
+          1,
+          2
+        ],
+        "B": [
+          12,
+          3
+        ],
+        "C": [
+          13,
+          1
+        ],
+        "D": [
+          13,
+          3
+        ]
+      },
+      "status": {
+        "A": "central_path_command",
+        "B": "central_path_command",
+        "C": "central_path_command",
+        "D": "central_path_command"
+      },
+      "shield_stops": [],
+      "observed_changed": {
+        "A": false,
+        "B": false,
+        "C": false,
+        "D": false
+      },
+      "grant_windows": {
+        "B": {
+          "open_at": 19,
+          "close_at": 80
+        },
+        "A": {
+          "open_at": 30,
+          "close_at": 80
+        },
+        "C": {
+          "open_at": 82,
+          "close_at": 100
+        },
+        "D": {
+          "open_at": 85,
+          "close_at": 100
+        }
+      }
+    },
+    {
+      "time": 31,
+      "obstacles": [],
+      "position_before": {
+        "A": [
+          1,
+          2
+        ],
+        "B": [
+          12,
+          3
+        ],
+        "C": [
+          13,
+          1
+        ],
+        "D": [
+          13,
+          3
+        ]
+      },
+      "positions": {
+        "A": [
+          2,
+          2
+        ],
+        "B": [
+          12,
+          3
+        ],
+        "C": [
+          13,
+          1
+        ],
+        "D": [
+          13,
+          3
+        ]
+      },
+      "status": {
+        "A": "central_path_command",
+        "B": "central_path_command",
+        "C": "central_path_command",
+        "D": "central_path_command"
+      },
+      "shield_stops": [],
+      "observed_changed": {
+        "A": false,
+        "B": false,
+        "C": false,
+        "D": false
+      },
+      "grant_windows": {
+        "B": {
+          "open_at": 19,
+          "close_at": 80
+        },
+        "A": {
+          "open_at": 30,
+          "close_at": 80
+        },
+        "C": {
+          "open_at": 82,
+          "close_at": 100
+        },
+        "D": {
+          "open_at": 85,
+          "close_at": 100
+        }
+      }
+    },
+    {
+      "time": 32,
+      "obstacles": [],
+      "position_before": {
+        "A": [
+          2,
+          2
+        ],
+        "B": [
+          12,
+          3
+        ],
+        "C": [
+          13,
+          1
+        ],
+        "D": [
+          13,
+          3
+        ]
+      },
+      "positions": {
+        "A": [
+          3,
+          2
+        ],
+        "B": [
+          12,
+          3
+        ],
+        "C": [
+          13,
+          1
+        ],
+        "D": [
+          13,
+          3
+        ]
+      },
+      "status": {
+        "A": "central_path_command",
+        "B": "central_path_command",
+        "C": "central_path_command",
+        "D": "central_path_command"
+      },
+      "shield_stops": [],
+      "observed_changed": {
+        "A": false,
+        "B": false,
+        "C": false,
+        "D": false
+      },
+      "grant_windows": {
+        "B": {
+          "open_at": 19,
+          "close_at": 80
+        },
+        "A": {
+          "open_at": 30,
+          "close_at": 80
+        },
+        "C": {
+          "open_at": 82,
+          "close_at": 100
+        },
+        "D": {
+          "open_at": 85,
+          "close_at": 100
+        }
+      }
+    },
+    {
+      "time": 33,
+      "obstacles": [],
+      "position_before": {
+        "A": [
+          3,
+          2
+        ],
+        "B": [
+          12,
+          3
+        ],
+        "C": [
+          13,
+          1
+        ],
+        "D": [
+          13,
+          3
+        ]
+      },
+      "positions": {
+        "A": [
+          4,
+          2
+        ],
+        "B": [
+          12,
+          3
+        ],
+        "C": [
+          13,
+          1
+        ],
+        "D": [
+          13,
+          3
+        ]
+      },
+      "status": {
+        "A": "central_path_command",
+        "B": "central_path_command",
+        "C": "central_path_command",
+        "D": "central_path_command"
+      },
+      "shield_stops": [],
+      "observed_changed": {
+        "A": false,
+        "B": false,
+        "C": false,
+        "D": false
+      },
+      "grant_windows": {
+        "B": {
+          "open_at": 19,
+          "close_at": 80
+        },
+        "A": {
+          "open_at": 30,
+          "close_at": 80
+        },
+        "C": {
+          "open_at": 82,
+          "close_at": 100
+        },
+        "D": {
+          "open_at": 85,
+          "close_at": 100
+        }
+      }
+    },
+    {
+      "time": 34,
+      "obstacles": [],
+      "position_before": {
+        "A": [
+          4,
+          2
+        ],
+        "B": [
+          12,
+          3
+        ],
+        "C": [
+          13,
+          1
+        ],
+        "D": [
+          13,
+          3
+        ]
+      },
+      "positions": {
+        "A": [
+          5,
+          2
+        ],
+        "B": [
+          12,
+          3
+        ],
+        "C": [
+          13,
+          1
+        ],
+        "D": [
+          13,
+          3
+        ]
+      },
+      "status": {
+        "A": "central_path_command",
+        "B": "central_path_command",
+        "C": "central_path_command",
+        "D": "central_path_command"
+      },
+      "shield_stops": [],
+      "observed_changed": {
+        "A": false,
+        "B": false,
+        "C": false,
+        "D": false
+      },
+      "grant_windows": {
+        "B": {
+          "open_at": 19,
+          "close_at": 80
+        },
+        "A": {
+          "open_at": 30,
+          "close_at": 80
+        },
+        "C": {
+          "open_at": 82,
+          "close_at": 100
+        },
+        "D": {
+          "open_at": 85,
+          "close_at": 100
+        }
+      }
+    },
+    {
+      "time": 35,
+      "obstacles": [],
+      "position_before": {
+        "A": [
+          5,
+          2
+        ],
+        "B": [
+          12,
+          3
+        ],
+        "C": [
+          13,
+          1
+        ],
+        "D": [
+          13,
+          3
+        ]
+      },
+      "positions": {
+        "A": [
+          6,
+          2
+        ],
+        "B": [
+          12,
+          3
+        ],
+        "C": [
+          13,
+          1
+        ],
+        "D": [
+          13,
+          3
+        ]
+      },
+      "status": {
+        "A": "central_path_command",
+        "B": "central_path_command",
+        "C": "central_path_command",
+        "D": "central_path_command"
+      },
+      "shield_stops": [],
+      "observed_changed": {
+        "A": false,
+        "B": false,
+        "C": false,
+        "D": false
+      },
+      "grant_windows": {
+        "B": {
+          "open_at": 19,
+          "close_at": 80
+        },
+        "A": {
+          "open_at": 30,
+          "close_at": 80
+        },
+        "C": {
+          "open_at": 82,
+          "close_at": 100
+        },
+        "D": {
+          "open_at": 85,
+          "close_at": 100
+        }
+      }
+    },
+    {
+      "time": 36,
+      "obstacles": [],
+      "position_before": {
+        "A": [
+          6,
+          2
+        ],
+        "B": [
+          12,
+          3
+        ],
+        "C": [
+          13,
+          1
+        ],
+        "D": [
+          13,
+          3
+        ]
+      },
+      "positions": {
+        "A": [
+          7,
+          2
+        ],
+        "B": [
+          12,
+          3
+        ],
+        "C": [
+          13,
+          1
+        ],
+        "D": [
+          13,
+          3
+        ]
+      },
+      "status": {
+        "A": "central_path_command",
+        "B": "central_path_command",
+        "C": "central_path_command",
+        "D": "central_path_command"
+      },
+      "shield_stops": [],
+      "observed_changed": {
+        "A": false,
+        "B": false,
+        "C": false,
+        "D": false
+      },
+      "grant_windows": {
+        "B": {
+          "open_at": 19,
+          "close_at": 80
+        },
+        "A": {
+          "open_at": 30,
+          "close_at": 80
+        },
+        "C": {
+          "open_at": 82,
+          "close_at": 100
+        },
+        "D": {
+          "open_at": 85,
+          "close_at": 100
+        }
+      }
+    },
+    {
+      "time": 37,
+      "obstacles": [],
+      "position_before": {
+        "A": [
+          7,
+          2
+        ],
+        "B": [
+          12,
+          3
+        ],
+        "C": [
+          13,
+          1
+        ],
+        "D": [
+          13,
+          3
+        ]
+      },
+      "positions": {
+        "A": [
+          8,
+          2
+        ],
+        "B": [
+          12,
+          3
+        ],
+        "C": [
+          13,
+          1
+        ],
+        "D": [
+          13,
+          3
+        ]
+      },
+      "status": {
+        "A": "central_path_command",
+        "B": "central_path_command",
+        "C": "central_path_command",
+        "D": "central_path_command"
+      },
+      "shield_stops": [],
+      "observed_changed": {
+        "A": false,
+        "B": false,
+        "C": false,
+        "D": false
+      },
+      "grant_windows": {
+        "B": {
+          "open_at": 19,
+          "close_at": 80
+        },
+        "A": {
+          "open_at": 30,
+          "close_at": 80
+        },
+        "C": {
+          "open_at": 82,
+          "close_at": 100
+        },
+        "D": {
+          "open_at": 85,
+          "close_at": 100
+        }
+      }
+    },
+    {
+      "time": 38,
+      "obstacles": [],
+      "position_before": {
+        "A": [
+          8,
+          2
+        ],
+        "B": [
+          12,
+          3
+        ],
+        "C": [
+          13,
+          1
+        ],
+        "D": [
+          13,
+          3
+        ]
+      },
+      "positions": {
+        "A": [
+          9,
+          2
+        ],
+        "B": [
+          12,
+          3
+        ],
+        "C": [
+          13,
+          1
+        ],
+        "D": [
+          13,
+          3
+        ]
+      },
+      "status": {
+        "A": "central_path_command",
+        "B": "central_path_command",
+        "C": "central_path_command",
+        "D": "central_path_command"
+      },
+      "shield_stops": [],
+      "observed_changed": {
+        "A": false,
+        "B": false,
+        "C": false,
+        "D": false
+      },
+      "grant_windows": {
+        "B": {
+          "open_at": 19,
+          "close_at": 80
+        },
+        "A": {
+          "open_at": 30,
+          "close_at": 80
+        },
+        "C": {
+          "open_at": 82,
+          "close_at": 100
+        },
+        "D": {
+          "open_at": 85,
+          "close_at": 100
+        }
+      }
+    },
+    {
+      "time": 39,
+      "obstacles": [],
+      "position_before": {
+        "A": [
+          9,
+          2
+        ],
+        "B": [
+          12,
+          3
+        ],
+        "C": [
+          13,
+          1
+        ],
+        "D": [
+          13,
+          3
+        ]
+      },
+      "positions": {
+        "A": [
+          10,
+          2
+        ],
+        "B": [
+          12,
+          3
+        ],
+        "C": [
+          13,
+          1
+        ],
+        "D": [
+          13,
+          3
+        ]
+      },
+      "status": {
+        "A": "central_path_command",
+        "B": "central_path_command",
+        "C": "central_path_command",
+        "D": "central_path_command"
+      },
+      "shield_stops": [],
+      "observed_changed": {
+        "A": false,
+        "B": false,
+        "C": false,
+        "D": false
+      },
+      "grant_windows": {
+        "B": {
+          "open_at": 19,
+          "close_at": 80
+        },
+        "A": {
+          "open_at": 30,
+          "close_at": 80
+        },
+        "C": {
+          "open_at": 82,
+          "close_at": 100
+        },
+        "D": {
+          "open_at": 85,
+          "close_at": 100
+        }
+      }
+    },
+    {
+      "time": 40,
+      "obstacles": [],
+      "position_before": {
+        "A": [
+          10,
+          2
+        ],
+        "B": [
+          12,
+          3
+        ],
+        "C": [
+          13,
+          1
+        ],
+        "D": [
+          13,
+          3
+        ]
+      },
+      "positions": {
+        "A": [
+          11,
+          2
+        ],
+        "B": [
+          12,
+          3
+        ],
+        "C": [
+          13,
+          1
+        ],
+        "D": [
+          13,
+          3
+        ]
+      },
+      "status": {
+        "A": "central_path_command",
+        "B": "central_path_command",
+        "C": "central_path_command",
+        "D": "central_path_command"
+      },
+      "shield_stops": [],
+      "observed_changed": {
+        "A": false,
+        "B": false,
+        "C": false,
+        "D": false
+      },
+      "grant_windows": {
+        "A": {
+          "open_at": 30,
+          "close_at": 100
+        },
+        "C": {
+          "open_at": 101,
+          "close_at": 120
+        },
+        "D": {
+          "open_at": 105,
+          "close_at": 120
+        }
+      }
+    },
+    {
+      "time": 41,
+      "obstacles": [],
+      "position_before": {
+        "A": [
+          11,
+          2
+        ],
+        "B": [
+          12,
+          3
+        ],
+        "C": [
+          13,
+          1
+        ],
+        "D": [
+          13,
+          3
+        ]
+      },
+      "positions": {
+        "A": [
+          11,
+          1
+        ],
+        "B": [
+          12,
+          3
+        ],
+        "C": [
+          13,
+          1
+        ],
+        "D": [
+          13,
+          3
+        ]
+      },
+      "status": {
+        "A": "central_path_command",
+        "B": "central_path_command",
+        "C": "central_path_command",
+        "D": "central_path_command"
+      },
+      "shield_stops": [],
+      "observed_changed": {
+        "A": false,
+        "B": false,
+        "C": false,
+        "D": false
+      },
+      "grant_windows": {
+        "A": {
+          "open_at": 30,
+          "close_at": 100
+        },
+        "C": {
+          "open_at": 101,
+          "close_at": 120
+        },
+        "D": {
+          "open_at": 105,
+          "close_at": 120
+        }
+      }
+    },
+    {
+      "time": 42,
+      "obstacles": [],
+      "position_before": {
+        "A": [
+          11,
+          1
+        ],
+        "B": [
+          12,
+          3
+        ],
+        "C": [
+          13,
+          1
+        ],
+        "D": [
+          13,
+          3
+        ]
+      },
+      "positions": {
+        "A": [
+          12,
+          1
+        ],
+        "B": [
+          12,
+          3
+        ],
+        "C": [
+          13,
+          1
+        ],
+        "D": [
+          13,
+          3
+        ]
+      },
+      "status": {
+        "A": "central_path_command",
+        "B": "central_path_command",
+        "C": "central_path_command",
+        "D": "central_path_command"
+      },
+      "shield_stops": [],
+      "observed_changed": {
+        "A": false,
+        "B": false,
+        "C": false,
+        "D": false
+      },
+      "grant_windows": {
+        "A": {
+          "open_at": 30,
+          "close_at": 100
+        },
+        "C": {
+          "open_at": 101,
+          "close_at": 120
+        },
+        "D": {
+          "open_at": 105,
+          "close_at": 120
+        }
+      }
+    },
+    {
+      "time": 43,
+      "obstacles": [],
+      "position_before": {
+        "A": [
+          12,
+          1
+        ],
+        "B": [
+          12,
+          3
+        ],
+        "C": [
+          13,
+          1
+        ],
+        "D": [
+          13,
+          3
+        ]
+      },
+      "positions": {
+        "A": [
+          12,
+          1
+        ],
+        "B": [
+          12,
+          3
+        ],
+        "C": [
+          13,
+          1
+        ],
+        "D": [
+          13,
+          3
+        ]
+      },
+      "status": {
+        "A": "central_path_command",
+        "B": "central_path_command",
+        "C": "central_path_command",
+        "D": "central_path_command"
+      },
+      "shield_stops": [],
+      "observed_changed": {
+        "A": false,
+        "B": false,
+        "C": false,
+        "D": false
+      },
+      "grant_windows": {
+        "A": {
+          "open_at": 30,
+          "close_at": 100
+        },
+        "C": {
+          "open_at": 101,
+          "close_at": 120
+        },
+        "D": {
+          "open_at": 105,
+          "close_at": 120
+        }
+      }
+    },
+    {
+      "time": 44,
+      "obstacles": [],
+      "position_before": {
+        "A": [
+          12,
+          1
+        ],
+        "B": [
+          12,
+          3
+        ],
+        "C": [
+          13,
+          1
+        ],
+        "D": [
+          13,
+          3
+        ]
+      },
+      "positions": {
+        "A": [
+          12,
+          1
+        ],
+        "B": [
+          12,
+          3
+        ],
+        "C": [
+          13,
+          1
+        ],
+        "D": [
+          13,
+          3
+        ]
+      },
+      "status": {
+        "A": "central_path_command",
+        "B": "central_path_command",
+        "C": "central_path_command",
+        "D": "central_path_command"
+      },
+      "shield_stops": [],
+      "observed_changed": {
+        "A": false,
+        "B": false,
+        "C": false,
+        "D": false
+      },
+      "grant_windows": {
+        "A": {
+          "open_at": 30,
+          "close_at": 100
+        },
+        "C": {
+          "open_at": 101,
+          "close_at": 120
+        },
+        "D": {
+          "open_at": 105,
+          "close_at": 120
+        }
+      }
+    },
+    {
+      "time": 45,
+      "obstacles": [],
+      "position_before": {
+        "A": [
+          12,
+          1
+        ],
+        "B": [
+          12,
+          3
+        ],
+        "C": [
+          13,
+          1
+        ],
+        "D": [
+          13,
+          3
+        ]
+      },
+      "positions": {
+        "A": [
+          12,
+          1
+        ],
+        "B": [
+          12,
+          3
+        ],
+        "C": [
+          13,
+          1
+        ],
+        "D": [
+          13,
+          3
+        ]
+      },
+      "status": {
+        "A": "central_path_command",
+        "B": "central_path_command",
+        "C": "central_path_command",
+        "D": "central_path_command"
+      },
+      "shield_stops": [],
+      "observed_changed": {
+        "A": false,
+        "B": false,
+        "C": false,
+        "D": false
+      },
+      "grant_windows": {
+        "A": {
+          "open_at": 30,
+          "close_at": 100
+        },
+        "C": {
+          "open_at": 101,
+          "close_at": 120
+        },
+        "D": {
+          "open_at": 105,
+          "close_at": 120
+        }
+      }
+    },
+    {
+      "time": 46,
+      "obstacles": [],
+      "position_before": {
+        "A": [
+          12,
+          1
+        ],
+        "B": [
+          12,
+          3
+        ],
+        "C": [
+          13,
+          1
+        ],
+        "D": [
+          13,
+          3
+        ]
+      },
+      "positions": {
+        "A": [
+          12,
+          1
+        ],
+        "B": [
+          12,
+          3
+        ],
+        "C": [
+          13,
+          1
+        ],
+        "D": [
+          13,
+          3
+        ]
+      },
+      "status": {
+        "A": "central_path_command",
+        "B": "central_path_command",
+        "C": "central_path_command",
+        "D": "central_path_command"
+      },
+      "shield_stops": [],
+      "observed_changed": {
+        "A": false,
+        "B": false,
+        "C": false,
+        "D": false
+      },
+      "grant_windows": {
+        "A": {
+          "open_at": 30,
+          "close_at": 100
+        },
+        "C": {
+          "open_at": 101,
+          "close_at": 120
+        },
+        "D": {
+          "open_at": 105,
+          "close_at": 120
+        }
+      }
+    },
+    {
+      "time": 47,
+      "obstacles": [],
+      "position_before": {
+        "A": [
+          12,
+          1
+        ],
+        "B": [
+          12,
+          3
+        ],
+        "C": [
+          13,
+          1
+        ],
+        "D": [
+          13,
+          3
+        ]
+      },
+      "positions": {
+        "A": [
+          12,
+          1
+        ],
+        "B": [
+          12,
+          3
+        ],
+        "C": [
+          13,
+          1
+        ],
+        "D": [
+          13,
+          3
+        ]
+      },
+      "status": {
+        "A": "central_path_command",
+        "B": "central_path_command",
+        "C": "central_path_command",
+        "D": "central_path_command"
+      },
+      "shield_stops": [],
+      "observed_changed": {
+        "A": false,
+        "B": false,
+        "C": false,
+        "D": false
+      },
+      "grant_windows": {
+        "A": {
+          "open_at": 30,
+          "close_at": 100
+        },
+        "C": {
+          "open_at": 101,
+          "close_at": 120
+        },
+        "D": {
+          "open_at": 105,
+          "close_at": 120
+        }
+      }
+    },
+    {
+      "time": 48,
+      "obstacles": [],
+      "position_before": {
+        "A": [
+          12,
+          1
+        ],
+        "B": [
+          12,
+          3
+        ],
+        "C": [
+          13,
+          1
+        ],
+        "D": [
+          13,
+          3
+        ]
+      },
+      "positions": {
+        "A": [
+          12,
+          1
+        ],
+        "B": [
+          12,
+          3
+        ],
+        "C": [
+          13,
+          1
+        ],
+        "D": [
+          13,
+          3
+        ]
+      },
+      "status": {
+        "A": "central_path_command",
+        "B": "central_path_command",
+        "C": "central_path_command",
+        "D": "central_path_command"
+      },
+      "shield_stops": [],
+      "observed_changed": {
+        "A": false,
+        "B": false,
+        "C": false,
+        "D": false
+      },
+      "grant_windows": {
+        "A": {
+          "open_at": 30,
+          "close_at": 100
+        },
+        "C": {
+          "open_at": 101,
+          "close_at": 120
+        },
+        "D": {
+          "open_at": 105,
+          "close_at": 120
+        }
+      }
+    },
+    {
+      "time": 49,
+      "obstacles": [],
+      "position_before": {
+        "A": [
+          12,
+          1
+        ],
+        "B": [
+          12,
+          3
+        ],
+        "C": [
+          13,
+          1
+        ],
+        "D": [
+          13,
+          3
+        ]
+      },
+      "positions": {
+        "A": [
+          12,
+          1
+        ],
+        "B": [
+          12,
+          3
+        ],
+        "C": [
+          13,
+          1
+        ],
+        "D": [
+          13,
+          3
+        ]
+      },
+      "status": {
+        "A": "central_path_command",
+        "B": "central_path_command",
+        "C": "central_path_command",
+        "D": "central_path_command"
+      },
+      "shield_stops": [],
+      "observed_changed": {
+        "A": false,
+        "B": false,
+        "C": false,
+        "D": false
+      },
+      "grant_windows": {
+        "A": {
+          "open_at": 30,
+          "close_at": 100
+        },
+        "C": {
+          "open_at": 101,
+          "close_at": 120
+        },
+        "D": {
+          "open_at": 105,
+          "close_at": 120
+        }
+      }
+    },
+    {
+      "time": 50,
+      "obstacles": [],
+      "position_before": {
+        "A": [
+          12,
+          1
+        ],
+        "B": [
+          12,
+          3
+        ],
+        "C": [
+          13,
+          1
+        ],
+        "D": [
+          13,
+          3
+        ]
+      },
+      "positions": {
+        "A": [
+          12,
+          1
+        ],
+        "B": [
+          12,
+          3
+        ],
+        "C": [
+          13,
+          2
+        ],
+        "D": [
+          13,
+          4
+        ]
+      },
+      "status": {
+        "A": "central_path_command",
+        "B": "central_path_command",
+        "C": "central_path_command",
+        "D": "central_path_command"
+      },
+      "shield_stops": [],
+      "observed_changed": {
+        "A": false,
+        "B": false,
+        "C": false,
+        "D": false
+      },
+      "grant_windows": {
+        "C": {
+          "open_at": 51,
+          "close_at": 69
+        },
+        "D": {
+          "open_at": 55,
+          "close_at": 69
+        }
+      }
+    },
+    {
+      "time": 51,
+      "obstacles": [],
+      "position_before": {
+        "A": [
+          12,
+          1
+        ],
+        "B": [
+          12,
+          3
+        ],
+        "C": [
+          13,
+          2
+        ],
+        "D": [
+          13,
+          4
+        ]
+      },
+      "positions": {
+        "A": [
+          12,
+          1
+        ],
+        "B": [
+          12,
+          3
+        ],
+        "C": [
+          12,
+          2
+        ],
+        "D": [
+          12,
+          4
+        ]
+      },
+      "status": {
+        "A": "central_path_command",
+        "B": "central_path_command",
+        "C": "central_path_command",
+        "D": "central_path_command"
+      },
+      "shield_stops": [],
+      "observed_changed": {
+        "A": false,
+        "B": false,
+        "C": false,
+        "D": false
+      },
+      "grant_windows": {
+        "C": {
+          "open_at": 51,
+          "close_at": 69
+        },
+        "D": {
+          "open_at": 55,
+          "close_at": 69
+        }
+      }
+    },
+    {
+      "time": 52,
+      "obstacles": [],
+      "position_before": {
+        "A": [
+          12,
+          1
+        ],
+        "B": [
+          12,
+          3
+        ],
+        "C": [
+          12,
+          2
+        ],
+        "D": [
+          12,
+          4
+        ]
+      },
+      "positions": {
+        "A": [
+          12,
+          1
+        ],
+        "B": [
+          12,
+          3
+        ],
+        "C": [
+          11,
+          2
+        ],
+        "D": [
+          11,
+          4
+        ]
+      },
+      "status": {
+        "A": "central_path_command",
+        "B": "central_path_command",
+        "C": "central_path_command",
+        "D": "central_path_command"
+      },
+      "shield_stops": [],
+      "observed_changed": {
+        "A": false,
+        "B": false,
+        "C": false,
+        "D": false
+      },
+      "grant_windows": {
+        "C": {
+          "open_at": 51,
+          "close_at": 69
+        },
+        "D": {
+          "open_at": 55,
+          "close_at": 69
+        }
+      }
+    },
+    {
+      "time": 53,
+      "obstacles": [],
+      "position_before": {
+        "A": [
+          12,
+          1
+        ],
+        "B": [
+          12,
+          3
+        ],
+        "C": [
+          11,
+          2
+        ],
+        "D": [
+          11,
+          4
+        ]
+      },
+      "positions": {
+        "A": [
+          12,
+          1
+        ],
+        "B": [
+          12,
+          3
+        ],
+        "C": [
+          10,
+          2
+        ],
+        "D": [
+          11,
+          3
+        ]
+      },
+      "status": {
+        "A": "central_path_command",
+        "B": "central_path_command",
+        "C": "central_path_command",
+        "D": "central_path_command"
+      },
+      "shield_stops": [],
+      "observed_changed": {
+        "A": false,
+        "B": false,
+        "C": false,
+        "D": false
+      },
+      "grant_windows": {
+        "C": {
+          "open_at": 51,
+          "close_at": 69
+        },
+        "D": {
+          "open_at": 55,
+          "close_at": 69
+        }
+      }
+    },
+    {
+      "time": 54,
+      "obstacles": [],
+      "position_before": {
+        "A": [
+          12,
+          1
+        ],
+        "B": [
+          12,
+          3
+        ],
+        "C": [
+          10,
+          2
+        ],
+        "D": [
+          11,
+          3
+        ]
+      },
+      "positions": {
+        "A": [
+          12,
+          1
+        ],
+        "B": [
+          12,
+          3
+        ],
+        "C": [
+          9,
+          2
+        ],
+        "D": [
+          11,
+          2
+        ]
+      },
+      "status": {
+        "A": "central_path_command",
+        "B": "central_path_command",
+        "C": "central_path_command",
+        "D": "central_path_command"
+      },
+      "shield_stops": [],
+      "observed_changed": {
+        "A": false,
+        "B": false,
+        "C": false,
+        "D": false
+      },
+      "grant_windows": {
+        "C": {
+          "open_at": 51,
+          "close_at": 69
+        },
+        "D": {
+          "open_at": 55,
+          "close_at": 69
+        }
+      }
+    },
+    {
+      "time": 55,
+      "obstacles": [],
+      "position_before": {
+        "A": [
+          12,
+          1
+        ],
+        "B": [
+          12,
+          3
+        ],
+        "C": [
+          9,
+          2
+        ],
+        "D": [
+          11,
+          2
+        ]
+      },
+      "positions": {
+        "A": [
+          12,
+          1
+        ],
+        "B": [
+          12,
+          3
+        ],
+        "C": [
+          8,
+          2
+        ],
+        "D": [
+          10,
+          2
+        ]
+      },
+      "status": {
+        "A": "central_path_command",
+        "B": "central_path_command",
+        "C": "central_path_command",
+        "D": "central_path_command"
+      },
+      "shield_stops": [],
+      "observed_changed": {
+        "A": false,
+        "B": false,
+        "C": false,
+        "D": false
+      },
+      "grant_windows": {
+        "C": {
+          "open_at": 51,
+          "close_at": 69
+        },
+        "D": {
+          "open_at": 55,
+          "close_at": 69
+        }
+      }
+    },
+    {
+      "time": 56,
+      "obstacles": [],
+      "position_before": {
+        "A": [
+          12,
+          1
+        ],
+        "B": [
+          12,
+          3
+        ],
+        "C": [
+          8,
+          2
+        ],
+        "D": [
+          10,
+          2
+        ]
+      },
+      "positions": {
+        "A": [
+          12,
+          1
+        ],
+        "B": [
+          12,
+          3
+        ],
+        "C": [
+          7,
+          2
+        ],
+        "D": [
+          9,
+          2
+        ]
+      },
+      "status": {
+        "A": "central_path_command",
+        "B": "central_path_command",
+        "C": "central_path_command",
+        "D": "central_path_command"
+      },
+      "shield_stops": [],
+      "observed_changed": {
+        "A": false,
+        "B": false,
+        "C": false,
+        "D": false
+      },
+      "grant_windows": {
+        "C": {
+          "open_at": 51,
+          "close_at": 69
+        },
+        "D": {
+          "open_at": 55,
+          "close_at": 69
+        }
+      }
+    },
+    {
+      "time": 57,
+      "obstacles": [],
+      "position_before": {
+        "A": [
+          12,
+          1
+        ],
+        "B": [
+          12,
+          3
+        ],
+        "C": [
+          7,
+          2
+        ],
+        "D": [
+          9,
+          2
+        ]
+      },
+      "positions": {
+        "A": [
+          12,
+          1
+        ],
+        "B": [
+          12,
+          3
+        ],
+        "C": [
+          6,
+          2
+        ],
+        "D": [
+          8,
+          2
+        ]
+      },
+      "status": {
+        "A": "central_path_command",
+        "B": "central_path_command",
+        "C": "central_path_command",
+        "D": "central_path_command"
+      },
+      "shield_stops": [],
+      "observed_changed": {
+        "A": false,
+        "B": false,
+        "C": false,
+        "D": false
+      },
+      "grant_windows": {
+        "C": {
+          "open_at": 51,
+          "close_at": 69
+        },
+        "D": {
+          "open_at": 55,
+          "close_at": 69
+        }
+      }
+    },
+    {
+      "time": 58,
+      "obstacles": [],
+      "position_before": {
+        "A": [
+          12,
+          1
+        ],
+        "B": [
+          12,
+          3
+        ],
+        "C": [
+          6,
+          2
+        ],
+        "D": [
+          8,
+          2
+        ]
+      },
+      "positions": {
+        "A": [
+          12,
+          1
+        ],
+        "B": [
+          12,
+          3
+        ],
+        "C": [
+          5,
+          2
+        ],
+        "D": [
+          7,
+          2
+        ]
+      },
+      "status": {
+        "A": "central_path_command",
+        "B": "central_path_command",
+        "C": "central_path_command",
+        "D": "central_path_command"
+      },
+      "shield_stops": [],
+      "observed_changed": {
+        "A": false,
+        "B": false,
+        "C": false,
+        "D": false
+      },
+      "grant_windows": {
+        "C": {
+          "open_at": 51,
+          "close_at": 69
+        },
+        "D": {
+          "open_at": 55,
+          "close_at": 69
+        }
+      }
+    },
+    {
+      "time": 59,
+      "obstacles": [],
+      "position_before": {
+        "A": [
+          12,
+          1
+        ],
+        "B": [
+          12,
+          3
+        ],
+        "C": [
+          5,
+          2
+        ],
+        "D": [
+          7,
+          2
+        ]
+      },
+      "positions": {
+        "A": [
+          12,
+          1
+        ],
+        "B": [
+          12,
+          3
+        ],
+        "C": [
+          4,
+          2
+        ],
+        "D": [
+          6,
+          2
+        ]
+      },
+      "status": {
+        "A": "central_path_command",
+        "B": "central_path_command",
+        "C": "central_path_command",
+        "D": "central_path_command"
+      },
+      "shield_stops": [],
+      "observed_changed": {
+        "A": false,
+        "B": false,
+        "C": false,
+        "D": false
+      },
+      "grant_windows": {
+        "C": {
+          "open_at": 51,
+          "close_at": 69
+        },
+        "D": {
+          "open_at": 55,
+          "close_at": 69
+        }
+      }
+    },
+    {
+      "time": 60,
+      "obstacles": [],
+      "position_before": {
+        "A": [
+          12,
+          1
+        ],
+        "B": [
+          12,
+          3
+        ],
+        "C": [
+          4,
+          2
+        ],
+        "D": [
+          6,
+          2
+        ]
+      },
+      "positions": {
+        "A": [
+          12,
+          1
+        ],
+        "B": [
+          12,
+          3
+        ],
+        "C": [
+          3,
+          2
+        ],
+        "D": [
+          5,
+          2
+        ]
+      },
+      "status": {
+        "A": "central_path_command",
+        "B": "central_path_command",
+        "C": "central_path_command",
+        "D": "central_path_command"
+      },
+      "shield_stops": [],
+      "observed_changed": {
+        "A": false,
+        "B": false,
+        "C": false,
+        "D": false
+      },
+      "grant_windows": {
+        "C": {
+          "open_at": 51,
+          "close_at": 120
+        },
+        "D": {
+          "open_at": 55,
+          "close_at": 120
+        }
+      }
+    },
+    {
+      "time": 61,
+      "obstacles": [],
+      "position_before": {
+        "A": [
+          12,
+          1
+        ],
+        "B": [
+          12,
+          3
+        ],
+        "C": [
+          3,
+          2
+        ],
+        "D": [
+          5,
+          2
+        ]
+      },
+      "positions": {
+        "A": [
+          12,
+          1
+        ],
+        "B": [
+          12,
+          3
+        ],
+        "C": [
+          2,
+          2
+        ],
+        "D": [
+          4,
+          2
+        ]
+      },
+      "status": {
+        "A": "central_path_command",
+        "B": "central_path_command",
+        "C": "central_path_command",
+        "D": "central_path_command"
+      },
+      "shield_stops": [],
+      "observed_changed": {
+        "A": false,
+        "B": false,
+        "C": false,
+        "D": false
+      },
+      "grant_windows": {
+        "C": {
+          "open_at": 51,
+          "close_at": 120
+        },
+        "D": {
+          "open_at": 55,
+          "close_at": 120
+        }
+      }
+    },
+    {
+      "time": 62,
+      "obstacles": [],
+      "position_before": {
+        "A": [
+          12,
+          1
+        ],
+        "B": [
+          12,
+          3
+        ],
+        "C": [
+          2,
+          2
+        ],
+        "D": [
+          4,
+          2
+        ]
+      },
+      "positions": {
+        "A": [
+          12,
+          1
+        ],
+        "B": [
+          12,
+          3
+        ],
+        "C": [
+          2,
+          1
+        ],
+        "D": [
+          3,
+          2
+        ]
+      },
+      "status": {
+        "A": "central_path_command",
+        "B": "central_path_command",
+        "C": "central_path_command",
+        "D": "central_path_command"
+      },
+      "shield_stops": [],
+      "observed_changed": {
+        "A": false,
+        "B": false,
+        "C": false,
+        "D": false
+      },
+      "grant_windows": {
+        "C": {
+          "open_at": 51,
+          "close_at": 120
+        },
+        "D": {
+          "open_at": 55,
+          "close_at": 120
+        }
+      }
+    },
+    {
+      "time": 63,
+      "obstacles": [],
+      "position_before": {
+        "A": [
+          12,
+          1
+        ],
+        "B": [
+          12,
+          3
+        ],
+        "C": [
+          2,
+          1
+        ],
+        "D": [
+          3,
+          2
+        ]
+      },
+      "positions": {
+        "A": [
+          12,
+          1
+        ],
+        "B": [
+          12,
+          3
+        ],
+        "C": [
+          2,
+          1
+        ],
+        "D": [
+          2,
+          2
+        ]
+      },
+      "status": {
+        "A": "central_path_command",
+        "B": "central_path_command",
+        "C": "central_path_command",
+        "D": "central_path_command"
+      },
+      "shield_stops": [],
+      "observed_changed": {
+        "A": false,
+        "B": false,
+        "C": false,
+        "D": false
+      },
+      "grant_windows": {
+        "C": {
+          "open_at": 51,
+          "close_at": 120
+        },
+        "D": {
+          "open_at": 55,
+          "close_at": 120
+        }
+      }
+    },
+    {
+      "time": 64,
+      "obstacles": [],
+      "position_before": {
+        "A": [
+          12,
+          1
+        ],
+        "B": [
+          12,
+          3
+        ],
+        "C": [
+          2,
+          1
+        ],
+        "D": [
+          2,
+          2
+        ]
+      },
+      "positions": {
+        "A": [
+          12,
+          1
+        ],
+        "B": [
+          12,
+          3
+        ],
+        "C": [
+          2,
+          1
+        ],
+        "D": [
+          2,
+          3
+        ]
+      },
+      "status": {
+        "A": "central_path_command",
+        "B": "central_path_command",
+        "C": "central_path_command",
+        "D": "central_path_command"
+      },
+      "shield_stops": [],
+      "observed_changed": {
+        "A": false,
+        "B": false,
+        "C": false,
+        "D": false
+      },
+      "grant_windows": {
+        "C": {
+          "open_at": 51,
+          "close_at": 120
+        },
+        "D": {
+          "open_at": 55,
+          "close_at": 120
+        }
+      }
+    }
+  ],
+  "restriction_payloads": [
+    {
+      "time": 0,
+      "agent": "A",
+      "payload": {
+        "version": 1,
+        "issued_at": 0,
+        "valid_to": 60,
+        "restricted_resource": "single_lane_bridge_and_approaches",
+        "resource_cell_count": 15,
+        "resource_cells_xy": [
+          [
+            0,
+            2
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            3,
+            2
+          ],
+          [
+            4,
+            2
+          ],
+          [
+            5,
+            2
+          ],
+          [
+            6,
+            2
+          ],
+          [
+            7,
+            2
+          ],
+          [
+            8,
+            2
+          ],
+          [
+            9,
+            2
+          ],
+          [
+            10,
+            2
+          ],
+          [
+            11,
+            2
+          ],
+          [
+            12,
+            2
+          ],
+          [
+            13,
+            2
+          ],
+          [
+            14,
+            2
+          ]
+        ],
+        "protected_parking_cells_xy": [
+          [
+            2,
+            1
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            12,
+            3
+          ]
+        ],
+        "access_window": {
+          "open_at": 24,
+          "close_at": 38
+        },
+        "contents": "resource-level allowed/denied mask; no path waypoints"
+      }
+    },
+    {
+      "time": 0,
+      "agent": "B",
+      "payload": {
+        "version": 1,
+        "issued_at": 0,
+        "valid_to": 60,
+        "restricted_resource": "single_lane_bridge_and_approaches",
+        "resource_cell_count": 15,
+        "resource_cells_xy": [
+          [
+            0,
+            2
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            3,
+            2
+          ],
+          [
+            4,
+            2
+          ],
+          [
+            5,
+            2
+          ],
+          [
+            6,
+            2
+          ],
+          [
+            7,
+            2
+          ],
+          [
+            8,
+            2
+          ],
+          [
+            9,
+            2
+          ],
+          [
+            10,
+            2
+          ],
+          [
+            11,
+            2
+          ],
+          [
+            12,
+            2
+          ],
+          [
+            13,
+            2
+          ],
+          [
+            14,
+            2
+          ]
+        ],
+        "protected_parking_cells_xy": [
+          [
+            2,
+            1
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            12,
+            1
+          ]
+        ],
+        "access_window": {
+          "open_at": 20,
+          "close_at": 38
+        },
+        "contents": "resource-level allowed/denied mask; no path waypoints"
+      }
+    },
+    {
+      "time": 0,
+      "agent": "C",
+      "payload": {
+        "version": 1,
+        "issued_at": 0,
+        "valid_to": 60,
+        "restricted_resource": "single_lane_bridge_and_approaches",
+        "resource_cell_count": 15,
+        "resource_cells_xy": [
+          [
+            0,
+            2
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            3,
+            2
+          ],
+          [
+            4,
+            2
+          ],
+          [
+            5,
+            2
+          ],
+          [
+            6,
+            2
+          ],
+          [
+            7,
+            2
+          ],
+          [
+            8,
+            2
+          ],
+          [
+            9,
+            2
+          ],
+          [
+            10,
+            2
+          ],
+          [
+            11,
+            2
+          ],
+          [
+            12,
+            2
+          ],
+          [
+            13,
+            2
+          ],
+          [
+            14,
+            2
+          ]
+        ],
+        "protected_parking_cells_xy": [
+          [
+            2,
+            3
+          ],
+          [
+            12,
+            1
+          ],
+          [
+            12,
+            3
+          ]
+        ],
+        "access_window": {
+          "open_at": 4,
+          "close_at": 18
+        },
+        "contents": "resource-level allowed/denied mask; no path waypoints"
+      }
+    },
+    {
+      "time": 0,
+      "agent": "D",
+      "payload": {
+        "version": 1,
+        "issued_at": 0,
+        "valid_to": 60,
+        "restricted_resource": "single_lane_bridge_and_approaches",
+        "resource_cell_count": 15,
+        "resource_cells_xy": [
+          [
+            0,
+            2
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            3,
+            2
+          ],
+          [
+            4,
+            2
+          ],
+          [
+            5,
+            2
+          ],
+          [
+            6,
+            2
+          ],
+          [
+            7,
+            2
+          ],
+          [
+            8,
+            2
+          ],
+          [
+            9,
+            2
+          ],
+          [
+            10,
+            2
+          ],
+          [
+            11,
+            2
+          ],
+          [
+            12,
+            2
+          ],
+          [
+            13,
+            2
+          ],
+          [
+            14,
+            2
+          ]
+        ],
+        "protected_parking_cells_xy": [
+          [
+            2,
+            1
+          ],
+          [
+            12,
+            1
+          ],
+          [
+            12,
+            3
+          ]
+        ],
+        "access_window": {
+          "open_at": 0,
+          "close_at": 18
+        },
+        "contents": "resource-level allowed/denied mask; no path waypoints"
+      }
+    },
+    {
+      "time": 10,
+      "agent": "A",
+      "payload": {
+        "version": 2,
+        "issued_at": 10,
+        "valid_to": 70,
+        "restricted_resource": "single_lane_bridge_and_approaches",
+        "resource_cell_count": 15,
+        "resource_cells_xy": [
+          [
+            0,
+            2
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            3,
+            2
+          ],
+          [
+            4,
+            2
+          ],
+          [
+            5,
+            2
+          ],
+          [
+            6,
+            2
+          ],
+          [
+            7,
+            2
+          ],
+          [
+            8,
+            2
+          ],
+          [
+            9,
+            2
+          ],
+          [
+            10,
+            2
+          ],
+          [
+            11,
+            2
+          ],
+          [
+            12,
+            2
+          ],
+          [
+            13,
+            2
+          ],
+          [
+            14,
+            2
+          ]
+        ],
+        "protected_parking_cells_xy": [
+          [
+            2,
+            1
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            12,
+            3
+          ]
+        ],
+        "access_window": {
+          "open_at": 22,
+          "close_at": 38
+        },
+        "contents": "resource-level allowed/denied mask; no path waypoints"
+      }
+    },
+    {
+      "time": 10,
+      "agent": "B",
+      "payload": {
+        "version": 2,
+        "issued_at": 10,
+        "valid_to": 70,
+        "restricted_resource": "single_lane_bridge_and_approaches",
+        "resource_cell_count": 15,
+        "resource_cells_xy": [
+          [
+            0,
+            2
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            3,
+            2
+          ],
+          [
+            4,
+            2
+          ],
+          [
+            5,
+            2
+          ],
+          [
+            6,
+            2
+          ],
+          [
+            7,
+            2
+          ],
+          [
+            8,
+            2
+          ],
+          [
+            9,
+            2
+          ],
+          [
+            10,
+            2
+          ],
+          [
+            11,
+            2
+          ],
+          [
+            12,
+            2
+          ],
+          [
+            13,
+            2
+          ],
+          [
+            14,
+            2
+          ]
+        ],
+        "protected_parking_cells_xy": [
+          [
+            2,
+            1
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            12,
+            1
+          ]
+        ],
+        "access_window": {
+          "open_at": 19,
+          "close_at": 38
+        },
+        "contents": "resource-level allowed/denied mask; no path waypoints"
+      }
+    },
+    {
+      "time": 10,
+      "agent": "C",
+      "payload": {
+        "version": 2,
+        "issued_at": 10,
+        "valid_to": 70,
+        "restricted_resource": "single_lane_bridge_and_approaches",
+        "resource_cell_count": 15,
+        "resource_cells_xy": [
+          [
+            0,
+            2
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            3,
+            2
+          ],
+          [
+            4,
+            2
+          ],
+          [
+            5,
+            2
+          ],
+          [
+            6,
+            2
+          ],
+          [
+            7,
+            2
+          ],
+          [
+            8,
+            2
+          ],
+          [
+            9,
+            2
+          ],
+          [
+            10,
+            2
+          ],
+          [
+            11,
+            2
+          ],
+          [
+            12,
+            2
+          ],
+          [
+            13,
+            2
+          ],
+          [
+            14,
+            2
+          ]
+        ],
+        "protected_parking_cells_xy": [
+          [
+            2,
+            3
+          ],
+          [
+            12,
+            1
+          ],
+          [
+            12,
+            3
+          ]
+        ],
+        "access_window": {
+          "open_at": 4,
+          "close_at": 18
+        },
+        "contents": "resource-level allowed/denied mask; no path waypoints"
+      }
+    },
+    {
+      "time": 10,
+      "agent": "D",
+      "payload": {
+        "version": 2,
+        "issued_at": 10,
+        "valid_to": 70,
+        "restricted_resource": "single_lane_bridge_and_approaches",
+        "resource_cell_count": 15,
+        "resource_cells_xy": [
+          [
+            0,
+            2
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            3,
+            2
+          ],
+          [
+            4,
+            2
+          ],
+          [
+            5,
+            2
+          ],
+          [
+            6,
+            2
+          ],
+          [
+            7,
+            2
+          ],
+          [
+            8,
+            2
+          ],
+          [
+            9,
+            2
+          ],
+          [
+            10,
+            2
+          ],
+          [
+            11,
+            2
+          ],
+          [
+            12,
+            2
+          ],
+          [
+            13,
+            2
+          ],
+          [
+            14,
+            2
+          ]
+        ],
+        "protected_parking_cells_xy": [
+          [
+            2,
+            1
+          ],
+          [
+            12,
+            1
+          ],
+          [
+            12,
+            3
+          ]
+        ],
+        "access_window": {
+          "open_at": 0,
+          "close_at": 18
+        },
+        "contents": "resource-level allowed/denied mask; no path waypoints"
+      }
+    },
+    {
+      "time": 20,
+      "agent": "A",
+      "payload": {
+        "version": 3,
+        "issued_at": 20,
+        "valid_to": 80,
+        "restricted_resource": "single_lane_bridge_and_approaches",
+        "resource_cell_count": 15,
+        "resource_cells_xy": [
+          [
+            0,
+            2
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            3,
+            2
+          ],
+          [
+            4,
+            2
+          ],
+          [
+            5,
+            2
+          ],
+          [
+            6,
+            2
+          ],
+          [
+            7,
+            2
+          ],
+          [
+            8,
+            2
+          ],
+          [
+            9,
+            2
+          ],
+          [
+            10,
+            2
+          ],
+          [
+            11,
+            2
+          ],
+          [
+            12,
+            2
+          ],
+          [
+            13,
+            2
+          ],
+          [
+            14,
+            2
+          ]
+        ],
+        "protected_parking_cells_xy": [
+          [
+            2,
+            1
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            12,
+            3
+          ]
+        ],
+        "access_window": null,
+        "contents": "resource-level allowed/denied mask; no path waypoints"
+      }
+    },
+    {
+      "time": 20,
+      "agent": "B",
+      "payload": {
+        "version": 3,
+        "issued_at": 20,
+        "valid_to": 80,
+        "restricted_resource": "single_lane_bridge_and_approaches",
+        "resource_cell_count": 15,
+        "resource_cells_xy": [
+          [
+            0,
+            2
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            3,
+            2
+          ],
+          [
+            4,
+            2
+          ],
+          [
+            5,
+            2
+          ],
+          [
+            6,
+            2
+          ],
+          [
+            7,
+            2
+          ],
+          [
+            8,
+            2
+          ],
+          [
+            9,
+            2
+          ],
+          [
+            10,
+            2
+          ],
+          [
+            11,
+            2
+          ],
+          [
+            12,
+            2
+          ],
+          [
+            13,
+            2
+          ],
+          [
+            14,
+            2
+          ]
+        ],
+        "protected_parking_cells_xy": [
+          [
+            2,
+            1
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            12,
+            1
+          ]
+        ],
+        "access_window": {
+          "open_at": 19,
+          "close_at": 80
+        },
+        "contents": "resource-level allowed/denied mask; no path waypoints"
+      }
+    },
+    {
+      "time": 20,
+      "agent": "C",
+      "payload": {
+        "version": 3,
+        "issued_at": 20,
+        "valid_to": 80,
+        "restricted_resource": "single_lane_bridge_and_approaches",
+        "resource_cell_count": 15,
+        "resource_cells_xy": [
+          [
+            0,
+            2
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            3,
+            2
+          ],
+          [
+            4,
+            2
+          ],
+          [
+            5,
+            2
+          ],
+          [
+            6,
+            2
+          ],
+          [
+            7,
+            2
+          ],
+          [
+            8,
+            2
+          ],
+          [
+            9,
+            2
+          ],
+          [
+            10,
+            2
+          ],
+          [
+            11,
+            2
+          ],
+          [
+            12,
+            2
+          ],
+          [
+            13,
+            2
+          ],
+          [
+            14,
+            2
+          ]
+        ],
+        "protected_parking_cells_xy": [
+          [
+            2,
+            3
+          ],
+          [
+            12,
+            1
+          ],
+          [
+            12,
+            3
+          ]
+        ],
+        "access_window": null,
+        "contents": "resource-level allowed/denied mask; no path waypoints"
+      }
+    },
+    {
+      "time": 20,
+      "agent": "D",
+      "payload": {
+        "version": 3,
+        "issued_at": 20,
+        "valid_to": 80,
+        "restricted_resource": "single_lane_bridge_and_approaches",
+        "resource_cell_count": 15,
+        "resource_cells_xy": [
+          [
+            0,
+            2
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            3,
+            2
+          ],
+          [
+            4,
+            2
+          ],
+          [
+            5,
+            2
+          ],
+          [
+            6,
+            2
+          ],
+          [
+            7,
+            2
+          ],
+          [
+            8,
+            2
+          ],
+          [
+            9,
+            2
+          ],
+          [
+            10,
+            2
+          ],
+          [
+            11,
+            2
+          ],
+          [
+            12,
+            2
+          ],
+          [
+            13,
+            2
+          ],
+          [
+            14,
+            2
+          ]
+        ],
+        "protected_parking_cells_xy": [
+          [
+            2,
+            1
+          ],
+          [
+            12,
+            1
+          ],
+          [
+            12,
+            3
+          ]
+        ],
+        "access_window": null,
+        "contents": "resource-level allowed/denied mask; no path waypoints"
+      }
+    },
+    {
+      "time": 30,
+      "agent": "A",
+      "payload": {
+        "version": 4,
+        "issued_at": 30,
+        "valid_to": 90,
+        "restricted_resource": "single_lane_bridge_and_approaches",
+        "resource_cell_count": 15,
+        "resource_cells_xy": [
+          [
+            0,
+            2
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            3,
+            2
+          ],
+          [
+            4,
+            2
+          ],
+          [
+            5,
+            2
+          ],
+          [
+            6,
+            2
+          ],
+          [
+            7,
+            2
+          ],
+          [
+            8,
+            2
+          ],
+          [
+            9,
+            2
+          ],
+          [
+            10,
+            2
+          ],
+          [
+            11,
+            2
+          ],
+          [
+            12,
+            2
+          ],
+          [
+            13,
+            2
+          ],
+          [
+            14,
+            2
+          ]
+        ],
+        "protected_parking_cells_xy": [
+          [
+            2,
+            1
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            12,
+            3
+          ]
+        ],
+        "access_window": {
+          "open_at": 30,
+          "close_at": 80
+        },
+        "contents": "resource-level allowed/denied mask; no path waypoints"
+      }
+    },
+    {
+      "time": 30,
+      "agent": "B",
+      "payload": {
+        "version": 4,
+        "issued_at": 30,
+        "valid_to": 90,
+        "restricted_resource": "single_lane_bridge_and_approaches",
+        "resource_cell_count": 15,
+        "resource_cells_xy": [
+          [
+            0,
+            2
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            3,
+            2
+          ],
+          [
+            4,
+            2
+          ],
+          [
+            5,
+            2
+          ],
+          [
+            6,
+            2
+          ],
+          [
+            7,
+            2
+          ],
+          [
+            8,
+            2
+          ],
+          [
+            9,
+            2
+          ],
+          [
+            10,
+            2
+          ],
+          [
+            11,
+            2
+          ],
+          [
+            12,
+            2
+          ],
+          [
+            13,
+            2
+          ],
+          [
+            14,
+            2
+          ]
+        ],
+        "protected_parking_cells_xy": [
+          [
+            2,
+            1
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            12,
+            1
+          ]
+        ],
+        "access_window": {
+          "open_at": 19,
+          "close_at": 80
+        },
+        "contents": "resource-level allowed/denied mask; no path waypoints"
+      }
+    },
+    {
+      "time": 30,
+      "agent": "C",
+      "payload": {
+        "version": 4,
+        "issued_at": 30,
+        "valid_to": 90,
+        "restricted_resource": "single_lane_bridge_and_approaches",
+        "resource_cell_count": 15,
+        "resource_cells_xy": [
+          [
+            0,
+            2
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            3,
+            2
+          ],
+          [
+            4,
+            2
+          ],
+          [
+            5,
+            2
+          ],
+          [
+            6,
+            2
+          ],
+          [
+            7,
+            2
+          ],
+          [
+            8,
+            2
+          ],
+          [
+            9,
+            2
+          ],
+          [
+            10,
+            2
+          ],
+          [
+            11,
+            2
+          ],
+          [
+            12,
+            2
+          ],
+          [
+            13,
+            2
+          ],
+          [
+            14,
+            2
+          ]
+        ],
+        "protected_parking_cells_xy": [
+          [
+            2,
+            3
+          ],
+          [
+            12,
+            1
+          ],
+          [
+            12,
+            3
+          ]
+        ],
+        "access_window": {
+          "open_at": 82,
+          "close_at": 100
+        },
+        "contents": "resource-level allowed/denied mask; no path waypoints"
+      }
+    },
+    {
+      "time": 30,
+      "agent": "D",
+      "payload": {
+        "version": 4,
+        "issued_at": 30,
+        "valid_to": 90,
+        "restricted_resource": "single_lane_bridge_and_approaches",
+        "resource_cell_count": 15,
+        "resource_cells_xy": [
+          [
+            0,
+            2
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            3,
+            2
+          ],
+          [
+            4,
+            2
+          ],
+          [
+            5,
+            2
+          ],
+          [
+            6,
+            2
+          ],
+          [
+            7,
+            2
+          ],
+          [
+            8,
+            2
+          ],
+          [
+            9,
+            2
+          ],
+          [
+            10,
+            2
+          ],
+          [
+            11,
+            2
+          ],
+          [
+            12,
+            2
+          ],
+          [
+            13,
+            2
+          ],
+          [
+            14,
+            2
+          ]
+        ],
+        "protected_parking_cells_xy": [
+          [
+            2,
+            1
+          ],
+          [
+            12,
+            1
+          ],
+          [
+            12,
+            3
+          ]
+        ],
+        "access_window": {
+          "open_at": 85,
+          "close_at": 100
+        },
+        "contents": "resource-level allowed/denied mask; no path waypoints"
+      }
+    },
+    {
+      "time": 40,
+      "agent": "A",
+      "payload": {
+        "version": 5,
+        "issued_at": 40,
+        "valid_to": 100,
+        "restricted_resource": "single_lane_bridge_and_approaches",
+        "resource_cell_count": 15,
+        "resource_cells_xy": [
+          [
+            0,
+            2
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            3,
+            2
+          ],
+          [
+            4,
+            2
+          ],
+          [
+            5,
+            2
+          ],
+          [
+            6,
+            2
+          ],
+          [
+            7,
+            2
+          ],
+          [
+            8,
+            2
+          ],
+          [
+            9,
+            2
+          ],
+          [
+            10,
+            2
+          ],
+          [
+            11,
+            2
+          ],
+          [
+            12,
+            2
+          ],
+          [
+            13,
+            2
+          ],
+          [
+            14,
+            2
+          ]
+        ],
+        "protected_parking_cells_xy": [
+          [
+            2,
+            1
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            12,
+            3
+          ]
+        ],
+        "access_window": {
+          "open_at": 30,
+          "close_at": 100
+        },
+        "contents": "resource-level allowed/denied mask; no path waypoints"
+      }
+    },
+    {
+      "time": 40,
+      "agent": "B",
+      "payload": {
+        "version": 5,
+        "issued_at": 40,
+        "valid_to": 100,
+        "restricted_resource": "single_lane_bridge_and_approaches",
+        "resource_cell_count": 15,
+        "resource_cells_xy": [
+          [
+            0,
+            2
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            3,
+            2
+          ],
+          [
+            4,
+            2
+          ],
+          [
+            5,
+            2
+          ],
+          [
+            6,
+            2
+          ],
+          [
+            7,
+            2
+          ],
+          [
+            8,
+            2
+          ],
+          [
+            9,
+            2
+          ],
+          [
+            10,
+            2
+          ],
+          [
+            11,
+            2
+          ],
+          [
+            12,
+            2
+          ],
+          [
+            13,
+            2
+          ],
+          [
+            14,
+            2
+          ]
+        ],
+        "protected_parking_cells_xy": [
+          [
+            2,
+            1
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            12,
+            1
+          ]
+        ],
+        "access_window": null,
+        "contents": "resource-level allowed/denied mask; no path waypoints"
+      }
+    },
+    {
+      "time": 40,
+      "agent": "C",
+      "payload": {
+        "version": 5,
+        "issued_at": 40,
+        "valid_to": 100,
+        "restricted_resource": "single_lane_bridge_and_approaches",
+        "resource_cell_count": 15,
+        "resource_cells_xy": [
+          [
+            0,
+            2
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            3,
+            2
+          ],
+          [
+            4,
+            2
+          ],
+          [
+            5,
+            2
+          ],
+          [
+            6,
+            2
+          ],
+          [
+            7,
+            2
+          ],
+          [
+            8,
+            2
+          ],
+          [
+            9,
+            2
+          ],
+          [
+            10,
+            2
+          ],
+          [
+            11,
+            2
+          ],
+          [
+            12,
+            2
+          ],
+          [
+            13,
+            2
+          ],
+          [
+            14,
+            2
+          ]
+        ],
+        "protected_parking_cells_xy": [
+          [
+            2,
+            3
+          ],
+          [
+            12,
+            1
+          ],
+          [
+            12,
+            3
+          ]
+        ],
+        "access_window": {
+          "open_at": 101,
+          "close_at": 120
+        },
+        "contents": "resource-level allowed/denied mask; no path waypoints"
+      }
+    },
+    {
+      "time": 40,
+      "agent": "D",
+      "payload": {
+        "version": 5,
+        "issued_at": 40,
+        "valid_to": 100,
+        "restricted_resource": "single_lane_bridge_and_approaches",
+        "resource_cell_count": 15,
+        "resource_cells_xy": [
+          [
+            0,
+            2
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            3,
+            2
+          ],
+          [
+            4,
+            2
+          ],
+          [
+            5,
+            2
+          ],
+          [
+            6,
+            2
+          ],
+          [
+            7,
+            2
+          ],
+          [
+            8,
+            2
+          ],
+          [
+            9,
+            2
+          ],
+          [
+            10,
+            2
+          ],
+          [
+            11,
+            2
+          ],
+          [
+            12,
+            2
+          ],
+          [
+            13,
+            2
+          ],
+          [
+            14,
+            2
+          ]
+        ],
+        "protected_parking_cells_xy": [
+          [
+            2,
+            1
+          ],
+          [
+            12,
+            1
+          ],
+          [
+            12,
+            3
+          ]
+        ],
+        "access_window": {
+          "open_at": 105,
+          "close_at": 120
+        },
+        "contents": "resource-level allowed/denied mask; no path waypoints"
+      }
+    },
+    {
+      "time": 50,
+      "agent": "A",
+      "payload": {
+        "version": 6,
+        "issued_at": 50,
+        "valid_to": 110,
+        "restricted_resource": "single_lane_bridge_and_approaches",
+        "resource_cell_count": 15,
+        "resource_cells_xy": [
+          [
+            0,
+            2
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            3,
+            2
+          ],
+          [
+            4,
+            2
+          ],
+          [
+            5,
+            2
+          ],
+          [
+            6,
+            2
+          ],
+          [
+            7,
+            2
+          ],
+          [
+            8,
+            2
+          ],
+          [
+            9,
+            2
+          ],
+          [
+            10,
+            2
+          ],
+          [
+            11,
+            2
+          ],
+          [
+            12,
+            2
+          ],
+          [
+            13,
+            2
+          ],
+          [
+            14,
+            2
+          ]
+        ],
+        "protected_parking_cells_xy": [
+          [
+            2,
+            1
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            12,
+            3
+          ]
+        ],
+        "access_window": null,
+        "contents": "resource-level allowed/denied mask; no path waypoints"
+      }
+    },
+    {
+      "time": 50,
+      "agent": "B",
+      "payload": {
+        "version": 6,
+        "issued_at": 50,
+        "valid_to": 110,
+        "restricted_resource": "single_lane_bridge_and_approaches",
+        "resource_cell_count": 15,
+        "resource_cells_xy": [
+          [
+            0,
+            2
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            3,
+            2
+          ],
+          [
+            4,
+            2
+          ],
+          [
+            5,
+            2
+          ],
+          [
+            6,
+            2
+          ],
+          [
+            7,
+            2
+          ],
+          [
+            8,
+            2
+          ],
+          [
+            9,
+            2
+          ],
+          [
+            10,
+            2
+          ],
+          [
+            11,
+            2
+          ],
+          [
+            12,
+            2
+          ],
+          [
+            13,
+            2
+          ],
+          [
+            14,
+            2
+          ]
+        ],
+        "protected_parking_cells_xy": [
+          [
+            2,
+            1
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            12,
+            1
+          ]
+        ],
+        "access_window": null,
+        "contents": "resource-level allowed/denied mask; no path waypoints"
+      }
+    },
+    {
+      "time": 50,
+      "agent": "C",
+      "payload": {
+        "version": 6,
+        "issued_at": 50,
+        "valid_to": 110,
+        "restricted_resource": "single_lane_bridge_and_approaches",
+        "resource_cell_count": 15,
+        "resource_cells_xy": [
+          [
+            0,
+            2
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            3,
+            2
+          ],
+          [
+            4,
+            2
+          ],
+          [
+            5,
+            2
+          ],
+          [
+            6,
+            2
+          ],
+          [
+            7,
+            2
+          ],
+          [
+            8,
+            2
+          ],
+          [
+            9,
+            2
+          ],
+          [
+            10,
+            2
+          ],
+          [
+            11,
+            2
+          ],
+          [
+            12,
+            2
+          ],
+          [
+            13,
+            2
+          ],
+          [
+            14,
+            2
+          ]
+        ],
+        "protected_parking_cells_xy": [
+          [
+            2,
+            3
+          ],
+          [
+            12,
+            1
+          ],
+          [
+            12,
+            3
+          ]
+        ],
+        "access_window": {
+          "open_at": 51,
+          "close_at": 69
+        },
+        "contents": "resource-level allowed/denied mask; no path waypoints"
+      }
+    },
+    {
+      "time": 50,
+      "agent": "D",
+      "payload": {
+        "version": 6,
+        "issued_at": 50,
+        "valid_to": 110,
+        "restricted_resource": "single_lane_bridge_and_approaches",
+        "resource_cell_count": 15,
+        "resource_cells_xy": [
+          [
+            0,
+            2
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            3,
+            2
+          ],
+          [
+            4,
+            2
+          ],
+          [
+            5,
+            2
+          ],
+          [
+            6,
+            2
+          ],
+          [
+            7,
+            2
+          ],
+          [
+            8,
+            2
+          ],
+          [
+            9,
+            2
+          ],
+          [
+            10,
+            2
+          ],
+          [
+            11,
+            2
+          ],
+          [
+            12,
+            2
+          ],
+          [
+            13,
+            2
+          ],
+          [
+            14,
+            2
+          ]
+        ],
+        "protected_parking_cells_xy": [
+          [
+            2,
+            1
+          ],
+          [
+            12,
+            1
+          ],
+          [
+            12,
+            3
+          ]
+        ],
+        "access_window": {
+          "open_at": 55,
+          "close_at": 69
+        },
+        "contents": "resource-level allowed/denied mask; no path waypoints"
+      }
+    },
+    {
+      "time": 60,
+      "agent": "A",
+      "payload": {
+        "version": 7,
+        "issued_at": 60,
+        "valid_to": 120,
+        "restricted_resource": "single_lane_bridge_and_approaches",
+        "resource_cell_count": 15,
+        "resource_cells_xy": [
+          [
+            0,
+            2
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            3,
+            2
+          ],
+          [
+            4,
+            2
+          ],
+          [
+            5,
+            2
+          ],
+          [
+            6,
+            2
+          ],
+          [
+            7,
+            2
+          ],
+          [
+            8,
+            2
+          ],
+          [
+            9,
+            2
+          ],
+          [
+            10,
+            2
+          ],
+          [
+            11,
+            2
+          ],
+          [
+            12,
+            2
+          ],
+          [
+            13,
+            2
+          ],
+          [
+            14,
+            2
+          ]
+        ],
+        "protected_parking_cells_xy": [
+          [
+            2,
+            1
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            12,
+            3
+          ]
+        ],
+        "access_window": null,
+        "contents": "resource-level allowed/denied mask; no path waypoints"
+      }
+    },
+    {
+      "time": 60,
+      "agent": "B",
+      "payload": {
+        "version": 7,
+        "issued_at": 60,
+        "valid_to": 120,
+        "restricted_resource": "single_lane_bridge_and_approaches",
+        "resource_cell_count": 15,
+        "resource_cells_xy": [
+          [
+            0,
+            2
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            3,
+            2
+          ],
+          [
+            4,
+            2
+          ],
+          [
+            5,
+            2
+          ],
+          [
+            6,
+            2
+          ],
+          [
+            7,
+            2
+          ],
+          [
+            8,
+            2
+          ],
+          [
+            9,
+            2
+          ],
+          [
+            10,
+            2
+          ],
+          [
+            11,
+            2
+          ],
+          [
+            12,
+            2
+          ],
+          [
+            13,
+            2
+          ],
+          [
+            14,
+            2
+          ]
+        ],
+        "protected_parking_cells_xy": [
+          [
+            2,
+            1
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            12,
+            1
+          ]
+        ],
+        "access_window": null,
+        "contents": "resource-level allowed/denied mask; no path waypoints"
+      }
+    },
+    {
+      "time": 60,
+      "agent": "C",
+      "payload": {
+        "version": 7,
+        "issued_at": 60,
+        "valid_to": 120,
+        "restricted_resource": "single_lane_bridge_and_approaches",
+        "resource_cell_count": 15,
+        "resource_cells_xy": [
+          [
+            0,
+            2
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            3,
+            2
+          ],
+          [
+            4,
+            2
+          ],
+          [
+            5,
+            2
+          ],
+          [
+            6,
+            2
+          ],
+          [
+            7,
+            2
+          ],
+          [
+            8,
+            2
+          ],
+          [
+            9,
+            2
+          ],
+          [
+            10,
+            2
+          ],
+          [
+            11,
+            2
+          ],
+          [
+            12,
+            2
+          ],
+          [
+            13,
+            2
+          ],
+          [
+            14,
+            2
+          ]
+        ],
+        "protected_parking_cells_xy": [
+          [
+            2,
+            3
+          ],
+          [
+            12,
+            1
+          ],
+          [
+            12,
+            3
+          ]
+        ],
+        "access_window": {
+          "open_at": 51,
+          "close_at": 120
+        },
+        "contents": "resource-level allowed/denied mask; no path waypoints"
+      }
+    },
+    {
+      "time": 60,
+      "agent": "D",
+      "payload": {
+        "version": 7,
+        "issued_at": 60,
+        "valid_to": 120,
+        "restricted_resource": "single_lane_bridge_and_approaches",
+        "resource_cell_count": 15,
+        "resource_cells_xy": [
+          [
+            0,
+            2
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            3,
+            2
+          ],
+          [
+            4,
+            2
+          ],
+          [
+            5,
+            2
+          ],
+          [
+            6,
+            2
+          ],
+          [
+            7,
+            2
+          ],
+          [
+            8,
+            2
+          ],
+          [
+            9,
+            2
+          ],
+          [
+            10,
+            2
+          ],
+          [
+            11,
+            2
+          ],
+          [
+            12,
+            2
+          ],
+          [
+            13,
+            2
+          ],
+          [
+            14,
+            2
+          ]
+        ],
+        "protected_parking_cells_xy": [
+          [
+            2,
+            1
+          ],
+          [
+            12,
+            1
+          ],
+          [
+            12,
+            3
+          ]
+        ],
+        "access_window": {
+          "open_at": 55,
+          "close_at": 120
+        },
+        "contents": "resource-level allowed/denied mask; no path waypoints"
+      }
+    }
+  ],
+  "runtime_seconds": 0.19085601799997676,
+  "cut_calls": 0
+}

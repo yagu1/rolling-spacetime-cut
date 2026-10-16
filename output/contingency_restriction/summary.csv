@@ -1,0 +1,10 @@
+scenario,method,all_arrived,completion_time,sum_arrival_times,minimum_swept_distance,emergency_stops,reactive_local_replans,path_dispatch_messages,restriction_messages,path_payload_bytes,restriction_payload_bytes,simulation_steps,runtime_seconds
+none,restriction,True,36,99,1.0,0,0,0,16,0,6368,36,0.05226285500020822
+none,central_path,True,36,99,1.0,0,0,16,16,6624,6368,36,0.04430961700018088
+none,uncoordinated,False,,360,1.0,332,0,0,0,0,0,90,0.016494486999818037
+approach_detour,restriction,True,36,103,1.0,2,2,0,16,0,6368,36,0.054704936999769416
+approach_detour,central_path,True,65,202,1.0,16,0,28,28,12272,11147,65,0.19085601799997676
+approach_detour,uncoordinated,False,,360,1.0,328,2,0,0,0,0,90,0.017347992999930284
+bridge_closure,restriction,True,55,172,1.0,17,2,0,24,0,9466,55,0.08668559599982473
+bridge_closure,central_path,True,66,208,1.0,9,0,28,28,11376,11166,66,0.08111504599992259
+bridge_closure,uncoordinated,False,,360,1.0,298,4,0,0,0,0,90,0.017739234000146098

@@ -22,6 +22,28 @@ python -m pytest -q tests/test_hierarchical_restriction.py
 
 # Rolling Space-Time Graph Cut + D* Lite — exploratory prototype
 
+## October 2026: contingency absorption under dynamic restrictions
+
+The [restriction-only contingency experiment](experiments/README_CONTINGENCY_RESTRICTION.md)
+separates three components: fixed Start/Goal delivery assignment, a supervisory
+60-second/10-second rolling restriction schedule, and independently replanning
+rovers with short-range obstacle detection. The new scenarios test **local
+detour**, **safe holding**, and **recovery** under temporary obstructions.
+
+```bash
+python experiments/contingency_restriction.py
+python experiments/run_contingency_batch.py --seeds 10
+python experiments/render_contingency_restriction.py
+python -m pytest -q tests/test_contingency_restriction.py
+```
+
+The one-lane resource gate runs without Graph Cut, and safety checks rely on
+an idealized joint ground-truth simulator shield — **not** certified safe
+independent navigation. Task reassignment and communication delay are not yet
+modeled.
+
+
+
 2026-10 / Multi-agent 2D+T safe-region allocation proof of concept.
 
 

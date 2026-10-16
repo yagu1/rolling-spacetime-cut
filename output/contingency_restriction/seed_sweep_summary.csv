@@ -1,0 +1,10 @@
+scenario,method,trials,successes,success_rate,mean_completion_s_successful_only,std_completion_s_successful_only,mean_stops,mean_compute_runtime_s
+approach_detour,central_path,10,10,1.0,62.4,4.993328882953068,14.6,0.16871814610008187
+approach_detour,restriction,10,10,1.0,38.2,9.772978620211502,2,0.06445368539989431
+approach_detour,uncoordinated,10,0,0.0,,,328,0.017327077800064216
+bridge_closure,central_path,10,10,1.0,65.1,0.31622776601683794,9,0.08199713180001708
+bridge_closure,restriction,10,10,1.0,55.1,0.31622776601683794,16.9,0.08120829329991466
+bridge_closure,uncoordinated,10,0,0.0,,,298,0.016767401000061
+none,central_path,10,10,1.0,35.1,0.31622776601683794,0,0.04185856399994918
+none,restriction,10,10,1.0,35.1,0.31622776601683794,0,0.05082192849990861
+none,uncoordinated,10,0,0.0,,,332,0.016616441300084262
